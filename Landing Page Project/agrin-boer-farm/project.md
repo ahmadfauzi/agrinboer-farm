@@ -13,7 +13,7 @@ Tahap berikutnya: **2 — Copy**
 | # | Tahap | Artefak | Status |
 |---|---|---|---|
 | 1 | Brief | `brief.md`, `CLAUDE.md`, `PRODUCT.md` | selesai (`PRODUCT.md` ditunda ke Tahap 5 saat `impeccable` dimuat) |
-| 2 | Copy | `copy.md` | belum |
+| 2 | Copy | `copy.md` | draf v1 — menunggu keputusan audit antislop |
 | 3 | Arah visual & ide | `DESIGN.md` | belum |
 | 4 | Token desain | `tokens.css` | belum |
 | 5 | Rakit kode | `index.html` | belum |
