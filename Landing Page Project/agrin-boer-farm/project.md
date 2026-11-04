@@ -2,12 +2,12 @@
 
 Dibuat: 2026-11-04
 Folder: `Landing Page Project/agrin-boer-farm/`
-Pemilik: [KONFIRMASI: sendiri | klien (<nama klien>, penyetuju: <nama>)]
+Pemilik: sendiri
 Sumber brand: `brand-strategy.md` (Brand Strategy v1, 22 Okt 2026)
 
 ## Posisi
 
-Tahap terakhir selesai: **1 (Brief)** — pemilik belum dikonfirmasi
+Tahap terakhir selesai: **1 (Brief)**
 Tahap berikutnya: **2 — Copy**
 
 | # | Tahap | Artefak | Status |
@@ -80,7 +80,6 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 Temuan yang sengaja ditunda, bukan dilupakan:
 
 - PENGHALANG DEPLOY: nomor WhatsApp dummy, harga paket dummy, gambar AI/stock sementara, alamat & jam kunjung, materi hukum aqiqah belum ditinjau ustaz.
-- Pemilik project (sendiri/klien) belum dikonfirmasi; kalau klien, Tahap 1 perlu persetujuan klien.
 - [PERLU DIVERIFIKASI] timbangan digital per ekor, kebijakan kambing sakit sebelum hari-H, sertifikat halal/juru sembelih, kirim foto kambing sebelum disembelih.
 - Review Brand Strategy v1 (4 Nov 2026): izin susu (bukan PIRT; NKV/BPOM MD), izin burger (SLHS), cek batas wajib halal UMK 17 Okt 2026 untuk lini aqiqah, jadwal kampanye qurban (mulai ±Maret 2027), aksen warna per lini belum ditetapkan, font tulisan tangan belum dinamai.
 
