@@ -1,6 +1,6 @@
 # Copy — Landing Page Agrin Boer Farm
 
-Versi 1 · 4 Nov 2026 · Mengikuti `brief.md` (10 section) dan suara di `brand-strategy.md`.
+Versi 1.1 · 4 Nov 2026 (setelah audit antislop) · Mengikuti `brief.md` (10 section) dan suara di `brand-strategy.md`.
 
 **Diagnosis:** Ayah & Bunda muda di Malang Raya, *solution-aware* (tahu perlu aqiqah, sedang memilih penyedia), datang dari Instagram/TikTok/WhatsApp. Tujuan halaman: memulai chat WhatsApp.
 
@@ -24,18 +24,14 @@ Penanda:
 
 **Pengantar (di atas judul):** Kamar sudah. Baju sudah. Nama sudah.
 
-**Judul (H1) — pilih satu:**
+**Judul (H1):** Aqiqah tuntas, dari kandang kami sendiri.
 
-| Opsi | Teks | Karakter | Angle |
-|---|---|---|---|
-| **A (usulan)** | Tinggal kambing aqiqahnya, kami temani. | 39 | Melanjutkan kalimat khas persona; pendamping, bukan penjual |
-| B | Aqiqah tuntas, dari kandang kami sendiri. | 41 | Asal-usul dan layanan tuntas |
-| C | Aqiqah Si Kecil, beres tanpa menebak. | 37 | Menjawab keberatan "sesuai ketentuan atau tidak" |
+**Catatan (tidak tampil):** dipilih opsi B (4 Nov 2026). Opsi yang tidak dipakai: "Tinggal kambing aqiqahnya, kami temani." dan "Aqiqah Si Kecil, beres tanpa menebak." 
 
 **Subjudul:** Kambing Boer dari kandang kami di Tajinan, Malang. Kami pilihkan, sembelih, masak, dan antar sampai siap dihidangkan untuk keluarga.
 
 **Tombol utama:** Tanya paket aqiqah
-**Di bawah tombol:** Balasan lewat WhatsApp. Ayah & Bunda boleh lihat kambingnya dulu.
+**Di bawah tombol:** Dibalas lewat WhatsApp. Ayah & Bunda boleh lihat kambingnya dulu.
 
 **Trust line:** Kandang kami terbuka. Silakan datang dengan janji lewat WhatsApp.
 
@@ -45,7 +41,7 @@ Penanda:
 
 ## 3. Sesuai ketentuan, tanpa menebak
 
-**Judul:** Ketentuannya kami pegang, bukan kami tebak.
+**Judul:** Ketentuan yang kami jaga untuk setiap kambing.
 
 **Pengantar:** Aqiqah cukup sekali seumur hidup Si Kecil. Wajar kalau Ayah & Bunda ingin semuanya tepat. Ini yang kami jaga untuk setiap kambing:
 
@@ -54,10 +50,12 @@ Penanda:
 - **Jumlah sesuai pilihan keluarga.** Banyak keluarga memakai dua ekor untuk anak laki-laki dan satu ekor untuk anak perempuan. Sebagian ulama membolehkan satu ekor untuk anak laki-laki. Ayah & Bunda yang memutuskan, kami siapkan.
 - **Disembelih dengan tata cara syar'i,** dengan menyebut nama Allah.
 
-**Penutup:** Masih ragu soal hukumnya? Tanyakan ke ustaz yang Ayah & Bunda percaya. Kami juga senang menjelaskan pandangan yang kami pakai beserta sumbernya.
+**Penutup:** Masih ragu soal hukumnya? Tanyakan ke ustaz yang Ayah & Bunda percaya. Kami juga senang menjawab pertanyaan Ayah & Bunda lewat WhatsApp.
 
 **Catatan (tidak tampil):**
 - Materi hukum ini wajib ditinjau ustaz sebelum tayang (penghalang deploy).
+- [CEK] "umur tiap ekor kami tulis di Kartu Kambing" hanya boleh tayang bila Kartu Kambing sudah berjalan.
+- Pemilik mengonfirmasi kambing dipilih dengan kriteria ini (sehat, tidak cacat, cukup umur).
 - [PERLU DIVERIFIKASI] umur tiap ekor memang dicatat; siapa juru sembelih dan apakah bersertifikat. Sertifikat halal tidak disebut sampai ada.
 
 ---
@@ -91,11 +89,13 @@ Penanda:
 **Judul:** Ayah & Bunda cukup menentukan tanggal.
 
 1. **Pilih kambing.** Kami kirimkan Kartu Kambing: foto, jenis, bobot, dan umur. Mau datang melihat langsung juga boleh.
-2. **Disembelih.** Pada hari yang disepakati, sesuai tata cara syar'i. Nama Si Kecil disebut saat penyembelihan.
+2. **Disembelih.** Pada hari yang disepakati, sesuai tata cara syar'i.
 3. **Dimasak.** Diolah di dapur kami sesuai menu paket.
 4. **Dikemas dan diantar.** Sampai di rumah atau di tempat acara, siap dibagikan.
 
-**Catatan (tidak tampil):** [PERLU DIVERIFIKASI] apakah keluarga dikirimi foto/video saat penyembelihan; apakah nama anak disebut saat menyembelih (praktik ini dianjurkan sebagian ulama — konfirmasi bahwa Agrin melakukannya); lokasi dapur.
+**Catatan (tidak tampil):**
+- [CEK] Kartu Kambing (foto, jenis, bobot, umur) harus sudah berjalan sebelum tayang. Kalau belum, ganti langkah 1 jadi "Kami kirimkan foto dan keterangan kambingnya."
+- [PERLU DIVERIFIKASI] apakah keluarga dikirimi foto/video saat penyembelihan; lokasi dapur. Kalimat "nama Si Kecil disebut saat penyembelihan" dihapus sampai dikonfirmasi.
 
 ---
 
@@ -137,7 +137,7 @@ Penanda:
 **Tombol:** Tanya Tabungan Qurban
 **Pesan WhatsApp terisi:** Assalamu'alaikum, saya mau tanya Tabungan Qurban Agrin.
 
-**Catatan (tidak tampil):** hindari kata "investasi", "untung", "bunga". Skema tertulis perlu dicek konsultan hukum (brand-strategy, Guardrails).
+**Catatan (tidak tampil):** [CEK] "Setiap setoran tercatat dan aturannya tertulis" hanya boleh tayang setelah skema tertulis jadi. Hindari kata "investasi", "untung", "bunga". Skema tertulis perlu dicek konsultan hukum (brand-strategy, Guardrails).
 
 ---
 
@@ -193,7 +193,7 @@ Malang Raya. [BUTUH DATA: tarif ongkir atau area gratis]
 
 ## Kenapa copy ini bekerja
 
-- **Pengantar hero memakai kalimat persona sendiri.** Ayah & Bunda mengenali daftar persiapannya, lalu judul langsung menjawab yang belum beres: kambingnya.
+- **Pengantar hero memakai kalimat persona sendiri.** Ayah & Bunda mengenali daftar persiapannya, lalu judul menjawab dua hal sekaligus: layanannya tuntas dan kambingnya jelas asalnya.
 - **Keberatan nomor satu dijawab di section kedua,** dengan ketentuan konkret dan perbedaan pendapat yang disebut terbuka. Keterbukaan soal khilafiyah justru menenangkan, karena tidak terdengar seperti jualan.
 - **Harga total dan isi paket tampil sebelum tombol.** Menjawab keberatan "harga tidak jelas" tanpa memaksa chat dulu.
 - **Kartu Kambing dan kunjungan kandang adalah bukti yang bisa dicek sendiri,** pengganti testimoni dan bukti kesehatan yang belum ada.

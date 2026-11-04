@@ -7,13 +7,13 @@ Sumber brand: `brand-strategy.md` (Brand Strategy v1, 22 Okt 2026)
 
 ## Posisi
 
-Tahap terakhir selesai: **1 (Brief)**
-Tahap berikutnya: **2 — Copy**
+Tahap terakhir selesai: **2 (Copy)**
+Tahap berikutnya: **3 — Arah visual & ide**
 
 | # | Tahap | Artefak | Status |
 |---|---|---|---|
 | 1 | Brief | `brief.md`, `CLAUDE.md`, `PRODUCT.md` | selesai (`PRODUCT.md` ditunda ke Tahap 5 saat `impeccable` dimuat) |
-| 2 | Copy | `copy.md` | draf v1 — menunggu keputusan audit antislop |
+| 2 | Copy | `copy.md` | selesai (v1.1, lolos audit antislop; sisa [CEK] tercatat) |
 | 3 | Arah visual & ide | `DESIGN.md` | belum |
 | 4 | Token desain | `tokens.css` | belum |
 | 5 | Rakit kode | `index.html` | belum |
@@ -38,9 +38,11 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 - Dilewati atas keputusan pengguna: bukti kesehatan, testimoni
 
 **Dari Tahap 2 — Copy**
-- Sudut utama:
-- Nada bicara:
-- Keberatan yang dijawab:
+- Sudut utama: ketenangan, bukan sekadar kambing. Pengantar hero "Kamar sudah. Baju sudah. Nama sudah." + H1 "Aqiqah tuntas, dari kandang kami sendiri."
+- Nada bicara: sesuai brand-strategy (hangat, jujur, tenang, edukatif tanpa menggurui); Ayah & Bunda, section qurban Bapak/Ibu; hukum ditulis netral
+- Keberatan yang dijawab: (a) sesuai ketentuan atau tidak → section 3 + Kartu Kambing + kunjungan kandang; (b) repot & harga tidak jelas → paket berharga total + alur 4 langkah
+- Pengecualian register: tagline "…momen keluargamu" tetap dipakai (keputusan brand)
+- Teks tiap section: `copy.md` v1.1
 
 **Dari Tahap 3 — Arah visual & ide** (rincian di `DESIGN.md`)
 - Arah:
@@ -80,6 +82,7 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 Temuan yang sengaja ditunda, bukan dilupakan:
 
 - PENGHALANG DEPLOY: nomor WhatsApp dummy, harga paket dummy, gambar AI/stock sementara, alamat & jam kunjung, materi hukum aqiqah belum ditinjau ustaz.
+- [CEK] dari copy: Kartu Kambing berjalan sebelum tayang; skema tertulis Tabungan Qurban; materi hukum ditinjau ustaz.
 - [PERLU DIVERIFIKASI] timbangan digital per ekor, kebijakan kambing sakit sebelum hari-H, sertifikat halal/juru sembelih, kirim foto kambing sebelum disembelih.
 - Review Brand Strategy v1 (4 Nov 2026): izin susu (bukan PIRT; NKV/BPOM MD), izin burger (SLHS), cek batas wajib halal UMK 17 Okt 2026 untuk lini aqiqah, jadwal kampanye qurban (mulai ±Maret 2027), aksen warna per lini belum ditetapkan, font tulisan tangan belum dinamai.
 
