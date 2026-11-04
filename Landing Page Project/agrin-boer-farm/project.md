@@ -7,14 +7,14 @@ Sumber brand: `brand-strategy.md` (Brand Strategy v1, 22 Okt 2026)
 
 ## Posisi
 
-Tahap terakhir selesai: **2 (Copy)**
-Tahap berikutnya: **3 — Arah visual & ide**
+Tahap terakhir selesai: **3 (Arah visual & ide)**
+Tahap berikutnya: **4 — Token desain**
 
 | # | Tahap | Artefak | Status |
 |---|---|---|---|
 | 1 | Brief | `brief.md`, `CLAUDE.md`, `PRODUCT.md` | selesai (`PRODUCT.md` ditunda ke Tahap 5 saat `impeccable` dimuat) |
 | 2 | Copy | `copy.md` | selesai (v1.1, lolos audit antislop; sisa [CEK] tercatat) |
-| 3 | Arah visual & ide | `DESIGN.md` | belum |
+| 3 | Arah visual & ide | `DESIGN.md` | selesai |
 | 4 | Token desain | `tokens.css` | belum |
 | 5 | Rakit kode | `index.html` | belum |
 | 6 | QA & Deploy | `LAUNCH.md` | belum |
@@ -45,11 +45,11 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 - Teks tiap section: `copy.md` v1.1
 
 **Dari Tahap 3 — Arah visual & ide** (rincian di `DESIGN.md`)
-- Arah:
-- Kalimat ide:
-- Elemen hidup:
-- Pengecualian larangan (id — alasan):
-- Disetujui klien (nama, tanggal):
+- Arah: page-is-the-object — halaman berbentuk Kartu Kambing / catatan kandang
+- Kalimat ide: Di halaman ini, Kartu Kambing menjadi bentuk tiap section (baris berlabel seperti catatan kandang)
+- Elemen hidup: pemilih paket (jenis kelamin anak + jumlah tamu → saran paket + WA terisi); data dummy
+- Pengecualian larangan (id — alasan): (manual) foto stok/AI — sementara atas keputusan pengguna, diganti foto asli sebelum deploy; tipografi 3 keluarga — aksen tulisan tangan dari brand
+- Disetujui klien (nama, tanggal): n/a (pemilik sendiri)
 
 **Dari Tahap 4 — Token desain**
 - Warna utama:
@@ -74,6 +74,7 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 
 | Tanggal | Yang diubah | Dari → Ke | Alasan | Disetujui |
 |---|---|---|---|---|
+| 2026-11-04 | Sumber gambar | Foto asli saja (brand-strategy) → gambar AI/stock sementara | Foto asli belum ada; pengguna akan mengganti sendiri | Pengguna |
 
 ---
 
