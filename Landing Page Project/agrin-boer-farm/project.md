@@ -7,15 +7,15 @@ Sumber brand: `brand-strategy.md` (Brand Strategy v1, 22 Okt 2026)
 
 ## Posisi
 
-Tahap terakhir selesai: **3 (Arah visual & ide)**
-Tahap berikutnya: **4 — Token desain**
+Tahap terakhir selesai: **4 (Token desain)**
+Tahap berikutnya: **5 — Rakit kode**
 
 | # | Tahap | Artefak | Status |
 |---|---|---|---|
 | 1 | Brief | `brief.md`, `CLAUDE.md`, `PRODUCT.md` | selesai (`PRODUCT.md` ditunda ke Tahap 5 saat `impeccable` dimuat) |
 | 2 | Copy | `copy.md` | selesai (v1.1, lolos audit antislop; sisa [CEK] tercatat) |
 | 3 | Arah visual & ide | `DESIGN.md` | selesai |
-| 4 | Token desain | `tokens.css` | belum |
+| 4 | Token desain | `tokens.css`, `icons.md` | selesai |
 | 5 | Rakit kode | `index.html` | belum |
 | 6 | QA & Deploy | `LAUNCH.md` | belum |
 
@@ -52,10 +52,10 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 - Disetujui klien (nama, tanggal): n/a (pemilik sendiri)
 
 **Dari Tahap 4 — Token desain**
-- Warna utama:
-- Pasangan font:
-- Radius & motion (durasi, easing):
-- Library ikon:
+- Warna utama: palet brand apa adanya + turunan krem-kartu #FBF7EF, krem-tua #EADFC9, hijau-gelap #1A3521, cokelat-lembut #5E4A38 (semua pasangan teks lolos AA; Emas Tua di krem tua hanya ≥24px/hiasan)
+- Pasangan font: Fraunces (judul) + Plus Jakarta Sans (isi) + Caveat (aksen tangan, sekali)
+- Radius & motion (durasi, easing): kartu 12 · tombol 10 · isian 8; 200ms / 480ms, cubic-bezier(0.22, 0.61, 0.36, 1); reduced-motion → 0
+- Library ikon: tanpa library; SVG inline (path Lucide ISC + siluet Boer gambar sendiri), lihat icons.md
 
 **Dari Tahap 5 — Rakit kode**
 - Urutan section final:
@@ -83,6 +83,7 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 Temuan yang sengaja ditunda, bukan dilupakan:
 
 - PENGHALANG DEPLOY: nomor WhatsApp dummy, harga paket dummy, gambar AI/stock sementara, alamat & jam kunjung, materi hukum aqiqah belum ditinjau ustaz.
+- Font: dimuat dari Google Fonts CDN atau self-host — putuskan di Tahap 5 (self-host lebih baik untuk privasi UU PDP).
 - [CEK] dari copy: Kartu Kambing berjalan sebelum tayang; skema tertulis Tabungan Qurban; materi hukum ditinjau ustaz.
 - [PERLU DIVERIFIKASI] timbangan digital per ekor, kebijakan kambing sakit sebelum hari-H, sertifikat halal/juru sembelih, kirim foto kambing sebelum disembelih.
 - Review Brand Strategy v1 (4 Nov 2026): izin susu (bukan PIRT; NKV/BPOM MD), izin burger (SLHS), cek batas wajib halal UMK 17 Okt 2026 untuk lini aqiqah, jadwal kampanye qurban (mulai ±Maret 2027), aksen warna per lini belum ditetapkan, font tulisan tangan belum dinamai.
