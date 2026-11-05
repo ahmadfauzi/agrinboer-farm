@@ -7,8 +7,8 @@ Sumber brand: `brand-strategy.md` (Brand Strategy v1, 22 Okt 2026)
 
 ## Posisi
 
-Tahap terakhir selesai: **4 (Token desain)**
-Tahap berikutnya: **5 — Rakit kode**
+Tahap terakhir selesai: **5 (Rakit kode)**
+Tahap berikutnya: **6 — QA & Deploy**
 
 | # | Tahap | Artefak | Status |
 |---|---|---|---|
@@ -16,7 +16,7 @@ Tahap berikutnya: **5 — Rakit kode**
 | 2 | Copy | `copy.md` | selesai (v1.1, lolos audit antislop; sisa [CEK] tercatat) |
 | 3 | Arah visual & ide | `DESIGN.md` | selesai |
 | 4 | Token desain | `tokens.css`, `icons.md` | selesai |
-| 5 | Rakit kode | `index.html` | belum |
+| 5 | Rakit kode | `index.html`, `image-prompts.md` | selesai |
 | 6 | QA & Deploy | `LAUNCH.md` | belum |
 
 Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] — alasan`
@@ -58,8 +58,10 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 - Library ikon: tanpa library; SVG inline (path Lucide ISC + siluet Boer gambar sendiri), lihat icons.md
 
 **Dari Tahap 5 — Rakit kode**
-- Urutan section final:
-- Tujuan tombol CTA (URL/nomor):
+- Urutan section final: sesuai brief (10 section) + sticky WA HP (muncul setelah hero, sembunyi di CTA akhir)
+- Tujuan tombol CTA (URL/nomor): wa.me/62812000000000 (DUMMY) + pesan terisi per section; nomor di konstanta WA_NUMBER
+- Gambar: host stock diblokir dari lingkungan kerja → slot foto berupa bingkai [BUTUH DATA] + siluet Boer; prompt GPT Image di image-prompts.md
+- Font: Google Fonts CDN (sementara)
 
 ---
 
@@ -83,7 +85,10 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 Temuan yang sengaja ditunda, bukan dilupakan:
 
 - PENGHALANG DEPLOY: nomor WhatsApp dummy, harga paket dummy, gambar AI/stock sementara, alamat & jam kunjung, materi hukum aqiqah belum ditinjau ustaz.
-- Font: dimuat dari Google Fonts CDN atau self-host — putuskan di Tahap 5 (self-host lebih baik untuk privasi UU PDP).
+- Font: masih Google Fonts CDN → pindah ke self-host sebelum deploy (privasi UU PDP).
+- Teks UI baru yang tidak ada di copy.md (perlu persetujuan pengguna): label pemilih paket "Si Kecil", "Laki-laki", "Perempuan", "Perkiraan tamu", pesan galat "Isi dengan angka, misalnya 60.", teks saran "Saran: … (sekitar N porsi).", lencana "Cocok".
+- Penyimpangan DESIGN.md: aksen tulisan tangan dipakai sebagai stempel "Contoh" di Kartu Kambing hero, bukan di CTA akhir (copy CTA akhir tidak punya sapaan untuk ditulis tangan).
+- Penanda copy di label ketentuan "Disembelih dengan tata cara syar'i," berakhir koma karena kalimat copy terpotong label/isi; pertimbangkan sunting copy.
 - [CEK] dari copy: Kartu Kambing berjalan sebelum tayang; skema tertulis Tabungan Qurban; materi hukum ditinjau ustaz.
 - [PERLU DIVERIFIKASI] timbangan digital per ekor, kebijakan kambing sakit sebelum hari-H, sertifikat halal/juru sembelih, kirim foto kambing sebelum disembelih.
 - Review Brand Strategy v1 (4 Nov 2026): izin susu (bukan PIRT; NKV/BPOM MD), izin burger (SLHS), cek batas wajib halal UMK 17 Okt 2026 untuk lini aqiqah, jadwal kampanye qurban (mulai ±Maret 2027), aksen warna per lini belum ditetapkan, font tulisan tangan belum dinamai.
