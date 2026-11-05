@@ -1,9 +1,10 @@
 # LAUNCH.md — Agrin Boer Farm (landing page aqiqah)
 
-**Status: BELUM DEPLOY — ditahan.** QA Tahap 6 dijalankan 5 Nov 2026. Halaman lolos semua pemeriksaan teknis yang bisa dijalankan, tetapi masih punya penghalang deploy di bawah.
+**Status: PRATINJAU ONLINE (data dummy) — belum untuk dibagikan ke pelanggan.** QA Tahap 6 dijalankan 5 Nov 2026. Halaman lolos semua pemeriksaan teknis yang bisa dijalankan, tetapi masih punya penghalang deploy di bawah.
 
-- URL: — (belum ada)
-- Tanggal tayang: —
+- URL pratinjau: https://agrinboer-farm.pages.dev/ (production branch `main`)
+- Tanggal deploy pratinjau: 5 Nov 2026
+- Tanggal tayang resmi: — (setelah penghalang di bawah beres)
 - Host: Cloudflare Pages (dibuat pengguna 5 Nov 2026), build command kosong, output directory `site`
 
 ## Penghalang deploy (wajib beres sebelum tayang)
@@ -98,6 +99,14 @@ Diperbaiki di putaran 1: kontras teks alur (warna color-mix diganti token), judu
 **Penutup**
 - [ ] Analytics — **belum ada** [BUTUH DATA: pilih alat]
 - [ ] Dibuka dari HP asli — **belum terverifikasi**
+
+## Cek setelah online (5 Nov 2026)
+- [x] Halaman utama dan `tokens.css` termuat (200), judul tab benar.
+- [x] Dokumen internal tidak bocor: `/brand-strategy.md` dan path folder project hanya mengembalikan halaman utama, bukan isi file.
+- [ ] `404.html` belum ada: alamat acak (mis. `/tes-404`) menampilkan halaman utama, bukan halaman 404.
+- [ ] Buka dari jaringan seluler & HP asli — belum terverifikasi.
+- [ ] Bagikan tautan ke WhatsApp — preview belum ada gambar (Open Graph belum dipasang).
+- [ ] Kirim pesan uji lewat tombol CTA — ditunda sampai nomor WA asli dipasang.
 
 ## Pantau minggu pertama (setelah tayang)
 - Jumlah chat WhatsApp masuk per hari dan pesan terisi mana yang paling sering dipakai (paket, kunjungan, tabungan).
