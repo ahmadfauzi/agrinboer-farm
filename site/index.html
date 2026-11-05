@@ -6,6 +6,24 @@
 <title>Agrin Boer Farm · Aqiqah tuntas dari kandang di Tajinan, Malang</title>
 <meta name="description" content="Aqiqah tuntas dari kandang kami sendiri di Tajinan, Malang. Kambing Boer dipilihkan, disembelih, dimasak, dan diantar sampai siap dihidangkan.">
 <meta name="theme-color" content="#24482E">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="id_ID">
+<meta property="og:site_name" content="Agrin Boer Farm">
+<meta property="og:title" content="Aqiqah tuntas, dari kandang kami sendiri. · Agrin Boer Farm">
+<meta property="og:description" content="Kambing Boer dari kandang kami di Tajinan, Malang. Kami pilihkan, sembelih, masak, dan antar sampai siap dihidangkan.">
+<meta property="og:url" content="https://agrinboer-farm.pages.dev/">
+<meta property="og:image" content="https://agrinboer-farm.pages.dev/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Agrin Boer Farm: Aqiqah tuntas, dari kandang kami sendiri. Tajinan, Malang.">
+<meta name="twitter:card" content="summary_large_image">
+<script>
+  // Alternatif latar putih untuk perbandingan: tambahkan ?tema=putih di URL.
+  if (new URLSearchParams(location.search).get('tema') === 'putih') document.documentElement.dataset.tema = 'putih';
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!-- Sementara dari Google Fonts; pindahkan ke self-host sebelum deploy (privasi pengunjung). -->
@@ -133,7 +151,7 @@
     display: grid; grid-template-columns: 8.5rem 1fr; gap: var(--sp-3); align-items: baseline;
     padding: var(--sp-3) var(--sp-3); border-radius: 6px;
   }
-  .baris > div:nth-child(odd) { background: var(--bg); }
+  .baris > div:nth-child(odd) { background: var(--bg-baris); }
   .baris dt { font-size: var(--fs-kecil); font-weight: var(--fw-label); color: var(--teks-lembut); letter-spacing: 0.01em; }
   .baris dd { margin: 0; font-weight: 600; color: var(--teks); font-variant-numeric: tabular-nums; }
   .kartu-kaki { padding: var(--sp-3) var(--sp-5) var(--sp-4); font-size: var(--fs-kecil); color: var(--teks-lembut); }
@@ -148,7 +166,7 @@
   .ketentuan { display: grid; gap: 6px; margin: var(--sp-6) 0; padding: 0; }
   .ketentuan > div {
     display: grid; gap: var(--sp-2); padding: var(--sp-4) var(--sp-5);
-    background: var(--bg-kartu); border-radius: var(--radius-isian);
+    background: var(--bg-blok); border-radius: var(--radius-isian);
   }
   @media (min-width: 720px) { .ketentuan > div { grid-template-columns: 13rem 1fr; gap: var(--sp-5); } }
   .ketentuan dt { font-weight: var(--fw-label); color: var(--judul); display: flex; gap: var(--sp-2); }
@@ -245,7 +263,7 @@
 
   /* FAQ */
   .faq { margin-top: var(--sp-6); display: grid; gap: 6px; }
-  .faq details { background: var(--bg-kartu); border-radius: var(--radius-isian); }
+  .faq details { background: var(--bg-blok); border-radius: var(--radius-isian); }
   .faq summary {
     list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: var(--sp-4);
     min-height: var(--target-min); padding: var(--sp-4) var(--sp-5); font-weight: 600; color: var(--judul); border-radius: var(--radius-isian);

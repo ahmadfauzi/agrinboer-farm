@@ -92,9 +92,9 @@ Diperbaiki di putaran 1: kontras teks alur (warna color-mix diganti token), judu
 
 **Metadata**
 - [x] Judul tab berisi brand, `lang="id"`, deskripsi meta (141 karakter)
-- [ ] Favicon — **belum ada** (menunggu logo)
-- [ ] Gambar Open Graph — **belum ada** (menunggu foto/logo)
-- [ ] `404.html` — **belum ada**
+- [x] Favicon — `favicon.svg`, `favicon-32.png`, `apple-touch-icon.png` (siluet kepala Boer; bukan logo final)
+- [x] Gambar Open Graph — `og-image.png` (krem) + `og-image-putih.png`; sumber di `og/og-template.html`. Tanpa data dummy.
+- [x] `404.html` — bergaya Kartu Kambing, tombol kembali ke halaman utama, `noindex`
 
 **Penutup**
 - [ ] Analytics — **belum ada** [BUTUH DATA: pilih alat]
@@ -103,9 +103,9 @@ Diperbaiki di putaran 1: kontras teks alur (warna color-mix diganti token), judu
 ## Cek setelah online (5 Nov 2026)
 - [x] Halaman utama dan `tokens.css` termuat (200), judul tab benar.
 - [x] Dokumen internal tidak bocor: `/brand-strategy.md` dan path folder project hanya mengembalikan halaman utama, bukan isi file.
-- [ ] `404.html` belum ada: alamat acak (mis. `/tes-404`) menampilkan halaman utama, bukan halaman 404.
+- [x] `404.html` dibuat (5 Nov 2026); cek ulang `/tes-404` setelah deploy berikutnya.
 - [ ] Buka dari jaringan seluler & HP asli — belum terverifikasi.
-- [ ] Bagikan tautan ke WhatsApp — preview belum ada gambar (Open Graph belum dipasang).
+- [ ] Bagikan tautan ke WhatsApp — Open Graph sudah dipasang; cek tampilan preview setelah deploy (WhatsApp menyimpan cache preview lama).
 - [ ] Kirim pesan uji lewat tombol CTA — ditunda sampai nomor WA asli dipasang.
 
 ## Pantau minggu pertama (setelah tayang)

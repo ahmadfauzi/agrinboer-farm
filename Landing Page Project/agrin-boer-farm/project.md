@@ -77,6 +77,7 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 
 | Tanggal | Yang diubah | Dari → Ke | Alasan | Disetujui |
 |---|---|---|---|---|
+| 2026-11-05 | Latar halaman (alternatif) | krem saja → krem (default) + alternatif putih lewat `?tema=putih` | Diminta pengguna untuk dibandingkan; tema krem belum diganti | Pengguna |
 | 2026-11-05 | Stack & lokasi file | Tailwind CDN, file di folder project → tanpa Tailwind, file publik di `site/` | Tailwind tidak terpakai (±270KB JS); dokumen internal tidak boleh ikut tayang di Cloudflare Pages | Pengguna |
 | 2026-11-04 | Sumber gambar | Foto asli saja (brand-strategy) → gambar AI/stock sementara | Foto asli belum ada; pengguna akan mengganti sendiri | Pengguna |
 
@@ -87,6 +88,7 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 Temuan yang sengaja ditunda, bukan dilupakan:
 
 - PENGHALANG DEPLOY: nomor WhatsApp dummy, harga paket dummy, gambar AI/stock sementara, alamat & jam kunjung, materi hukum aqiqah belum ditinjau ustaz.
+- Pilih tema final: krem (default, sesuai brand) atau putih (`?tema=putih`). Kalau putih dipilih, ubah default di tokens.css dan DESIGN.md.
 - Font: masih Google Fonts CDN → pindah ke self-host sebelum deploy (privasi UU PDP).
 - Teks UI baru yang tidak ada di copy.md (perlu persetujuan pengguna): label pemilih paket "Si Kecil", "Laki-laki", "Perempuan", "Perkiraan tamu", pesan galat "Isi dengan angka, misalnya 60.", teks saran "Saran: … (sekitar N porsi).", lencana "Cocok".
 - Penyimpangan DESIGN.md: aksen tulisan tangan dipakai sebagai stempel "Contoh" di Kartu Kambing hero, bukan di CTA akhir (copy CTA akhir tidak punya sapaan untuk ditulis tangan).
