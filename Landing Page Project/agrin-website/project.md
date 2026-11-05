@@ -6,15 +6,15 @@ Pemilik: sendiri
 
 ## Posisi
 
-Tahap terakhir selesai: **3 (Arah visual & ide)**
-Tahap berikutnya: **4 — Token desain**
+Tahap terakhir selesai: **4 (Token desain)**
+Tahap berikutnya: **5 — Rakit kode**
 
 | # | Tahap | Artefak | Status |
 |---|---|---|---|
 | 1 | Brief | `brief.md`, `CLAUDE.md` (repo), `PRODUCT.md` (repo) | selesai (PRODUCT.md perlu diperluas ke semua lini di Tahap 5) |
 | 2 | Copy | `copy.md` (beranda + 4 halaman lini baru) | selesai (v1.1, lolos audit antislop) |
 | 3 | Arah visual & ide | `DESIGN.md` | selesai |
-| 4 | Token desain | `site/tokens.css` | belum (kemungkinan dipakai ulang) |
+| 4 | Token desain | `site/tokens.css` | selesai (dipakai ulang + 5 token baru) |
 | 5 | Rakit kode | `site/index.html` + `site/<lini>/index.html` | belum |
 | 6 | QA & Deploy | `LAUNCH.md` | belum |
 
@@ -48,6 +48,10 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 - Halaman lini: kerangka landing aqiqah + penanda pos sesuai pin
 - Pengecualian larangan: tipografi 3 keluarga (Caveat) — keputusan brand
 - Disetujui klien: n/a (pemilik sendiri)
+
+**Dari Tahap 4 — Token desain**
+- Warna utama, pasangan font, radius & motion, ikon: dipakai ulang dari `site/tokens.css` (landing aqiqah); ikon SVG inline (`../agrin-boer-farm/icons.md`)
+- Token baru: --tinggi-header, --pos-ukuran, --pos-ukuran-besar, --denah-maks, --garis-jalan
 
 ---
 
