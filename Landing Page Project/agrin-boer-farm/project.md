@@ -7,8 +7,8 @@ Sumber brand: `brand-strategy.md` (Brand Strategy v1, 22 Okt 2026)
 
 ## Posisi
 
-Tahap terakhir selesai: **5 (Rakit kode)**
-Tahap berikutnya: **6 — QA & Deploy**
+Tahap terakhir selesai: **5 (Rakit kode)**; Tahap 6 QA selesai, deploy ditahan
+Tahap berikutnya: **6 — Deploy (setelah penghalang di LAUNCH.md beres)**
 
 | # | Tahap | Artefak | Status |
 |---|---|---|---|
@@ -17,7 +17,7 @@ Tahap berikutnya: **6 — QA & Deploy**
 | 3 | Arah visual & ide | `DESIGN.md` | selesai |
 | 4 | Token desain | `tokens.css`, `icons.md` | selesai |
 | 5 | Rakit kode | `index.html`, `image-prompts.md` | selesai |
-| 6 | QA & Deploy | `LAUNCH.md` | belum |
+| 6 | QA & Deploy | `LAUNCH.md` | QA selesai (5 Nov 2026); deploy ditahan — penghalang di LAUNCH.md |
 
 Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] — alasan`
 
@@ -69,6 +69,7 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 
 | Lebar | id | Alasan satu kalimat |
 |---|---|---|
+| — | — | Tidak ada WARN pada putaran 2 |
 
 ---
 

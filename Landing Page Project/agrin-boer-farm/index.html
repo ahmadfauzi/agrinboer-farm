@@ -13,6 +13,9 @@
 <link rel="stylesheet" href="tokens.css">
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.1.13"></script>
 <style>
+  *, *::before, *::after { box-sizing: border-box; }
+  img, svg { display: block; max-width: 100%; }
+  button, input { font: inherit; }
   html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
   body {
@@ -94,13 +97,14 @@
   .persiapan { display: flex; flex-wrap: wrap; gap: var(--sp-2) var(--sp-4); margin: 0 0 var(--sp-4); padding: 0; list-style: none; color: var(--teks-lembut); font-weight: 500; }
   .persiapan li { display: inline-flex; align-items: center; gap: 6px; }
   .persiapan svg { width: 18px; height: 18px; color: var(--hijau-kandang); }
-  .hero h1 { max-width: 13ch; }
+  .hero h1 { max-width: 16ch; }
   .hero .sub { margin-top: var(--sp-5); font-size: var(--fs-isi-besar); max-width: 34rem; }
   .hero .aksi { margin-top: var(--sp-6); display: flex; flex-direction: column; align-items: flex-start; gap: var(--sp-2); }
   .hero .mikro { font-size: 0.9375rem; color: var(--teks-lembut); }
   .trust { margin-top: var(--sp-6); display: flex; gap: var(--sp-3); align-items: flex-start; max-width: 30rem; font-weight: 500; }
   .trust svg { width: 22px; height: 22px; flex: none; color: var(--emas-tua); margin-top: 2px; }
   @media (max-width: 599px) { .hero .aksi .btn { width: 100%; } }
+  @media (max-width: 959px) { .hero .kartu { max-width: 30rem; } }
 
   /* Kartu Kambing */
   .kartu {
@@ -178,8 +182,8 @@
     font: inherit; color: var(--teks); font-variant-numeric: tabular-nums;
   }
   .isian:hover { box-shadow: inset 0 0 0 1.5px var(--hijau-kandang); }
-  .isian[aria-invalid="true"] { box-shadow: inset 0 0 0 2px #9B2C1F; }
-  .galat { color: #8A2A1C; font-size: var(--fs-kecil); font-weight: 600; margin-top: var(--sp-2); }
+  .isian[aria-invalid="true"] { box-shadow: inset 0 0 0 2px var(--galat); }
+  .galat { color: var(--galat); font-size: var(--fs-kecil); font-weight: 600; margin-top: var(--sp-2); }
   .saran { font-weight: 500; min-height: 1.6em; }
   .saran strong { color: var(--judul); }
 
@@ -213,7 +217,7 @@
     width: 2px; background: var(--garis-di-bidang);
   }
   .alur h3 { margin-bottom: var(--sp-2); }
-  .alur p { color: color-mix(in srgb, var(--krem-jerami) 88%, var(--hijau-kandang)); }
+  .alur p { color: var(--teks-di-bidang); }
   @media (min-width: 900px) {
     .alur { grid-template-columns: repeat(4, 1fr); gap: var(--sp-6); }
     .alur li { padding-left: 0; padding-top: 4.25rem; }
@@ -272,7 +276,7 @@
   /* Sticky WA (HP) */
   .sticky-wa {
     position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; padding: var(--sp-3) var(--gutter) calc(var(--sp-3) + env(safe-area-inset-bottom));
-    background: var(--bg-kartu); box-shadow: 0 -4px 16px rgb(58 42 28 / 0.10);
+    background: var(--bg-kartu); box-shadow: 0 -4px 16px rgb(58 42 28 / 0.1);
     transform: translateY(110%); visibility: hidden;
     transition: transform var(--dur-cepat) var(--ease), visibility 0s linear var(--dur-cepat);
   }
@@ -281,7 +285,7 @@
   @media (max-width: 767px) { body { padding-bottom: 76px; } }
 
   [data-dummy] { text-decoration: underline dotted var(--emas-tua); text-underline-offset: 0.22em; }
-  .butuh { color: #8A2A1C; font-weight: 600; }
+  .butuh { color: var(--galat); font-weight: 600; }
   .di-bidang .butuh { color: var(--emas-terang); }
 </style>
 </head>
@@ -303,7 +307,7 @@
 <header class="header">
   <div class="wrap">
     <a class="wordmark" href="#konten">Agrin Boer Farm <span>· Aqiqah</span></a>
-    <a class="btn" href="https://wa.me/62812000000000" data-wa="Assalamu'alaikum, saya mau tanya paket aqiqah Agrin. Perkiraan tanggal aqiqah: …" data-dummy-wa>
+    <a class="btn" href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau tanya paket aqiqah Agrin. Perkiraan tanggal aqiqah: …" data-dummy-wa>
       <svg aria-hidden="true"><use href="#i-wa"/></svg><span>Chat <span class="teks-panjang">WhatsApp</span></span>
     </a>
   </div>
@@ -323,7 +327,7 @@
         <h1 id="judul-hero">Aqiqah tuntas, dari kandang kami sendiri.</h1>
         <p class="sub">Kambing Boer dari kandang kami di Tajinan, Malang. Kami pilihkan, sembelih, masak, dan antar sampai siap dihidangkan untuk keluarga.</p>
         <div class="aksi">
-          <a class="btn" href="https://wa.me/62812000000000" data-wa="Assalamu'alaikum, saya mau tanya paket aqiqah Agrin. Perkiraan tanggal aqiqah: …" data-dummy-wa>
+          <a class="btn" href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau tanya paket aqiqah Agrin. Perkiraan tanggal aqiqah: …" data-dummy-wa>
             <svg aria-hidden="true"><use href="#i-wa"/></svg>Tanya paket aqiqah
           </a>
           <p class="mikro">Dibalas lewat WhatsApp. Ayah &amp; Bunda boleh lihat kambingnya dulu.</p>
@@ -400,7 +404,7 @@
             <div><dt>Perkiraan porsi</dt><dd><span data-dummy>40 porsi</span></dd></div>
           </dl>
           <div class="harga"><div class="angka"><span data-dummy>Rp2.750.000</span></div></div>
-          <a class="btn" href="https://wa.me/62812000000000" data-wa="Assalamu'alaikum, saya mau tanya Paket Satu Ekor. Perkiraan tanggal aqiqah: …" data-dummy-wa><svg aria-hidden="true"><use href="#i-wa"/></svg>Tanya paket ini</a>
+          <a class="btn" href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau tanya Paket Satu Ekor. Perkiraan tanggal aqiqah: …" data-dummy-wa><svg aria-hidden="true"><use href="#i-wa"/></svg>Tanya paket ini</a>
         </article>
         <article class="kartu" data-paket="dua">
           <div class="kartu-kepala"><h3 class="nama" style="color:inherit;font-size:1.25rem">Paket Dua Ekor</h3><span class="tanda-saran">Cocok</span></div>
@@ -411,7 +415,7 @@
             <div><dt>Perkiraan porsi</dt><dd><span data-dummy>80 porsi</span></dd></div>
           </dl>
           <div class="harga"><div class="angka"><span data-dummy>Rp5.300.000</span></div></div>
-          <a class="btn" href="https://wa.me/62812000000000" data-wa="Assalamu'alaikum, saya mau tanya Paket Dua Ekor. Perkiraan tanggal aqiqah: …" data-dummy-wa><svg aria-hidden="true"><use href="#i-wa"/></svg>Tanya paket ini</a>
+          <a class="btn" href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau tanya Paket Dua Ekor. Perkiraan tanggal aqiqah: …" data-dummy-wa><svg aria-hidden="true"><use href="#i-wa"/></svg>Tanya paket ini</a>
         </article>
         <article class="kartu" data-paket="nasi">
           <div class="kartu-kepala"><h3 class="nama" style="color:inherit;font-size:1.25rem">Paket Dua Ekor + Nasi Kotak</h3><span class="tanda-saran">Cocok</span></div>
@@ -422,7 +426,7 @@
             <div><dt>Perkiraan porsi</dt><dd><span data-dummy>100 kotak</span></dd></div>
           </dl>
           <div class="harga"><div class="angka"><span data-dummy>Rp6.900.000</span></div></div>
-          <a class="btn" href="https://wa.me/62812000000000" data-wa="Assalamu'alaikum, saya mau tanya Paket Dua Ekor + Nasi Kotak. Perkiraan tanggal aqiqah: …" data-dummy-wa><svg aria-hidden="true"><use href="#i-wa"/></svg>Tanya paket ini</a>
+          <a class="btn" href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau tanya Paket Dua Ekor + Nasi Kotak. Perkiraan tanggal aqiqah: …" data-dummy-wa><svg aria-hidden="true"><use href="#i-wa"/></svg>Tanya paket ini</a>
         </article>
       </div>
 
@@ -476,7 +480,7 @@
               <li><svg aria-hidden="true"><use href="#i-jam"/></svg><span>Jam kunjung: <span class="butuh">[BUTUH DATA: hari dan jam]</span></span></li>
               <li><svg aria-hidden="true"><use href="#i-wa"/></svg><span>Kunjungan dengan janji lewat WhatsApp, supaya ada yang menemani.</span></li>
             </ul>
-            <a class="btn btn--garis" href="https://wa.me/62812000000000" data-wa="Assalamu'alaikum, saya mau berkunjung ke kandang Agrin untuk melihat kambing aqiqah. Rencana hari: …" data-dummy-wa><svg aria-hidden="true"><use href="#i-wa"/></svg>Atur jadwal kunjungan</a>
+            <a class="btn btn--garis" href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau berkunjung ke kandang Agrin untuk melihat kambing aqiqah. Rencana hari: …" data-dummy-wa><svg aria-hidden="true"><use href="#i-wa"/></svg>Atur jadwal kunjungan</a>
           </div>
         </div>
       </div>
@@ -502,7 +506,7 @@
         </div>
       </div>
       <p style="margin-top:var(--sp-6)">
-        <a class="btn" href="https://wa.me/62812000000000" data-wa="Assalamu'alaikum, saya mau tanya Tabungan Qurban Agrin." data-dummy-wa><svg aria-hidden="true"><use href="#i-wa"/></svg>Tanya Tabungan Qurban</a>
+        <a class="btn" href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau tanya Tabungan Qurban Agrin." data-dummy-wa><svg aria-hidden="true"><use href="#i-wa"/></svg>Tanya Tabungan Qurban</a>
       </p>
     </div>
   </section>
@@ -536,7 +540,7 @@
     <div class="wrap">
       <h2 id="judul-cta">Dari kandang kami, untuk momen keluargamu.</h2>
       <p>Ceritakan tanggal dan jumlah tamunya. Kami bantu siapkan sisanya.</p>
-      <a class="btn btn--bidang" href="https://wa.me/62812000000000" data-wa="Assalamu'alaikum, saya mau tanya paket aqiqah Agrin. Perkiraan tanggal aqiqah: …" data-dummy-wa><svg aria-hidden="true"><use href="#i-wa"/></svg>Tanya paket aqiqah</a>
+      <a class="btn btn--bidang" href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau tanya paket aqiqah Agrin. Perkiraan tanggal aqiqah: …" data-dummy-wa><svg aria-hidden="true"><use href="#i-wa"/></svg>Tanya paket aqiqah</a>
     </div>
   </section>
 </main>
@@ -554,13 +558,13 @@
       <li><svg aria-hidden="true"><use href="#i-jam"/></svg><span>Jam kunjung kandang: <span class="butuh">[BUTUH DATA: hari dan jam]</span></span></li>
     </ul>
     <ul>
-      <li><svg aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp: <a href="https://wa.me/62812000000000" data-wa="Assalamu'alaikum, saya mau tanya paket aqiqah Agrin. Perkiraan tanggal aqiqah: …" data-dummy-wa><span data-dummy>0812-0000-0000</span></a></span></li>
+      <li><svg aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp: <a href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau tanya paket aqiqah Agrin. Perkiraan tanggal aqiqah: …" data-dummy-wa><span data-dummy>0812-0000-0000</span></a></span></li>
     </ul>
   </div>
 </footer>
 
 <div class="sticky-wa" id="sticky-wa">
-  <a class="btn btn--lebar" href="https://wa.me/62812000000000" data-wa="Assalamu'alaikum, saya mau tanya paket aqiqah Agrin. Perkiraan tanggal aqiqah: …" data-dummy-wa tabindex="-1"><svg aria-hidden="true"><use href="#i-wa"/></svg>Tanya paket aqiqah</a>
+  <a class="btn btn--lebar" href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau tanya paket aqiqah Agrin. Perkiraan tanggal aqiqah: …" data-dummy-wa tabindex="-1"><svg aria-hidden="true"><use href="#i-wa"/></svg>Tanya paket aqiqah</a>
 </div>
 
 <script>
