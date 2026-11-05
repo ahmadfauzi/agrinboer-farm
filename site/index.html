@@ -142,7 +142,7 @@
   }
   .slot-foto {
     position: relative; display: grid; place-items: center; text-align: center; gap: var(--sp-2);
-    aspect-ratio: 4 / 3; padding: var(--sp-5); background: var(--bg-tua); color: var(--teks-lembut);
+    aspect-ratio: 4 / 3; padding: var(--sp-5); background: var(--bg-slot); color: var(--teks-lembut);
     font-size: 0.9375rem;
   }
   .slot-foto svg { width: 88px; height: 88px; color: var(--emas-tua); opacity: 0.85; }
@@ -185,7 +185,7 @@
   .pilihan { display: flex; gap: var(--sp-2); flex-wrap: wrap; }
   .pilihan label {
     position: relative; display: inline-flex; align-items: center; min-height: var(--target-min);
-    padding: 0 var(--sp-4); border-radius: var(--radius-isian); background: var(--bg-kartu);
+    padding: 0 var(--sp-4); border-radius: var(--radius-isian); background: var(--bg-isian);
     box-shadow: inset 0 0 0 1.5px var(--garis); cursor: pointer; font-weight: 500;
     transition: box-shadow var(--dur-cepat) var(--ease), background-color var(--dur-cepat) var(--ease);
   }
@@ -195,7 +195,7 @@
   .pilihan label:has(input:focus-visible) { outline: 3px solid var(--fokus); outline-offset: 3px; }
   .isian {
     min-height: var(--target-min); width: 9rem; padding: 0 var(--sp-4); border-radius: var(--radius-isian);
-    border: 0; box-shadow: inset 0 0 0 1.5px var(--garis); background: var(--bg-kartu);
+    border: 0; box-shadow: inset 0 0 0 1.5px var(--garis); background: var(--bg-isian);
     font: inherit; color: var(--teks); font-variant-numeric: tabular-nums;
   }
   .isian:hover { box-shadow: inset 0 0 0 1.5px var(--hijau-kandang); }

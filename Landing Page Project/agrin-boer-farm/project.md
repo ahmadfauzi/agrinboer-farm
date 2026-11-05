@@ -77,6 +77,7 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 
 | Tanggal | Yang diubah | Dari → Ke | Alasan | Disetujui |
 |---|---|---|---|---|
+| 2026-11-05 | Kartu di tema putih | kartu putih + belang krem pucat → kartu Krem Jerami + baris putih, tanpa bayangan (opsi A) | Kartu menyatu dengan latar putih (analisis ui-ux-analyzer, severity 3) | Pengguna |
 | 2026-11-05 | Latar halaman (alternatif) | krem saja → krem (default) + alternatif putih lewat `?tema=putih` | Diminta pengguna untuk dibandingkan; tema krem belum diganti | Pengguna |
 | 2026-11-05 | Stack & lokasi file | Tailwind CDN, file di folder project → tanpa Tailwind, file publik di `site/` | Tailwind tidak terpakai (±270KB JS); dokumen internal tidak boleh ikut tayang di Cloudflare Pages | Pengguna |
 | 2026-11-04 | Sumber gambar | Foto asli saja (brand-strategy) → gambar AI/stock sementara | Foto asli belum ada; pengguna akan mengganti sendiri | Pengguna |
