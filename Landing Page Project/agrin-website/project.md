@@ -12,7 +12,7 @@ Tahap berikutnya: **2 — Copy**
 | # | Tahap | Artefak | Status |
 |---|---|---|---|
 | 1 | Brief | `brief.md`, `CLAUDE.md` (repo), `PRODUCT.md` (repo) | selesai (PRODUCT.md perlu diperluas ke semua lini di Tahap 5) |
-| 2 | Copy | `copy.md` (beranda + 4 halaman lini baru) | belum |
+| 2 | Copy | `copy.md` (beranda + 4 halaman lini baru) | draf v1 — menunggu keputusan audit & judul hero |
 | 3 | Arah visual & ide | `DESIGN.md` | belum (rujukan: preview `/tur/` + DESIGN.md landing aqiqah) |
 | 4 | Token desain | `site/tokens.css` | belum (kemungkinan dipakai ulang) |
 | 5 | Rakit kode | `site/index.html` + `site/<lini>/index.html` | belum |
