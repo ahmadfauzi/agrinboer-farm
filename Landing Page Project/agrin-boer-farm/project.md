@@ -15,8 +15,8 @@ Tahap berikutnya: **6 — Deploy (setelah penghalang di LAUNCH.md beres)**
 | 1 | Brief | `brief.md`, `CLAUDE.md`, `PRODUCT.md` | selesai (`PRODUCT.md` ditunda ke Tahap 5 saat `impeccable` dimuat) |
 | 2 | Copy | `copy.md` | selesai (v1.1, lolos audit antislop; sisa [CEK] tercatat) |
 | 3 | Arah visual & ide | `DESIGN.md` | selesai |
-| 4 | Token desain | `tokens.css`, `icons.md` | selesai |
-| 5 | Rakit kode | `index.html`, `image-prompts.md` | selesai |
+| 4 | Token desain | `site/tokens.css`, `icons.md` | selesai |
+| 5 | Rakit kode | `site/index.html`, `image-prompts.md` | selesai |
 | 6 | QA & Deploy | `LAUNCH.md` | QA selesai (5 Nov 2026); deploy ditahan — penghalang di LAUNCH.md |
 
 Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] — alasan`
@@ -77,6 +77,7 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 
 | Tanggal | Yang diubah | Dari → Ke | Alasan | Disetujui |
 |---|---|---|---|---|
+| 2026-11-05 | Stack & lokasi file | Tailwind CDN, file di folder project → tanpa Tailwind, file publik di `site/` | Tailwind tidak terpakai (±270KB JS); dokumen internal tidak boleh ikut tayang di Cloudflare Pages | Pengguna |
 | 2026-11-04 | Sumber gambar | Foto asli saja (brand-strategy) → gambar AI/stock sementara | Foto asli belum ada; pengguna akan mengganti sendiri | Pengguna |
 
 ---

@@ -4,12 +4,12 @@
 
 - URL: — (belum ada)
 - Tanggal tayang: —
-- Host: [BUTUH DATA: pilih Cloudflare Pages atau Netlify]
+- Host: Cloudflare Pages (dibuat pengguna 5 Nov 2026), build command kosong, output directory `site`
 
 ## Penghalang deploy (wajib beres sebelum tayang)
 
 - [ ] **16 penanda `[BUTUH DATA]`** masih tampil (alamat, jam kunjung, ongkir, pemesanan/DP, kebijakan kambing sakit, skema Tabungan Qurban, tanggal buka qurban, foto).
-- [ ] **Nomor WhatsApp dummy** `62812000000000` → ganti `WA_NUMBER` dan cari-ganti di `index.html`.
+- [ ] **Nomor WhatsApp dummy** `62812000000000` → ganti `WA_NUMBER` dan cari-ganti di `site/index.html`.
 - [ ] **Harga, bobot, porsi, umur, tanggal timbang dummy** (`data-dummy`, bergaris titik).
 - [ ] **Foto**: slot `data-sementara` masih bingkai kosong. Pasang foto asli (atau gambar dari `image-prompts.md` sementara, lalu tetap ganti foto asli).
 - [ ] **Materi hukum aqiqah** (section Ketentuan + FAQ hari ke-7) ditinjau ustaz.
@@ -37,7 +37,7 @@ Diperbaiki di putaran 1: kontras teks alur (warna color-mix diganti token), judu
 | No | Temuan | Status |
 |---|---|---|
 | 1 | Placeholder `[BUTUH DATA]` ×16 | Penghalang deploy (disengaja) |
-| 2 | Tailwind CDN dimuat tetapi tidak ada kelas Tailwind yang dipakai | **Menunggu keputusan pengguna** (usulan: hapus; menghemat ±270KB JS yang memblokir render) |
+| 2 | Tailwind CDN dimuat tetapi tidak ada kelas Tailwind yang dipakai | Diperbaiki: dihapus atas persetujuan pengguna (5 Nov 2026) |
 | 3 | Warna galat ditulis langsung | Diperbaiki → token `--galat` (6,6–8,1:1) |
 | 4 | `rgb()` literal untuk tekstur jerami & bayangan sticky | Diterima: turunan transparan dari warna token |
 | 5 | `meta theme-color` memakai hex | Diterima: meta tidak bisa membaca variabel CSS |
