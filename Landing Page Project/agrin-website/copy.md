@@ -1,6 +1,6 @@
 # Copy — Website Peternakan Agrin Boer Farm
 
-Versi 1 · 5 Nov 2026 · Mengikuti `brief.md` (sitemap §4, beranda §5) dan suara di `../agrin-boer-farm/brand-strategy.md`.
+Versi 1.1 · 5 Nov 2026 (setelah audit antislop) · Mengikuti `brief.md` (sitemap §4, beranda §5) dan suara di `../agrin-boer-farm/brand-strategy.md`.
 Halaman Aqiqah memakai `../agrin-boer-farm/copy.md` v1.1 tanpa perubahan.
 
 Penanda:
@@ -23,13 +23,9 @@ Sapaan: beranda kami–keluarga (netral-hangat) · Tabungan Qurban: Bapak/Ibu ·
 
 ## A2. Hero peternakan
 
-**Judul (H1) — pilih satu:**
+**Judul (H1):** Peternakan kambing yang bisa didatangi.
 
-| Opsi | Teks | Karakter |
-|---|---|---|
-| **A (usulan)** | Peternakan kambing yang bisa didatangi. | 39 |
-| B | Kandang kambing keluarga di Tajinan. | 36 |
-| C | Dari satu kandang, untuk banyak keperluan. | 42 |
+**Catatan (tidak tampil):** opsi A dipilih (5 Nov 2026). Tidak dipakai: "Kandang kambing keluarga di Tajinan." dan "Dari satu kandang, untuk banyak keperluan." 
 
 **Subjudul:** Agrin Boer Farm adalah peternakan kambing Boer di Tajinan, Kabupaten Malang. Dari kandang yang sama kami menyiapkan aqiqah, Tabungan Qurban, kunjungan belajar, lotion, dan burger kambing.
 
@@ -86,7 +82,7 @@ Sapaan: beranda kami–keluarga (netral-hangat) · Tabungan Qurban: Bapak/Ibu ·
 
 - **Amanah.** Kambing yang kami tawarkan adalah kambing yang kami tunjukkan.
 - **Terbuka.** Kandang bisa didatangi, bobot ditulis, harga disebut di depan.
-- **Hangat.** Kami menemani keluarga, bukan sekadar menjual kambing.
+- **Hangat.** Kami menemani keluarga dari bertanya sampai selesai.
 - **Tuntas.** Urusan yang kami ambil, kami selesaikan sampai akhir.
 
 **Catatan (tidak tampil):** [CEK] "bobot ditulis" sejalan dengan Kartu Kambing; pastikan berjalan sebelum tayang.
@@ -132,7 +128,7 @@ Sapaan: beranda kami–keluarga (netral-hangat) · Tabungan Qurban: Bapak/Ibu ·
 | Penarikan & pengembalian | [BUTUH DATA: aturan tertulis] |
 | Kalau harga kambing berubah | [BUTUH DATA: kebijakan] |
 
-**Teks di bawah tabel:** Ini tabungan untuk membeli kambing qurban, bukan investasi. Tidak ada janji keuntungan.
+**Teks di bawah tabel:** Setoran dipakai untuk membeli kambing qurban Bapak/Ibu, bukan untuk dikembangkan.
 
 ## B4. FAQ
 **Judul:** Yang sering ditanyakan.
@@ -171,7 +167,7 @@ Sapaan: beranda kami–keluarga (netral-hangat) · Tabungan Qurban: Bapak/Ibu ·
 | Jadwal | [BUTUH DATA: hari dan jam kunjungan] |
 
 ## C3. Keselamatan di kandang
-**Judul:** Aman untuk anak-anak.
+**Judul:** Supaya kunjungan tetap aman.
 - Setiap rombongan didampingi tim Agrin selama di kandang.
 - Siswa memakai alas kaki tertutup dan mencuci tangan setelah dari kandang.
 - Guru tetap mendampingi siswanya sepanjang kunjungan.
@@ -208,7 +204,7 @@ Sapaan: beranda kami–keluarga (netral-hangat) · Tabungan Qurban: Bapak/Ibu ·
 
 ## D1. Hero
 **Judul (H1):** Lotion susu kambing dari Agrin. (32 karakter)
-**Subjudul:** Lotion untuk kulit kering sehari-hari, dari peternakan kambing di Tajinan, Malang.
+**Subjudul:** Lotion untuk kulit kering sehari-hari, dari peternakan kambing di Tajinan, Malang. [CEK: fungsi sesuai label]
 **Tombol:** Pesan lotion
 **Pesan WA terisi:** Assalamu'alaikum, saya mau pesan lotion susu kambing Agrin. Varian: … Jumlah: …
 
@@ -244,7 +240,7 @@ Sapaan: beranda kami–keluarga (netral-hangat) · Tabungan Qurban: Bapak/Ibu ·
 **Catatan (tidak tampil):** [CEK] judul "dari kandang kami" hanya boleh bila dagingnya memang dari kambing Agrin.
 
 ## E2. Menu
-**Judul:** Menu hari ini.
+**Judul:** Menu burger.
 
 | Menu | Isi | Harga |
 |---|---|---|
@@ -258,5 +254,5 @@ Sapaan: beranda kami–keluarga (netral-hangat) · Tabungan Qurban: Bapak/Ibu ·
 - Status halal dan izin pangan: [BUTUH DATA]
 
 ## E4. CTA akhir
-**Judul:** Lapar? Pesan sekarang.
+**Judul:** Pesan burgernya lewat WhatsApp.
 **Tombol:** Pesan burger

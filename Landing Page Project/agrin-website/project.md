@@ -6,13 +6,13 @@ Pemilik: sendiri
 
 ## Posisi
 
-Tahap terakhir selesai: **1 (Brief)**
-Tahap berikutnya: **2 — Copy**
+Tahap terakhir selesai: **2 (Copy)**
+Tahap berikutnya: **3 — Arah visual & ide**
 
 | # | Tahap | Artefak | Status |
 |---|---|---|---|
 | 1 | Brief | `brief.md`, `CLAUDE.md` (repo), `PRODUCT.md` (repo) | selesai (PRODUCT.md perlu diperluas ke semua lini di Tahap 5) |
-| 2 | Copy | `copy.md` (beranda + 4 halaman lini baru) | draf v1 — menunggu keputusan audit & judul hero |
+| 2 | Copy | `copy.md` (beranda + 4 halaman lini baru) | selesai (v1.1, lolos audit antislop) |
 | 3 | Arah visual & ide | `DESIGN.md` | belum (rujukan: preview `/tur/` + DESIGN.md landing aqiqah) |
 | 4 | Token desain | `site/tokens.css` | belum (kemungkinan dipakai ulang) |
 | 5 | Rakit kode | `site/index.html` + `site/<lini>/index.html` | belum |
@@ -34,6 +34,12 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 - Tabungan = Tabungan Qurban; path, bukan subdomain; menu utama 6 item
 - Data lini baru: dummy + `[BUTUH DATA]`
 - Visual: palet, huruf, latar putih, kartu krem sama dengan landing aqiqah
+
+**Dari Tahap 2 — Copy**
+- Sudut utama beranda: "Peternakan kambing yang bisa didatangi." — kandang di Tajinan sebagai benang merah semua lini
+- Nada bicara: brand-strategy; sapaan per halaman (beranda kami–keluarga, Tabungan Bapak/Ibu, Kunjungan Bapak/Ibu Guru & kamu, Lotion/Burger kamu)
+- Keberatan yang dijawab: peternakan sungguhan atau reseller (kandang terbuka); aman untuk anak (aturan keselamatan); izin produk (jujur [BUTUH DATA]); uang tabungan (aturan tertulis, tanpa bahasa investasi)
+- Teks tiap halaman: `copy.md` v1.1
 
 ---
 
@@ -57,6 +63,7 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 - Data per lini (`brief.md` §6) dan domain sendiri belum ada.
 - Nomor izin lotion (BPOM), burger (halal/izin pangan) hanya ditulis bila nomornya diberikan.
 - `brand-strategy.md` perlu ditambah lini Kunjungan & Edukasi.
+- [CEK] dari copy: lotion dari susu kambing Agrin; daging burger dari kambing Agrin; aturan keselamatan kunjungan; skema tertulis Tabungan Qurban; fungsi lotion sesuai label.
 
 ---
 
