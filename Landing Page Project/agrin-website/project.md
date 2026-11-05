@@ -6,8 +6,8 @@ Pemilik: sendiri
 
 ## Posisi
 
-Tahap terakhir selesai: **4 (Token desain)**
-Tahap berikutnya: **5 — Rakit kode**
+Tahap terakhir selesai: **5 (Rakit kode)**
+Tahap berikutnya: **6 — QA & Deploy**
 
 | # | Tahap | Artefak | Status |
 |---|---|---|---|
@@ -15,7 +15,7 @@ Tahap berikutnya: **5 — Rakit kode**
 | 2 | Copy | `copy.md` (beranda + 4 halaman lini baru) | selesai (v1.1, lolos audit antislop) |
 | 3 | Arah visual & ide | `DESIGN.md` | selesai |
 | 4 | Token desain | `site/tokens.css` | selesai (dipakai ulang + 5 token baru) |
-| 5 | Rakit kode | `site/index.html` + `site/<lini>/index.html` | belum |
+| 5 | Rakit kode | `site/index.html`, `site/{aqiqah,tabungan-qurban,kunjungan,lotion,burger}/index.html`, `site/situs.css`, `site/situs.js` | selesai |
 | 6 | QA & Deploy | `LAUNCH.md` | belum |
 
 Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] — alasan`
@@ -53,12 +53,19 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 - Warna utama, pasangan font, radius & motion, ikon: dipakai ulang dari `site/tokens.css` (landing aqiqah); ikon SVG inline (`../agrin-boer-farm/icons.md`)
 - Token baru: --tinggi-header, --pos-ukuran, --pos-ukuran-besar, --denah-maks, --garis-jalan
 
+**Dari Tahap 5 — Rakit kode**
+- Urutan section final: beranda sesuai brief §5; halaman lini sesuai copy.md B–E
+- Tujuan tombol CTA: wa.me/62812000000000 (DUMMY), satu konstanta `WA_NUMBER` di `site/situs.js` untuk seluruh situs; pesan terisi per halaman
+- Header & footer bersama; aqiqah dipindah ke `/aqiqah/` (og-aqiqah.png); og-image.png kini versi peternakan
+- Preview `/tur/` dihapus (idenya masuk ke beranda)
+
 ---
 
 ## WARN yang diterima
 
 | Lebar | id | Alasan satu kalimat |
 |---|---|---|
+| 360 (`/`) | wa-menutupi | Bilah WA tersembunyi di bawah layar saat diperiksa; pemeriksa membaca posisinya ketika halaman masih menggulir ke atas |
 
 ---
 

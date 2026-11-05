@@ -10,6 +10,8 @@ web
 Static HTML/CSS tanpa build step; file publik di `site/`, deploy Cloudflare Pages (production branch `main`, output directory `site`).
 
 ## Users
+Website utama adalah peternakan Agrin Boer Farm (beranda); lini: Aqiqah (pemasukan terbesar), Tabungan Qurban, Kunjungan sekolah & magang, Lotion, Burger — semuanya sudah berjalan.
+
 Ayah & Bunda muda (25–35 tahun) di Malang Raya yang anak pertamanya baru lahir atau segera lahir, sedang menyiapkan aqiqah. Mereka kewalahan, ingin aqiqah tepat ketentuan, tidak tertipu, dan tidak repot memasak atau mengantar. Audiens kedua: keluarga yang berqurban dan penabung qurban bulanan (disapa Bapak/Ibu).
 
 ## Product Purpose
