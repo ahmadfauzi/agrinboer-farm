@@ -6,8 +6,8 @@ Pemilik: sendiri
 
 ## Posisi
 
-Tahap terakhir selesai: **5 (Rakit kode)**
-Tahap berikutnya: **6 — QA & Deploy**
+Tahap terakhir selesai: **5 (Rakit kode)**; Tahap 6 QA selesai, deploy resmi ditahan
+Tahap berikutnya: **6 — Deploy (setelah penghalang di LAUNCH.md beres)**
 
 | # | Tahap | Artefak | Status |
 |---|---|---|---|
@@ -16,7 +16,7 @@ Tahap berikutnya: **6 — QA & Deploy**
 | 3 | Arah visual & ide | `DESIGN.md` | selesai |
 | 4 | Token desain | `site/tokens.css` | selesai (dipakai ulang + 5 token baru) |
 | 5 | Rakit kode | `site/index.html`, `site/{aqiqah,tabungan-qurban,kunjungan,lotion,burger}/index.html`, `site/situs.css`, `site/situs.js` | selesai |
-| 6 | QA & Deploy | `LAUNCH.md` | belum |
+| 6 | QA & Deploy | `LAUNCH.md` | QA selesai (5 Nov 2026); deploy resmi ditahan |
 
 Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] — alasan`
 

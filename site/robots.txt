@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://agrinboer-farm.pages.dev/sitemap.xml
