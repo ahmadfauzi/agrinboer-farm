@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Halaman tidak ditemukan · Agrin Boer Farm</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#24482E">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/tokens.css">
+<script>
+  if (new URLSearchParams(location.search).get('tema') === 'putih') document.documentElement.dataset.tema = 'putih';
+</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  svg { display: block; }
+  body {
+    margin: 0; min-height: 100vh; display: flex; flex-direction: column;
+    background: var(--bg); color: var(--teks); font-family: var(--font-isi);
+    font-size: var(--fs-isi); line-height: var(--lh-isi); -webkit-font-smoothing: antialiased;
+  }
+  ::selection { background: var(--emas-terang); color: var(--cokelat-tanduk); }
+  :focus-visible { outline: 3px solid var(--fokus); outline-offset: 3px; border-radius: 4px; }
+  .wrap { width: 100%; max-width: var(--lebar-maks); margin-inline: auto; padding-inline: var(--gutter); }
+  @media (min-width: 768px) { .wrap { padding-inline: var(--sp-6); } }
+  header { border-bottom: 1px solid var(--garis); }
+  header .wrap { min-height: 68px; display: flex; align-items: center; }
+  .wordmark { font-family: var(--font-judul); font-weight: 700; font-size: 1.25rem; color: var(--judul); text-decoration: none; white-space: nowrap; }
+  main { flex: 1; display: flex; align-items: center; padding-block: var(--sp-8); }
+  main .wrap { display: grid; gap: var(--sp-7); align-items: center; }
+  @media (min-width: 860px) { main .wrap { grid-template-columns: 1.1fr 0.9fr; } }
+  h1 { margin: 0; font-family: var(--font-judul); font-weight: var(--fw-judul); font-size: var(--fs-h1); line-height: var(--lh-judul); letter-spacing: -0.025em; color: var(--judul); text-wrap: balance; max-width: 18ch; font-variation-settings: "SOFT" 50; }
+  p { margin: var(--sp-5) 0 0; font-size: var(--fs-isi-besar); color: var(--teks-lembut); max-width: 32rem; text-wrap: pretty; }
+  .btn {
+    margin-top: var(--sp-6); display: inline-flex; align-items: center; justify-content: center; gap: var(--sp-2);
+    min-height: var(--target-min); padding: 0 var(--sp-5); border-radius: var(--radius-tombol);
+    background: var(--tombol-bg); color: var(--tombol-teks); font-weight: var(--fw-tombol); text-decoration: none;
+    transition: background-color var(--dur-cepat) var(--ease), transform var(--dur-cepat) var(--ease);
+  }
+  .btn:hover { background: var(--tombol-bg-hover); }
+  .btn:active { transform: translateY(1px); }
+  .btn svg { width: 20px; height: 20px; }
+  .kartu { background: var(--bg-kartu); border-radius: var(--radius-kartu); box-shadow: var(--bayangan-kartu); overflow: hidden; max-width: 26rem; width: 100%; }
+  .kepala { display: flex; align-items: center; justify-content: space-between; padding: var(--sp-4) var(--sp-5); background: var(--hijau-kandang); color: var(--teks-di-bidang); font-family: var(--font-judul); font-size: 1.25rem; font-weight: 600; }
+  .kepala svg { width: 40px; height: 40px; color: var(--emas-terang); }
+  dl { margin: 0; padding: var(--sp-2); display: grid; gap: 4px; }
+  dl div { display: grid; grid-template-columns: 7rem 1fr; gap: var(--sp-3); padding: var(--sp-3); border-radius: 6px; }
+  dl div:nth-child(odd) { background: var(--bg-baris); }
+  dt { font-size: var(--fs-kecil); font-weight: var(--fw-label); color: var(--teks-lembut); }
+  dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }
+  footer { background: var(--bg-footer); color: var(--teks-di-bidang); padding-block: var(--sp-5); font-size: 0.9375rem; }
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="wordmark" href="/">Agrin Boer Farm</a></div></header>
+<main>
+  <div class="wrap">
+    <div>
+      <h1>Halaman ini tidak ada di kandang kami.</h1>
+      <p>Mungkin tautannya salah ketik atau sudah dipindah. Info paket aqiqah dan kunjungan kandang ada di halaman utama.</p>
+      <a class="btn" href="/">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" d="m12 19-7-7 7-7M19 12H5"/></svg>
+        Kembali ke halaman utama
+      </a>
+    </div>
+    <article class="kartu" aria-label="Catatan halaman">
+      <div class="kepala">Catatan halaman
+        <svg viewBox="0 0 64 64" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M25 17c-2-6-7-9-12-8 4 2 6 5 7 10"/><path d="M39 17c2-6 7-9 12-8-4 2-6 5-7 10"/><path d="M22 20c-6 0-12 4-15 11 5 1 10-1 14-5"/><path d="M42 20c6 0 12 4 15 11-5 1-10-1-14-5"/><path d="M22 20c2-3 6-4 10-4s8 1 10 4c1 6 0 13-2 19-2 7-5 13-8 13s-6-6-8-13c-2-6-3-13-2-19Z"/><path d="M28 47c1.5 1.2 6.5 1.2 8 0"/><circle cx="26.5" cy="29" r="1.2" fill="currentColor"/><circle cx="37.5" cy="29" r="1.2" fill="currentColor"/></g></svg>
+      </div>
+      <dl>
+        <div><dt>Kode</dt><dd>404</dd></div>
+        <div><dt>Status</dt><dd>Tidak ditemukan</dd></div>
+        <div><dt>Arah</dt><dd>Halaman utama</dd></div>
+      </dl>
+    </article>
+  </div>
+</main>
+<footer><div class="wrap">Agrin Boer Farm · Peternakan Kambing untuk Keluarga — Malang</div></footer>
+</body>
+</html>

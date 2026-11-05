@@ -18,6 +18,8 @@
   --bg: var(--krem-jerami);
   --bg-kartu: var(--krem-kartu);
   --bg-tua: var(--krem-tua);
+  --bg-baris: var(--krem-jerami);           /* baris belang di dalam kartu */
+  --bg-blok: var(--krem-kartu);             /* blok lepas di atas latar halaman (ketentuan, FAQ) */
   --bg-bidang: var(--hijau-kandang);
   --bg-footer: var(--hijau-kandang-gelap);
   --teks: var(--cokelat-tanduk);            /* 11,71:1 krem · 12,86:1 kartu · 10,40:1 krem tua */
@@ -91,6 +93,17 @@
 
   /* Ukuran sentuh */
   --target-min: 48px;
+}
+
+/* Alternatif latar putih (diminta pengguna 5 Nov 2026). Aktif lewat ?tema=putih; tema krem tetap default.
+   Kontras: teks 13,74 · teks lembut 8,36 · emas tua 5,49 · judul 10,29 di #FFF; baris/blok ≥4,9 untuk emas tua. */
+:root[data-tema="putih"] {
+  --bg: #FFFFFF;
+  --bg-kartu: #FFFFFF;
+  --bg-baris: #F7F2E8;
+  --bg-blok: #F8F4EC;
+  --bg-tua: var(--krem-jerami);
+  --bayangan-kartu: 0 0 0 1px rgb(58 42 28 / 0.08), 0 6px 18px rgb(58 42 28 / 0.07);
 }
 
 @media (prefers-reduced-motion: reduce) {
