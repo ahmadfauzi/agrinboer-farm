@@ -1,0 +1,102 @@
+/* Token desain Agrin Boer Farm — diturunkan dari DESIGN.md (Tahap 4, 4 Nov 2026).
+   Nilai warna brand diambil apa adanya dari brand-strategy.md. Kontras dihitung dengan rumus WCAG. */
+
+:root {
+  /* Warna primitif (brand) */
+  --hijau-kandang: #24482E;
+  --hijau-kandang-gelap: #1A3521;   /* turunan: footer */
+  --krem-jerami: #F4ECDD;
+  --krem-kartu: #FBF7EF;            /* turunan: permukaan Kartu Kambing */
+  --krem-tua: #EADFC9;              /* turunan: bidang section qurban */
+  --cokelat-tanduk: #3A2A1C;
+  --cokelat-lembut: #5E4A38;        /* turunan: teks sekunder */
+  --emas-tua: #8F5F1F;
+  --emas-terang: #D9A441;
+  --hijau-daun: #6B8E4E;            /* hiasan besar saja, bukan teks */
+
+  /* Warna semantik */
+  --bg: var(--krem-jerami);
+  --bg-kartu: var(--krem-kartu);
+  --bg-tua: var(--krem-tua);
+  --bg-bidang: var(--hijau-kandang);
+  --bg-footer: var(--hijau-kandang-gelap);
+  --teks: var(--cokelat-tanduk);            /* 11,71:1 krem · 12,86:1 kartu · 10,40:1 krem tua */
+  --teks-lembut: var(--cokelat-lembut);     /* 7,12:1 krem · 7,82:1 kartu · 6,33:1 krem tua */
+  --teks-di-bidang: var(--krem-jerami);     /* 8,76:1 hijau · 11,36:1 hijau gelap */
+  --judul: var(--hijau-kandang);            /* 8,76:1 krem · 9,63:1 kartu · 7,79:1 krem tua */
+  --aksen: var(--emas-tua);                 /* 4,68:1 krem · 5,14:1 kartu · 4,16:1 krem tua → di krem tua hanya ≥24px/hiasan */
+  --aksen-di-bidang: var(--emas-terang);    /* 4,57:1 hijau · 5,93:1 hijau gelap */
+  --garis: color-mix(in srgb, var(--cokelat-tanduk) 16%, transparent);
+  --garis-di-bidang: color-mix(in srgb, var(--krem-jerami) 22%, transparent);
+
+  /* Tombol */
+  --tombol-bg: var(--hijau-kandang);        /* teks krem 8,76:1 */
+  --tombol-bg-hover: var(--hijau-kandang-gelap);
+  --tombol-teks: var(--krem-jerami);
+  --tombol-bidang-bg: var(--emas-terang);   /* tombol di atas hijau; teks cokelat 6,11:1 */
+  --tombol-bidang-bg-hover: #E4B65C;
+  --tombol-bidang-teks: var(--cokelat-tanduk);
+  --galat: #8A2A1C;                          /* pesan galat & penanda data; 6,9:1 di krem */
+  --fokus: var(--emas-tua);
+  --fokus-di-bidang: var(--emas-terang);
+
+  /* Tipografi */
+  --font-judul: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-isi: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-tangan: "Caveat", "Comic Sans MS", cursive;  /* satu kali per halaman, di luar judul */
+
+  /* Skala fluid 360 → 1440 px, rasio ±1,25 */
+  --fs-kecil: 0.875rem;                                      /* 14px label baris kartu */
+  --fs-isi: 1rem;                                            /* 16px minimum di HP */
+  --fs-isi-besar: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem); /* subjudul */
+  --fs-h3: clamp(1.25rem, 1.15rem + 0.45vw, 1.5rem);
+  --fs-h2: clamp(1.75rem, 1.5rem + 1.1vw, 2.5rem);
+  --fs-h1: clamp(2.25rem, 1.75rem + 2.2vw, 3.5rem);   /* maks 3.5rem supaya judul hero 2 baris di desktop */
+  --fs-harga: clamp(1.5rem, 1.35rem + 0.7vw, 2rem);
+  --fs-tangan: clamp(1.5rem, 1.3rem + 0.9vw, 2.125rem);
+  --lh-judul: 1.12;
+  --lh-isi: 1.6;
+  --fw-judul: 600;
+  --fw-label: 700;
+  --fw-isi: 400;
+  --fw-tombol: 600;
+  --lebar-teks: 38rem;  /* kolom sempit section ketentuan & FAQ */
+
+  /* Spacing (dasar 4px) */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4rem;
+  --sp-section: clamp(4rem, 2.8rem + 5.3vw, 7.5rem);  /* 64px HP → 120px desktop: tenang, lapang */
+  --gutter: 1rem;                                      /* 16px tepi HP */
+  --lebar-maks: 72rem;
+
+  /* Radius */
+  --radius-kartu: 12px;
+  --radius-tombol: 10px;
+  --radius-isian: 8px;
+
+  /* Bayangan: hampir datar; beda nada permukaan lebih utama */
+  --bayangan-kartu: 0 1px 2px rgb(58 42 28 / 0.06), 0 6px 18px rgb(58 42 28 / 0.06);
+
+  /* Gerak: satu kurva, hanya transform & opacity */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur-cepat: 200ms;   /* hover, fokus, accordion */
+  --dur-masuk: 480ms;   /* baris Kartu Kambing muncul */
+  --jeda-baris: 70ms;   /* selisih antar-baris kartu */
+
+  /* Ukuran sentuh */
+  --target-min: 48px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --dur-cepat: 0ms;
+    --dur-masuk: 0ms;
+    --jeda-baris: 0ms;
+  }
+}
