@@ -15,16 +15,17 @@
   --hijau-daun: #6B8E4E;            /* hiasan besar saja, bukan teks */
 
   /* Warna semantik */
-  --bg: var(--krem-jerami);
-  --bg-kartu: var(--krem-kartu);
-  --bg-tua: var(--krem-tua);
-  --bg-baris: var(--krem-jerami);           /* baris belang di dalam kartu */
-  --bg-blok: var(--krem-kartu);             /* blok lepas di atas latar halaman (ketentuan, FAQ) */
+  /* Latar putih jadi bawaan sejak 5 Nov 2026 (keputusan pengguna); kartu krem dengan baris putih. */
+  --bg: #FFFFFF;                            /* teks 13,74 · teks lembut 8,36 · emas tua 5,49 · judul 10,29 */
+  --bg-kartu: var(--krem-jerami);           /* kartu krem: teks 11,71 · emas tua 4,68 */
+  --bg-tua: var(--krem-jerami);             /* panel pemilih, kunjungan, section qurban */
+  --bg-baris: #FFFFFF;                      /* baris belang di dalam kartu */
+  --bg-blok: #F8F4EC;                       /* blok lepas di atas latar halaman (ketentuan, FAQ) */
   --bg-slot: var(--krem-tua);               /* slot foto di dalam kartu */
-  --bg-isian: var(--krem-kartu);            /* pilihan & kolom isian pemilih paket */
+  --bg-isian: #FFFFFF;                      /* pilihan & kolom isian pemilih paket */
   --bg-bidang: var(--hijau-kandang);
   --bg-footer: var(--hijau-kandang-gelap);
-  --teks: var(--cokelat-tanduk);            /* 11,71:1 krem · 12,86:1 kartu · 10,40:1 krem tua */
+  --teks: var(--cokelat-tanduk);            /* 13,74:1 putih · 11,71:1 krem · 10,40:1 krem tua */
   --teks-lembut: var(--cokelat-lembut);     /* 7,12:1 krem · 7,82:1 kartu · 6,33:1 krem tua */
   --teks-di-bidang: var(--krem-jerami);     /* 8,76:1 hijau · 11,36:1 hijau gelap */
   --judul: var(--hijau-kandang);            /* 8,76:1 krem · 9,63:1 kartu · 7,79:1 krem tua */
@@ -85,7 +86,7 @@
   --radius-isian: 8px;
 
   /* Bayangan: hampir datar; beda nada permukaan lebih utama */
-  --bayangan-kartu: 0 1px 2px rgb(58 42 28 / 0.06), 0 6px 18px rgb(58 42 28 / 0.06);
+  --bayangan-kartu: none;  /* kartu dibedakan lewat warna permukaan, bukan bayangan */
 
   /* Gerak: satu kurva, hanya transform & opacity */
   --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
@@ -97,17 +98,16 @@
   --target-min: 48px;
 }
 
-/* Alternatif latar putih (diminta pengguna 5 Nov 2026). Aktif lewat ?tema=putih; tema krem tetap default.
-   Kontras: teks 13,74 · teks lembut 8,36 · emas tua 5,49 · judul 10,29 di #FFF; di kartu krem: teks 11,71 · emas tua 4,68. */
-:root[data-tema="putih"] {
-  --bg: #FFFFFF;
-  --bg-kartu: var(--krem-jerami);   /* kartu krem di atas halaman putih (opsi A, 5 Nov 2026) */
-  --bg-baris: #FFFFFF;              /* baris belang putih di dalam kartu krem */
-  --bg-blok: #F8F4EC;
-  --bg-tua: var(--krem-jerami);
+/* Tema krem lama (latar Krem Jerami) disimpan sebagai cadangan: aktif lewat ?tema=krem. */
+:root[data-tema="krem"] {
+  --bg: var(--krem-jerami);
+  --bg-kartu: var(--krem-kartu);
+  --bg-tua: var(--krem-tua);
+  --bg-baris: var(--krem-jerami);
+  --bg-blok: var(--krem-kartu);
   --bg-slot: var(--krem-tua);
-  --bg-isian: #FFFFFF;
-  --bayangan-kartu: none;
+  --bg-isian: var(--krem-kartu);
+  --bayangan-kartu: 0 1px 2px rgb(58 42 28 / 0.06), 0 6px 18px rgb(58 42 28 / 0.06);
 }
 
 @media (prefers-reduced-motion: reduce) {

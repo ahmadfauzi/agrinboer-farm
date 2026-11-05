@@ -93,7 +93,7 @@ Diperbaiki di putaran 1: kontras teks alur (warna color-mix diganti token), judu
 **Metadata**
 - [x] Judul tab berisi brand, `lang="id"`, deskripsi meta (141 karakter)
 - [x] Favicon — `favicon.svg`, `favicon-32.png`, `apple-touch-icon.png` (siluet kepala Boer; bukan logo final)
-- [x] Gambar Open Graph — `og-image.png` (krem) + `og-image-putih.png`; sumber di `og/og-template.html`. Tanpa data dummy.
+- [x] Gambar Open Graph — `og-image.png` (putih, bawaan) + `og-image-krem.png`; sumber di `og/og-template.html`. Tanpa data dummy.
 - [x] `404.html` — bergaya Kartu Kambing, tombol kembali ke halaman utama, `noindex`
 
 **Penutup**

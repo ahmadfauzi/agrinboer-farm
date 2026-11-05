@@ -44,6 +44,7 @@ Sumber arah: brand guideline (`brand-strategy.md`, bagian Arah visual) + usulan 
 - Sticky WA di HP: bilah bawah kecil, tidak menutupi judul/tombol.
 
 ## Warna (untuk tahap token)
+- **Perubahan 5 Nov 2026 (keputusan pengguna):** latar halaman jadi **putih #FFFFFF**; kartu (Kartu Kambing, kartu paket, 404) berbadan Krem Jerami dengan baris belang putih, tanpa bayangan; panel pemilih, kunjungan, dan section qurban Krem Jerami. Proporsi di bawah ditulis untuk latar krem lama, yang kini cadangan (`?tema=krem`).
 - Dari brand-strategy, nilai tidak diubah: Hijau Kandang #24482E, Krem Jerami #F4ECDD, Cokelat Tanduk #3A2A1C, Emas Tua #8F5F1F, Emas Terang #D9A441, Hijau Daun #6B8E4E.
 - Proporsi: latar Krem ±65%; bidang Hijau Kandang penuh ±25% (alur, CTA akhir, footer, kepala kartu paket); tinta Cokelat Tanduk; aksen emas ±5% (garis, label kecil di krem = Emas Tua; garis/ikon/teks di hijau = Emas Terang).
 - Tombol aksi: Hijau Kandang di atas krem; Emas Terang dengan teks Cokelat Tanduk di atas hijau. Emas tidak dipakai sebagai teks kecil di atas krem kecuali Emas Tua.

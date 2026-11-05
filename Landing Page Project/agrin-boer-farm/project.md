@@ -52,6 +52,7 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 - Disetujui klien (nama, tanggal): n/a (pemilik sendiri)
 
 **Dari Tahap 4 — Token desain**
+- Latar halaman: putih #FFFFFF (sejak 5 Nov 2026), kartu Krem Jerami + baris putih; krem lama cadangan via ?tema=krem
 - Warna utama: palet brand apa adanya + turunan krem-kartu #FBF7EF, krem-tua #EADFC9, hijau-gelap #1A3521, cokelat-lembut #5E4A38 (semua pasangan teks lolos AA; Emas Tua di krem tua hanya ≥24px/hiasan)
 - Pasangan font: Fraunces (judul) + Plus Jakarta Sans (isi) + Caveat (aksen tangan, sekali)
 - Radius & motion (durasi, easing): kartu 12 · tombol 10 · isian 8; 200ms / 480ms, cubic-bezier(0.22, 0.61, 0.36, 1); reduced-motion → 0
@@ -77,6 +78,7 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 
 | Tanggal | Yang diubah | Dari → Ke | Alasan | Disetujui |
 |---|---|---|---|---|
+| 2026-11-05 | Latar bawaan | krem → putih (krem jadi cadangan `?tema=krem`; og-image.png kini versi putih) | Dipilih pengguna setelah membandingkan | Pengguna |
 | 2026-11-05 | Kartu di tema putih | kartu putih + belang krem pucat → kartu Krem Jerami + baris putih, tanpa bayangan (opsi A) | Kartu menyatu dengan latar putih (analisis ui-ux-analyzer, severity 3) | Pengguna |
 | 2026-11-05 | Latar halaman (alternatif) | krem saja → krem (default) + alternatif putih lewat `?tema=putih` | Diminta pengguna untuk dibandingkan; tema krem belum diganti | Pengguna |
 | 2026-11-05 | Stack & lokasi file | Tailwind CDN, file di folder project → tanpa Tailwind, file publik di `site/` | Tailwind tidak terpakai (±270KB JS); dokumen internal tidak boleh ikut tayang di Cloudflare Pages | Pengguna |
@@ -89,7 +91,6 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 Temuan yang sengaja ditunda, bukan dilupakan:
 
 - PENGHALANG DEPLOY: nomor WhatsApp dummy, harga paket dummy, gambar AI/stock sementara, alamat & jam kunjung, materi hukum aqiqah belum ditinjau ustaz.
-- Pilih tema final: krem (default, sesuai brand) atau putih (`?tema=putih`). Kalau putih dipilih, ubah default di tokens.css dan DESIGN.md.
 - Font: masih Google Fonts CDN → pindah ke self-host sebelum deploy (privasi UU PDP).
 - Teks UI baru yang tidak ada di copy.md (perlu persetujuan pengguna): label pemilih paket "Si Kecil", "Laki-laki", "Perempuan", "Perkiraan tamu", pesan galat "Isi dengan angka, misalnya 60.", teks saran "Saran: … (sekitar N porsi).", lencana "Cocok".
 - Penyimpangan DESIGN.md: aksen tulisan tangan dipakai sebagai stempel "Contoh" di Kartu Kambing hero, bukan di CTA akhir (copy CTA akhir tidak punya sapaan untuk ditulis tangan).
