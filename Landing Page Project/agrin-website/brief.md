@@ -5,11 +5,13 @@ Sumber: `../agrin-boer-farm/brand-strategy.md`, `PRODUCT.md`, landing aqiqah yan
 
 ## 1. Tujuan
 
-Website utama adalah **peternakan Agrin Boer Farm di Tajinan, Malang**. Setiap lini punya halaman sendiri. Beranda memperkenalkan peternakannya dan mengantar pengunjung ke lini yang ia cari, dengan aqiqah tetap paling menonjol.
+Website utama adalah **peternakan Agrin Boer Farm di Tajinan, Malang**. Setiap lini punya halaman sendiri. **Beranda menampilkan peternakan sebagai yang utama** (keputusan pengguna 5 Nov 2026); aqiqah menjadi lini pertama di peta lini, bukan hero beranda.
 
 ## 2. Keputusan dari pengguna (5 Nov 2026)
 
-- Pemasukan terbesar: **aqiqah** → aqiqah jadi CTA utama beranda dan lini pertama di semua daftar.
+- Pemasukan terbesar: **aqiqah** → aqiqah lini pertama di semua daftar dan halaman lini paling lengkap.
+- **Beranda: peternakan yang utama** (bukan aqiqah) — hero tentang kandang di Tajinan.
+- Data lini selain aqiqah: **dummy** (`data-dummy`) + `[BUTUH DATA]`, diganti pengguna nanti.
 - Tabungan: **Tabungan Qurban** (bukan tabungan aqiqah).
 - Lini lain **sudah berjalan semua**: lotion kambing, burger kambing, kunjungan sekolah, magang.
 - Struktur: halaman (path), bukan subdomain.
@@ -24,7 +26,7 @@ Website utama adalah **peternakan Agrin Boer Farm di Tajinan, Malang**. Setiap l
 
 | URL | Halaman | Audiens & sapaan | CTA (WhatsApp, pesan terisi) | Status |
 |---|---|---|---|---|
-| `/` | Beranda peternakan | Semua pengunjung | Utama: Tanya paket aqiqah · lini lain lewat kartu/denah | Baru |
+| `/` | Beranda peternakan | Semua pengunjung | Utama: chat WA umum ke peternakan · tiap lini lewat kartu/denah | Baru |
 | `/aqiqah/` | Aqiqah | Ayah & Bunda | Tanya paket aqiqah | **Sudah ada** (dipindah dari `/`) |
 | `/tabungan-qurban/` | Tabungan Qurban | Bapak/Ibu | Tanya Tabungan Qurban | Baru |
 | `/kunjungan/` | Kunjungan & edukasi (sekolah, magang) | Bapak/Ibu Guru, kampus, mahasiswa | Atur jadwal kunjungan · Tanya program magang | Baru |
@@ -38,7 +40,7 @@ Setiap halaman: tombol WA di header, maksimal 1 klik ke WA, footer NAP (nama, al
 ## 5. Beranda — urutan section (usulan)
 
 1. **Header** — wordmark, menu, tombol WA.
-2. **Hero peternakan** — siapa Agrin + kandang di Tajinan yang bisa dikunjungi; CTA utama aqiqah, tautan kedua "lihat semua lini".
+2. **Hero peternakan** — siapa Agrin + kandang di Tajinan yang bisa dikunjungi; CTA utama chat WA ke peternakan, tautan kedua ke peta lini.
 3. **Peta lini** — denah kandang (konsep "Tur kandang") atau kartu: tiap pos/kartu = satu lini dengan satu kalimat + tautan halamannya.
 4. **Sorotan aqiqah** — ringkasan paket + harga mulai dari + tautan ke `/aqiqah/`.
 5. **Kandang terbuka** — kunjungan keluarga, sekolah, magang (ke `/kunjungan/`).
@@ -70,3 +72,7 @@ Tanpa data ini, halaman dibuat dengan dummy (`data-dummy`) dan `[BUTUH DATA]`, s
 - `site/index.html` (aqiqah) pindah ke `site/aqiqah/index.html`; `/` diisi beranda peternakan.
 - Preview alternatif "Tur kandang" (`/tur/`) disimpan di branch kerja sebagai rujukan desain beranda.
 - `brand-strategy.md`: arsitektur brand perlu ditambah lini **Kunjungan & Edukasi**, dan beranda bergeser ke peternakan (aqiqah tetap terdepan).
+
+## 9. Aset gambar yang benar-benar ada
+
+Belum ada foto asli (sama dengan landing aqiqah). Slot foto memakai bingkai `[BUTUH DATA: foto …]` atau ilustrasi kode (denah); pengguna mengganti sendiri.
