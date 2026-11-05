@@ -6,14 +6,14 @@ Pemilik: sendiri
 
 ## Posisi
 
-Tahap terakhir selesai: **2 (Copy)**
-Tahap berikutnya: **3 — Arah visual & ide**
+Tahap terakhir selesai: **3 (Arah visual & ide)**
+Tahap berikutnya: **4 — Token desain**
 
 | # | Tahap | Artefak | Status |
 |---|---|---|---|
 | 1 | Brief | `brief.md`, `CLAUDE.md` (repo), `PRODUCT.md` (repo) | selesai (PRODUCT.md perlu diperluas ke semua lini di Tahap 5) |
 | 2 | Copy | `copy.md` (beranda + 4 halaman lini baru) | selesai (v1.1, lolos audit antislop) |
-| 3 | Arah visual & ide | `DESIGN.md` | belum (rujukan: preview `/tur/` + DESIGN.md landing aqiqah) |
+| 3 | Arah visual & ide | `DESIGN.md` | selesai |
 | 4 | Token desain | `site/tokens.css` | belum (kemungkinan dipakai ulang) |
 | 5 | Rakit kode | `site/index.html` + `site/<lini>/index.html` | belum |
 | 6 | QA & Deploy | `LAUNCH.md` | belum |
@@ -40,6 +40,14 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 - Nada bicara: brand-strategy; sapaan per halaman (beranda kami–keluarga, Tabungan Bapak/Ibu, Kunjungan Bapak/Ibu Guru & kamu, Lotion/Burger kamu)
 - Keberatan yang dijawab: peternakan sungguhan atau reseller (kandang terbuka); aman untuk anak (aturan keselamatan); izin produk (jujur [BUTUH DATA]); uang tabungan (aturan tertulis, tanpa bahasa investasi)
 - Teks tiap halaman: `copy.md` v1.1
+
+**Dari Tahap 3 — Arah visual & ide** (rincian di `DESIGN.md`)
+- Arah: Tur kandang — denah peternakan sebagai peta navigasi situs
+- Kalimat ide: Di halaman ini, denah peternakan di Tajinan menjadi peta navigasi situs
+- Elemen hidup: pin denah → halaman lini; pemilih paket di Aqiqah
+- Halaman lini: kerangka landing aqiqah + penanda pos sesuai pin
+- Pengecualian larangan: tipografi 3 keluarga (Caveat) — keputusan brand
+- Disetujui klien: n/a (pemilik sendiri)
 
 ---
 
