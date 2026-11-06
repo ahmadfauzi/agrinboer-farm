@@ -1,6 +1,6 @@
 # Copy — Website Peternakan Agrin Boer Farm
 
-Versi 1.2 · 6 Nov 2026 (beranda diperkaya; v1.1 lolos audit antislop 5 Nov 2026) · Mengikuti `brief.md` (sitemap §4, beranda §5) dan suara di `../agrin-boer-farm/brand-strategy.md`.
+Versi 1.3 · 6 Nov 2026 (v1.3: halaman lini diperkaya; v1.2: beranda; v1.1 lolos audit antislop 5 Nov 2026) · Mengikuti `brief.md` (sitemap §4, beranda §5) dan suara di `../agrin-boer-farm/brand-strategy.md`.
 Halaman Aqiqah memakai `../agrin-boer-farm/copy.md` v1.1 tanpa perubahan.
 
 Penanda:
@@ -139,12 +139,28 @@ Sapaan: beranda kami–keluarga (netral-hangat) · Tabungan Qurban: Bapak/Ibu ·
 **Tombol:** Tanya Tabungan Qurban
 **Pesan WA terisi:** Assalamu'alaikum, saya mau tanya Tabungan Qurban Agrin.
 
+
+## B1b. Untuk siapa (baru, v1.3)
+**Judul:** Untuk Bapak/Ibu yang ingin tenang.
+- Ingin berqurban tahun depan, dan lebih ringan bila disiapkan bertahap.
+- Ingin tahu kambing qurbannya berasal dari kandang mana.
+- Lebih tenang dengan aturan yang tertulis sejak awal.
+
 ## B2. Cara kerja
 **Judul:** Empat langkah, tanpa repot.
 1. **Daftar lewat WhatsApp.** Kami kirimkan aturan tertulisnya lebih dulu.
 2. **Setor rutin.** {DUMMY: Rp300.000 per bulan}, atau sesuai kesepakatan.
 3. **Pantau setoran.** Setiap setoran tercatat dan bisa ditanyakan kapan saja.
 4. **Kambing siap.** Menjelang Iduladha, Bapak/Ibu memilih kambing dari kandang yang sama.
+
+
+## B2b. Tiga prinsip (baru, v1.3)
+**Judul:** Tiga hal yang kami pegang.
+- **Tercatat.** Setiap setoran dicatat dan bisa ditanyakan kapan saja.
+- **Tertulis.** Aturannya kami kirimkan lebih dulu, sebelum Bapak/Ibu mulai menyetor.
+- **Untuk membeli kambing.** Setoran dipakai untuk membeli kambing qurban Bapak/Ibu, tidak untuk diputar atau dikembangkan.
+
+**Catatan (tidak tampil):** [CEK] "tercatat" dan "tertulis" hanya tayang bila skema tertulis sudah ada (sama dengan beranda A7).
 
 ## B3. Skema setoran
 **Judul:** Skemanya jelas sejak awal.
@@ -159,15 +175,28 @@ Sapaan: beranda kami–keluarga (netral-hangat) · Tabungan Qurban: Bapak/Ibu ·
 
 **Teks di bawah tabel:** Setoran dipakai untuk membeli kambing qurban Bapak/Ibu, bukan untuk dikembangkan.
 
+
+## B3b. Kambingnya bisa dilihat (baru, v1.3)
+**Judul:** Kambingnya bisa Bapak/Ibu lihat dulu.
+**Teks:** Kambing qurban Bapak/Ibu dipilih dari kandang kami di Tajinan, Kabupaten Malang. Sebelum Iduladha, Bapak/Ibu boleh datang melihatnya langsung, dengan janji lewat WhatsApp lebih dulu supaya ada yang menemani.
+**Teks kecil:** Data kambingnya ditulis di Kartu Kambing: jenis, bobot, umur, dan tanggal ditimbang.
+**Tautan:** Atur kunjungan ke kandang
+**Pesan WA terisi:** Assalamu'alaikum, saya peserta/calon peserta Tabungan Qurban dan ingin melihat kambing di kandang Agrin.
+
+**Catatan (tidak tampil):** [CEK] Kartu Kambing juga dipakai untuk kambing qurban, bukan hanya aqiqah.
+
 ## B4. FAQ
 **Judul:** Yang sering ditanyakan.
 - **Bisa berhenti di tengah jalan?** [BUTUH DATA: aturan penarikan]
 - **Kapan kambingnya dipilih?** Menjelang Iduladha, dari kandang kami di Tajinan. Bapak/Ibu boleh datang melihat langsung.
 - **Kalau setoran belum cukup saat Iduladha?** [BUTUH DATA: kebijakan]
 - **Disembelih di mana?** [BUTUH DATA: tempat penyembelihan dan pembagian daging]
+- **Setoran dipakai untuk apa?** (baru) Untuk membeli kambing qurban Bapak/Ibu, tidak untuk diputar atau dikembangkan.
+- **Bagaimana saya tahu setoran sudah tercatat?** (baru) Tanyakan kapan saja lewat WhatsApp. [BUTUH DATA: bentuk catatan setoran, misalnya bukti per setoran atau rekap bulanan]
 
 ## B5. CTA akhir
 **Judul:** Mulai menabung untuk qurban.
+**Teks (baru):** Kami kirimkan aturan tertulisnya dulu. Bapak/Ibu baca dengan tenang, baru memutuskan.
 **Tombol:** Tanya Tabungan Qurban
 
 **Catatan (tidak tampil):** hindari "investasi", "untung", "bagi hasil", "bunga". Skema tertulis dicek konsultan hukum (brand-strategy, Guardrails).
@@ -182,6 +211,16 @@ Sapaan: beranda kami–keluarga (netral-hangat) · Tabungan Qurban: Bapak/Ibu ·
 **Tombol:** Atur jadwal kunjungan
 **Pesan WA terisi:** Assalamu'alaikum, saya mau mengatur kunjungan sekolah ke kandang Agrin. Nama sekolah: … Perkiraan jumlah siswa: …
 
+
+## C1b. Yang dilihat siswa (baru, v1.3)
+**Judul:** Yang dilihat siswa di kandang.
+**Pengantar:** Siswa melihat sendiri hal yang biasanya hanya ada di buku pelajaran.
+- **Kambing Boer dari dekat.** Kepala cokelat kemerahan, telinga panjang terkulai, dan cara kambing makan.
+- **Kandang dan pakannya.** Tempat kambing tinggal dan apa yang dimakannya setiap hari.
+- **Pekerjaan peternak.** Apa saja yang dikerjakan tim kami untuk merawat kambing.
+
+**Catatan (tidak tampil):** [CEK] isi kegiatan sesuai program kunjungan yang berjalan sekarang.
+
 ## C2. Kunjungan sekolah (Bapak/Ibu Guru)
 **Judul:** Kunjungan untuk sekolah.
 **Teks:** Siswa mengenal kambing, kandang, dan pakannya dengan melihat sendiri.
@@ -195,6 +234,16 @@ Sapaan: beranda kami–keluarga (netral-hangat) · Tabungan Qurban: Bapak/Ibu ·
 | Biaya | {DUMMY: Rp35.000 per siswa} |
 | Jadwal | [BUTUH DATA: hari dan jam kunjungan] |
 
+
+## C2b. Cara mengatur kunjungan (baru, v1.3)
+**Judul:** Mengatur kunjungan dalam empat langkah.
+1. **Sapa kami lewat WhatsApp.** Sebutkan nama sekolah, perkiraan jumlah siswa, dan rentang usianya.
+2. **Sepakati tanggalnya.** Kami cocokkan dengan jadwal kandang.
+3. **Terima rinciannya.** Kegiatan, durasi, biaya, dan aturan keselamatan kami kirim tertulis.
+4. **Datang ke Tajinan.** Rombongan didampingi tim Agrin selama di kandang.
+
+**Catatan (tidak tampil):** [CEK] langkah 3 "dikirim tertulis" sesuai praktik.
+
 ## C3. Keselamatan di kandang
 **Judul:** Supaya kunjungan tetap aman.
 - Setiap rombongan didampingi tim Agrin selama di kandang.
@@ -203,9 +252,18 @@ Sapaan: beranda kami–keluarga (netral-hangat) · Tabungan Qurban: Bapak/Ibu ·
 
 **Catatan (tidak tampil):** [CEK] aturan keselamatan ini harus sesuai praktik Agrin sekarang. Foto siswa hanya dengan izin tertulis sekolah/orang tua.
 
+
+## C3b. Yang perlu disiapkan guru (baru, v1.3)
+**Judul:** Yang perlu Bapak/Ibu Guru siapkan.
+- Daftar siswa dan guru pendamping yang ikut.
+- Alas kaki tertutup untuk semua siswa.
+- Izin tertulis orang tua bila sekolah ingin ada foto siswa di kandang.
+- [BUTUH DATA: hal lain yang perlu dibawa, misalnya air minum atau topi]
+
 ## C4. Magang (kamu)
 **Judul:** Magang di peternakan.
 **Teks:** Untuk kamu yang ingin belajar beternak kambing dari pekerjaan sehari-hari di kandang.
+**Teks tambahan (baru):** Peserta ikut pekerjaan harian di kandang bersama tim kami. [CEK: lingkup kegiatan magang]
 
 | | |
 |---|---|
@@ -225,6 +283,7 @@ Sapaan: beranda kami–keluarga (netral-hangat) · Tabungan Qurban: Bapak/Ibu ·
 
 ## C6. CTA akhir
 **Judul:** Ajak siswa ke kandang.
+**Teks (baru):** Ceritakan jumlah siswa dan rentang usianya. Kami bantu atur sisanya.
 **Tombol:** Atur jadwal kunjungan
 
 ---
@@ -239,6 +298,13 @@ Sapaan: beranda kami–keluarga (netral-hangat) · Tabungan Qurban: Bapak/Ibu ·
 
 **Catatan (tidak tampil):** [CEK] apakah lotion dibuat dari susu kambing kandang Agrin sendiri; kalau ya, kalimat bisa diperkuat. Tanpa klaim menyembuhkan, mencerahkan, atau mengobati.
 
+
+## D1b. Asal produk (baru, v1.3)
+**Judul:** Dari peternakan yang sama.
+**Teks:** Lotion ini bagian dari hasil kandang Agrin Boer Farm di Tajinan, Malang, peternakan yang juga menyiapkan aqiqah dan Tabungan Qurban. Mau tanya soal bahan atau cara pakainya? Tanyakan langsung lewat WhatsApp.
+
+**Catatan (tidak tampil):** [CEK] bila lotion dibuat dari susu kambing kandang Agrin sendiri, tambahkan kalimat itu di sini. Tanpa klaim menyembuhkan, mencerahkan, atau mengobati.
+
 ## D2. Varian & harga
 **Judul:** Pilih ukuranmu.
 
@@ -252,8 +318,24 @@ Sapaan: beranda kami–keluarga (netral-hangat) · Tabungan Qurban: Bapak/Ibu ·
 - Komposisi: [BUTUH DATA: sesuai label]
 - Cara beli: chat WhatsApp, bayar transfer. Ongkir: [BUTUH DATA]
 
+
+## D3b. Cara pesan (baru, v1.3)
+**Judul:** Pesan dalam tiga langkah.
+1. **Chat WhatsApp.** Sebutkan varian dan jumlahnya.
+2. **Bayar transfer.** Total harga dan ongkirnya kami kirim lewat chat.
+3. **Terima pesananmu.** [BUTUH DATA: dikirim lewat kurir, diambil di kandang, atau keduanya]
+
+## D3c. FAQ (baru, v1.3)
+**Judul:** Yang sering ditanyakan.
+- **Lotion ini untuk kulit seperti apa?** [BUTUH DATA: sesuai label]
+- **Sudah terdaftar di BPOM?** Nomor notifikasi BPOM: [BUTUH DATA]
+- **Bisa dikirim ke luar Malang?** [BUTUH DATA: area kirim dan ongkir]
+
+**Catatan (tidak tampil):** aturan BPOM: kosmetik hanya boleh dipromosikan bila sudah punya notifikasi BPOM. Halaman ini penghalang deploy sampai nomornya ada.
+
 ## D4. CTA akhir
 **Judul:** Pesan lewat WhatsApp.
+**Teks (baru):** Sebutkan varian dan jumlahnya, kami balas dengan total harganya.
 **Tombol:** Pesan lotion
 
 ---
@@ -267,6 +349,13 @@ Sapaan: beranda kami–keluarga (netral-hangat) · Tabungan Qurban: Bapak/Ibu ·
 **Pesan WA terisi:** Assalamu'alaikum, saya mau pesan burger kambing Agrin. Menu: … Jumlah: … Ambil/antar: …
 
 **Catatan (tidak tampil):** [CEK] judul "dari kandang kami" hanya boleh bila dagingnya memang dari kambing Agrin.
+
+
+## E1b. Asal daging (baru, v1.3)
+**Judul:** Dari kandang ke dapur.
+**Teks:** Burger ini dibuat dari daging kambing, diolah menjadi patty, lalu disajikan dalam roti. Cara yang ringan untuk mencoba daging kambing di luar acara aqiqah dan qurban.
+
+**Catatan (tidak tampil):** [CEK] daging dari kambing kandang Agrin sendiri (syarat judul hero "dari kandang kami"). Tanpa klaim "sehat" atau gizi.
 
 ## E2. Menu
 **Judul:** Menu burger.
@@ -282,6 +371,20 @@ Sapaan: beranda kami–keluarga (netral-hangat) · Tabungan Qurban: Bapak/Ibu ·
 - Jam buka: [BUTUH DATA]
 - Status halal dan izin pangan: [BUTUH DATA]
 
+
+## E3b. Langkah memesan (baru, v1.3)
+**Judul:** Pesan dalam tiga langkah.
+1. **Pilih menunya.** Tulis menu dan jumlahnya lewat WhatsApp.
+2. **Ambil atau diantar.** Sebutkan mana yang kamu mau; untuk antar, sertakan alamatnya.
+3. **Bayar.** [BUTUH DATA: cara bayar]
+
+## E3c. FAQ (baru, v1.3)
+**Judul:** Yang sering ditanyakan.
+- **Daging kambingnya berbau prengus?** [BUTUH DATA: cara dapur Agrin mengolah daging kambing]
+- **Sudah bersertifikat halal?** [BUTUH DATA: status halal dan nomor sertifikat]
+- **Bisa pesan banyak untuk acara?** [BUTUH DATA: pesanan jumlah besar dan waktu pesan]
+
 ## E4. CTA akhir
 **Judul:** Pesan burgernya lewat WhatsApp.
+**Teks (baru):** Tulis menu, jumlah, dan mau diambil atau diantar.
 **Tombol:** Pesan burger
