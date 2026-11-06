@@ -96,6 +96,13 @@
 
   /* Ukuran sentuh */
   --target-min: 48px;
+
+  /* Website peternakan (multi-halaman) */
+  --tinggi-header: 68px;            /* header dengan menu 6 item */
+  --pos-ukuran: 2.5rem;             /* penanda pos di HP */
+  --pos-ukuran-besar: 3.5rem;       /* penanda pos di desktop & pin denah */
+  --denah-maks: 36rem;              /* lebar maksimum denah di beranda */
+  --garis-jalan: 3px;               /* tebal jalan setapak titik-titik */
 }
 
 /* Tema krem lama (latar Krem Jerami) disimpan sebagai cadangan: aktif lewat ?tema=krem. */

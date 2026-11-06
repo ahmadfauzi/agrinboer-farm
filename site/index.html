@@ -3,312 +3,37 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Agrin Boer Farm · Aqiqah tuntas dari kandang di Tajinan, Malang</title>
-<meta name="description" content="Aqiqah tuntas dari kandang kami sendiri di Tajinan, Malang. Kambing Boer dipilihkan, disembelih, dimasak, dan diantar sampai siap dihidangkan.">
+<title>Agrin Boer Farm · Peternakan kambing di Tajinan, Malang</title>
+<meta name="description" content="Peternakan kambing Boer di Tajinan, Kabupaten Malang. Aqiqah, Tabungan Qurban, kunjungan belajar, lotion, dan burger kambing dari kandang yang sama.">
 <meta name="theme-color" content="#24482E">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://agrinboer-farm.pages.dev/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="id_ID">
 <meta property="og:site_name" content="Agrin Boer Farm">
-<meta property="og:title" content="Aqiqah tuntas, dari kandang kami sendiri. · Agrin Boer Farm">
-<meta property="og:description" content="Kambing Boer dari kandang kami di Tajinan, Malang. Kami pilihkan, sembelih, masak, dan antar sampai siap dihidangkan.">
+<meta property="og:title" content="Agrin Boer Farm · Peternakan kambing di Tajinan, Malang">
+<meta property="og:description" content="Peternakan kambing Boer di Tajinan, Kabupaten Malang. Aqiqah, Tabungan Qurban, kunjungan belajar, lotion, dan burger kambing dari kandang yang sama.">
 <meta property="og:url" content="https://agrinboer-farm.pages.dev/">
 <meta property="og:image" content="https://agrinboer-farm.pages.dev/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Agrin Boer Farm: Aqiqah tuntas, dari kandang kami sendiri. Tajinan, Malang.">
+<meta property="og:image:alt" content="Agrin Boer Farm: peternakan kambing di Tajinan, Malang.">
 <meta name="twitter:card" content="summary_large_image">
 <script>
   // Tema krem lama tetap bisa dilihat untuk perbandingan: tambahkan ?tema=krem di URL.
   if (new URLSearchParams(location.search).get('tema') === 'krem') document.documentElement.dataset.tema = 'krem';
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- Sementara dari Google Fonts; pindahkan ke self-host sebelum deploy (privasi pengunjung). -->
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="tokens.css">
-<style>
-  *, *::before, *::after { box-sizing: border-box; }
-  img, svg { display: block; max-width: 100%; }
-  button, input { font: inherit; }
-  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-  body {
-    margin: 0; background: var(--bg); color: var(--teks);
-    font-family: var(--font-isi); font-size: var(--fs-isi); line-height: var(--lh-isi);
-    font-weight: var(--fw-isi); caret-color: var(--hijau-kandang);
-    -webkit-font-smoothing: antialiased;
-  }
-  ::selection { background: var(--emas-terang); color: var(--cokelat-tanduk); }
-  h1, h2, h3 {
-    font-family: var(--font-judul); color: var(--judul); font-weight: var(--fw-judul);
-    line-height: var(--lh-judul); letter-spacing: -0.015em; text-wrap: balance; margin: 0;
-    font-variation-settings: "SOFT" 50;
-  }
-  h1 { font-size: var(--fs-h1); letter-spacing: -0.025em; }
-  h2 { font-size: var(--fs-h2); }
-  h3 { font-size: var(--fs-h3); }
-  p { margin: 0; text-wrap: pretty; }
-  a { color: inherit; text-underline-offset: 0.2em; }
-  :focus-visible { outline: 3px solid var(--fokus); outline-offset: 3px; border-radius: 4px; }
-  .di-bidang :focus-visible { outline-color: var(--fokus-di-bidang); }
-
-  .lewati {
-    position: absolute; left: var(--gutter); top: -100px; z-index: 50;
-    background: var(--tombol-bg); color: var(--tombol-teks); padding: var(--sp-3) var(--sp-4);
-    border-radius: var(--radius-tombol); font-weight: var(--fw-tombol); text-decoration: none;
-  }
-  .lewati:focus { top: var(--sp-3); }
-
-  .wrap { max-width: var(--lebar-maks); margin-inline: auto; padding-inline: var(--gutter); }
-  @media (min-width: 768px) { .wrap { padding-inline: var(--sp-6); } }
-  .section { padding-block: var(--sp-section); }
-  .sempit { max-width: var(--lebar-teks); }
-  .lembut { color: var(--teks-lembut); }
-  .judul-section { margin-bottom: var(--sp-5); }
-  .pengantar { font-size: var(--fs-isi-besar); color: var(--teks-lembut); max-width: 40rem; }
-
-  /* Tombol */
-  .btn {
-    display: inline-flex; align-items: center; justify-content: center; gap: var(--sp-2);
-    min-height: var(--target-min); padding: 0 var(--sp-5); border-radius: var(--radius-tombol);
-    background: var(--tombol-bg); color: var(--tombol-teks); font-weight: var(--fw-tombol);
-    font-size: 1rem; text-decoration: none; border: 0; cursor: pointer;
-    transition: background-color var(--dur-cepat) var(--ease), transform var(--dur-cepat) var(--ease);
-  }
-  .btn:hover { background: var(--tombol-bg-hover); }
-  .btn:active { transform: translateY(1px); }
-  .btn svg { width: 20px; height: 20px; flex: none; }
-  .btn--bidang { background: var(--tombol-bidang-bg); color: var(--tombol-bidang-teks); }
-  .btn--bidang:hover { background: var(--tombol-bidang-bg-hover); }
-  .btn--garis { background: transparent; color: var(--judul); box-shadow: inset 0 0 0 2px var(--judul); }
-  .btn--garis:hover { background: color-mix(in srgb, var(--hijau-kandang) 8%, transparent); }
-  .btn--lebar { width: 100%; }
-
-  /* Header */
-  .header { border-bottom: 1px solid var(--garis); }
-  .header .wrap { display: flex; align-items: center; justify-content: space-between; gap: var(--sp-4); min-height: 68px; }
-  .wordmark { font-family: var(--font-judul); font-weight: 700; font-size: 1.25rem; color: var(--judul); text-decoration: none; letter-spacing: -0.01em; }
-  .wordmark span { font-family: var(--font-isi); font-weight: 500; font-size: 0.9375rem; color: var(--teks-lembut); letter-spacing: 0; }
-  .header .btn { min-height: 44px; padding: 0 var(--sp-4); font-size: 0.9375rem; }
-  .wordmark { white-space: nowrap; }
-  @media (max-width: 420px) {
-    .header .btn .teks-panjang { display: none; }
-    .wordmark { font-size: 1.0625rem; }
-    .wordmark span { font-size: 0.875rem; }
-  }
-
-  /* Hero */
-  .hero { padding-block: var(--sp-7) var(--sp-section); position: relative; overflow: hidden; }
-  .hero::before {
-    /* tekstur jerami halus dari garis-garis tipis, bukan gambar */
-    content: ""; position: absolute; inset: 0; pointer-events: none; opacity: 0.5;
-    background-image:
-      repeating-linear-gradient(112deg, transparent 0 22px, rgb(143 95 31 / 0.05) 22px 23px),
-      repeating-linear-gradient(68deg, transparent 0 31px, rgb(143 95 31 / 0.04) 31px 32px);
-  }
-  .hero .wrap { position: relative; display: grid; gap: var(--sp-7); align-items: center; }
-  @media (min-width: 960px) { .hero .wrap { grid-template-columns: 1.15fr 0.85fr; gap: var(--sp-8); } .hero { padding-top: var(--sp-8); } }
-  .persiapan { display: flex; flex-wrap: wrap; gap: var(--sp-2) var(--sp-4); margin: 0 0 var(--sp-4); padding: 0; list-style: none; color: var(--teks-lembut); font-weight: 500; }
-  .persiapan li { display: inline-flex; align-items: center; gap: 6px; }
-  .persiapan svg { width: 18px; height: 18px; color: var(--hijau-kandang); }
-  .hero h1 { max-width: 16ch; }
-  .hero .sub { margin-top: var(--sp-5); font-size: var(--fs-isi-besar); max-width: 34rem; }
-  .hero .aksi { margin-top: var(--sp-6); display: flex; flex-direction: column; align-items: flex-start; gap: var(--sp-2); }
-  .hero .mikro { font-size: 0.9375rem; color: var(--teks-lembut); }
-  .trust { margin-top: var(--sp-6); display: flex; gap: var(--sp-3); align-items: flex-start; max-width: 30rem; font-weight: 500; }
-  .trust svg { width: 22px; height: 22px; flex: none; color: var(--emas-tua); margin-top: 2px; }
-  @media (max-width: 599px) { .hero .aksi .btn { width: 100%; } }
-  @media (max-width: 959px) { .hero .kartu { max-width: 30rem; } }
-
-  /* Kartu Kambing */
-  .kartu {
-    background: var(--bg-kartu); border-radius: var(--radius-kartu); box-shadow: var(--bayangan-kartu);
-    overflow: hidden; position: relative;
-  }
-  .kartu-kepala {
-    display: flex; align-items: center; justify-content: space-between; gap: var(--sp-3);
-    padding: var(--sp-4) var(--sp-5); background: var(--hijau-kandang); color: var(--teks-di-bidang);
-  }
-  .kartu-kepala .nama { font-family: var(--font-judul); font-size: 1.25rem; font-weight: 600; }
-  .kartu-kepala svg { width: 40px; height: 40px; color: var(--emas-terang); }
-  .stempel {
-    position: absolute; top: 70px; right: var(--sp-4); z-index: 2; transform: rotate(-6deg);
-    font-family: var(--font-tangan); font-size: var(--fs-tangan); line-height: 1; color: var(--emas-tua);
-    background: var(--bg-kartu); padding: 2px 12px 6px; border-radius: 8px;
-    box-shadow: inset 0 0 0 2px var(--emas-tua);
-  }
-  .slot-foto {
-    position: relative; display: grid; place-items: center; text-align: center; gap: var(--sp-2);
-    aspect-ratio: 4 / 3; padding: var(--sp-5); background: var(--bg-slot); color: var(--teks-lembut);
-    font-size: 0.9375rem;
-  }
-  .slot-foto svg { width: 88px; height: 88px; color: var(--emas-tua); opacity: 0.85; }
-  .baris { margin: 0; padding: var(--sp-2); display: grid; gap: 4px; }
-  .baris > div {
-    display: grid; grid-template-columns: 8.5rem 1fr; gap: var(--sp-3); align-items: baseline;
-    padding: var(--sp-3) var(--sp-3); border-radius: 6px;
-  }
-  .baris > div:nth-child(odd) { background: var(--bg-baris); }
-  .baris dt { font-size: var(--fs-kecil); font-weight: var(--fw-label); color: var(--teks-lembut); letter-spacing: 0.01em; }
-  .baris dd { margin: 0; font-weight: 600; color: var(--teks); font-variant-numeric: tabular-nums; }
-  .kartu-kaki { padding: var(--sp-3) var(--sp-5) var(--sp-4); font-size: var(--fs-kecil); color: var(--teks-lembut); }
-  .js-gerak .kartu[data-isi] .baris > div { opacity: 0; transform: translateY(8px); }
-  .kartu[data-isi].terisi .baris > div {
-    opacity: 1; transform: none;
-    transition: opacity var(--dur-masuk) var(--ease), transform var(--dur-masuk) var(--ease);
-    transition-delay: calc(var(--i, 0) * var(--jeda-baris));
-  }
-
-  /* Ketentuan */
-  .ketentuan { display: grid; gap: 6px; margin: var(--sp-6) 0; padding: 0; }
-  .ketentuan > div {
-    display: grid; gap: var(--sp-2); padding: var(--sp-4) var(--sp-5);
-    background: var(--bg-blok); border-radius: var(--radius-isian);
-  }
-  @media (min-width: 720px) { .ketentuan > div { grid-template-columns: 13rem 1fr; gap: var(--sp-5); } }
-  .ketentuan dt { font-weight: var(--fw-label); color: var(--judul); display: flex; gap: var(--sp-2); }
-  .ketentuan dt svg { width: 20px; height: 20px; flex: none; margin-top: 3px; color: var(--emas-tua); }
-  .ketentuan dd { margin: 0; }
-  .catatan-ustaz { padding-left: var(--sp-5); border-left: 1px solid var(--garis); color: var(--teks-lembut); }
-
-  /* Paket */
-  .pemilih {
-    margin-top: var(--sp-6); padding: var(--sp-5); background: var(--bg-tua); border-radius: var(--radius-kartu);
-    display: grid; gap: var(--sp-5);
-  }
-  @media (min-width: 860px) { .pemilih { grid-template-columns: auto auto 1fr; align-items: end; } }
-  .pemilih fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
-  .pemilih legend, .pemilih label.label { font-weight: var(--fw-label); font-size: var(--fs-kecil); color: var(--teks); margin-bottom: var(--sp-2); padding: 0; display: block; }
-  .pilihan { display: flex; gap: var(--sp-2); flex-wrap: wrap; }
-  .pilihan label {
-    position: relative; display: inline-flex; align-items: center; min-height: var(--target-min);
-    padding: 0 var(--sp-4); border-radius: var(--radius-isian); background: var(--bg-isian);
-    box-shadow: inset 0 0 0 1.5px var(--garis); cursor: pointer; font-weight: 500;
-    transition: box-shadow var(--dur-cepat) var(--ease), background-color var(--dur-cepat) var(--ease);
-  }
-  .pilihan input { position: absolute; opacity: 0; inset: 0; margin: 0; cursor: pointer; }
-  .pilihan label:hover { box-shadow: inset 0 0 0 1.5px var(--hijau-kandang); }
-  .pilihan label:has(input:checked) { background: var(--hijau-kandang); color: var(--teks-di-bidang); box-shadow: none; }
-  .pilihan label:has(input:focus-visible) { outline: 3px solid var(--fokus); outline-offset: 3px; }
-  .isian {
-    min-height: var(--target-min); width: 9rem; padding: 0 var(--sp-4); border-radius: var(--radius-isian);
-    border: 0; box-shadow: inset 0 0 0 1.5px var(--garis); background: var(--bg-isian);
-    font: inherit; color: var(--teks); font-variant-numeric: tabular-nums;
-  }
-  .isian:hover { box-shadow: inset 0 0 0 1.5px var(--hijau-kandang); }
-  .isian[aria-invalid="true"] { box-shadow: inset 0 0 0 2px var(--galat); }
-  .galat { color: var(--galat); font-size: var(--fs-kecil); font-weight: 600; margin-top: var(--sp-2); }
-  .saran { font-weight: 500; min-height: 1.6em; }
-  .saran strong { color: var(--judul); }
-
-  .paket { display: grid; gap: var(--sp-5); margin-top: var(--sp-6); }
-  @media (min-width: 900px) { .paket { grid-template-columns: repeat(3, 1fr); align-items: start; } }
-  .paket .kartu { transition: box-shadow var(--dur-cepat) var(--ease), transform var(--dur-cepat) var(--ease); }
-  .paket .kartu.disarankan { box-shadow: 0 0 0 3px var(--emas-tua), var(--bayangan-kartu); }
-  .paket .baris > div { grid-template-columns: 7.5rem 1fr; }
-  .harga { padding: var(--sp-4) var(--sp-5) 0; }
-  .harga .angka { font-family: var(--font-judul); font-size: var(--fs-harga); font-weight: 600; color: var(--judul); font-variant-numeric: tabular-nums; }
-  .harga .ket { font-size: var(--fs-kecil); color: var(--teks-lembut); }
-  .paket .kartu .btn { margin: var(--sp-4) var(--sp-5) var(--sp-5); width: calc(100% - 2 * var(--sp-5)); }
-  .tanda-saran { display: none; font-size: var(--fs-kecil); font-weight: 700; color: var(--cokelat-tanduk); background: var(--emas-terang); padding: 2px 10px; border-radius: 6px; }
-  .disarankan .tanda-saran { display: inline-block; }
-  .info-paket { margin: var(--sp-6) 0 0; padding: 0; list-style: none; display: grid; gap: var(--sp-2); }
-  .info-paket li { display: flex; gap: var(--sp-3); }
-  .info-paket svg { width: 20px; height: 20px; flex: none; margin-top: 3px; color: var(--emas-tua); }
-
-  /* Alur: bidang hijau */
-  .di-bidang { background: var(--bg-bidang); color: var(--teks-di-bidang); }
-  .di-bidang h2, .di-bidang h3 { color: var(--teks-di-bidang); }
-  .alur { list-style: none; margin: var(--sp-7) 0 0; padding: 0; display: grid; gap: var(--sp-6); counter-reset: langkah; }
-  .alur li { position: relative; padding-left: 4rem; }
-  .alur li::before {
-    counter-increment: langkah; content: counter(langkah);
-    position: absolute; left: 0; top: -0.15em; font-family: var(--font-judul); font-size: 2.75rem;
-    line-height: 1; font-weight: 600; color: var(--aksen-di-bidang);
-  }
-  .alur li:not(:last-child)::after {
-    content: ""; position: absolute; left: 0.85rem; top: 3.2rem; bottom: calc(-1 * var(--sp-6) + 0.5rem);
-    width: 2px; background: var(--garis-di-bidang);
-  }
-  .alur h3 { margin-bottom: var(--sp-2); }
-  .alur p { color: var(--teks-di-bidang); }
-  @media (min-width: 900px) {
-    .alur { grid-template-columns: repeat(4, 1fr); gap: var(--sp-6); }
-    .alur li { padding-left: 0; padding-top: 4.25rem; }
-    .alur li::before { top: 0; }
-    .alur li:not(:last-child)::after { left: 3.5rem; right: calc(-1 * var(--sp-6) + 0.75rem); top: 1.35rem; bottom: auto; width: auto; height: 2px; }
-  }
-
-  /* Kandang terbuka */
-  .kandang { display: grid; gap: var(--sp-6); margin-top: var(--sp-7); }
-  @media (min-width: 960px) { .kandang { grid-template-columns: 1.1fr 0.9fr; align-items: start; } }
-  .kandang .foto-besar { border-radius: var(--radius-kartu); overflow: hidden; }
-  .kandang .foto-besar .slot-foto { aspect-ratio: 4 / 3; min-height: 260px; }
-  .kunjungan { margin-top: var(--sp-5); padding: var(--sp-5); background: var(--bg-tua); border-radius: var(--radius-kartu); display: grid; gap: var(--sp-4); }
-  .kunjungan ul { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-3); }
-  .kunjungan li { display: flex; gap: var(--sp-3); }
-  .kunjungan li svg { width: 22px; height: 22px; flex: none; margin-top: 2px; color: var(--emas-tua); }
-
-  /* Qurban */
-  .qurban { background: var(--bg-tua); }
-  .qurban-kolom { display: grid; gap: var(--sp-6); margin-top: var(--sp-6); }
-  @media (min-width: 860px) { .qurban-kolom { grid-template-columns: 1fr 1fr; gap: var(--sp-7); } }
-  .qurban-kolom > div { padding-top: var(--sp-5); border-top: 3px solid var(--emas-tua); }
-  .qurban-kolom h3 { margin-bottom: var(--sp-3); }
-  .qurban-kolom ul { margin: var(--sp-4) 0 0; padding-left: 1.2rem; display: grid; gap: var(--sp-2); }
-  .qurban-kolom li::marker { color: var(--emas-tua); }
-
-  /* FAQ */
-  .faq { margin-top: var(--sp-6); display: grid; gap: 6px; }
-  .faq details { background: var(--bg-blok); border-radius: var(--radius-isian); }
-  .faq summary {
-    list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: var(--sp-4);
-    min-height: var(--target-min); padding: var(--sp-4) var(--sp-5); font-weight: 600; color: var(--judul); border-radius: var(--radius-isian);
-  }
-  .faq summary::-webkit-details-marker { display: none; }
-  .faq summary:hover { background: color-mix(in srgb, var(--hijau-kandang) 5%, transparent); }
-  .faq summary svg { width: 22px; height: 22px; flex: none; transition: transform var(--dur-cepat) var(--ease); }
-  .faq details[open] summary svg { transform: rotate(180deg); }
-  .faq .jawab { padding: 0 var(--sp-5) var(--sp-5); }
-
-  /* CTA akhir */
-  .cta-akhir { position: relative; text-align: center; padding-top: calc(var(--sp-section) + 24px); }
-  .gelombang { position: absolute; top: 0; left: 0; width: 100%; height: 28px; color: var(--emas-terang); }
-  .cta-akhir h2 { font-size: clamp(2rem, 1.6rem + 1.9vw, 3.25rem); max-width: 18ch; margin-inline: auto; }
-  .cta-akhir p { margin: var(--sp-5) auto var(--sp-6); max-width: 32rem; font-size: var(--fs-isi-besar); }
-
-  /* Footer */
-  .footer { background: var(--bg-footer); color: var(--teks-di-bidang); padding-block: var(--sp-7); font-size: 0.9375rem; position: relative; }
-  .footer svg.gelombang { top: -1px; width: 100%; height: 18px; margin: 0; opacity: 0.9; }
-  .footer .wrap { display: grid; gap: var(--sp-5); }
-  @media (min-width: 860px) { .footer .wrap { grid-template-columns: 1.2fr 1fr 1fr; align-items: start; } }
-  .footer .nama { font-family: var(--font-judul); font-size: 1.375rem; font-weight: 600; }
-  .footer ul { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-3); }
-  .footer li { display: flex; gap: var(--sp-3); }
-  .footer svg { width: 20px; height: 20px; flex: none; margin-top: 2px; color: var(--emas-terang); }
-
-  /* Sticky WA (HP) */
-  .sticky-wa {
-    position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; padding: var(--sp-3) var(--gutter) calc(var(--sp-3) + env(safe-area-inset-bottom));
-    background: var(--bg-kartu); box-shadow: 0 -4px 16px rgb(58 42 28 / 0.1);
-    transform: translateY(110%); visibility: hidden;
-    transition: transform var(--dur-cepat) var(--ease), visibility 0s linear var(--dur-cepat);
-  }
-  .sticky-wa.tampil { transform: none; visibility: visible; transition: transform var(--dur-cepat) var(--ease); }
-  @media (min-width: 768px) { .sticky-wa { display: none; } }
-  @media (max-width: 767px) { body { padding-bottom: 76px; } }
-
-  [data-dummy] { text-decoration: underline dotted var(--emas-tua); text-underline-offset: 0.22em; }
-  .butuh { color: var(--galat); font-weight: 600; }
-  .di-bidang .butuh { color: var(--emas-terang); }
-</style>
+<link rel="preload" href="/fonts/Fraunces-latin-6NU78FyLNQ.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/PlusJakartaSans-latin-LDIoaomQNQ.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/tokens.css">
+<link rel="stylesheet" href="/situs.css">
+<script src="/situs.js" defer></script>
 </head>
 <body>
 <a class="lewati" href="#konten">Lewati ke konten</a>
-
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.91 9.91 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.23 8.23 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24a8.24 8.24 0 0 1 8.24 8.25c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.24-.64.8-.78.97-.15.16-.29.18-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29Z"/></symbol>
@@ -318,40 +43,105 @@
     <symbol id="i-chevron" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" d="m6 9 6 6 6-6"/></symbol>
     <!-- Siluet kepala Boer: dahi lebar, tanduk melengkung ke belakang, telinga panjang terkulai -->
     <symbol id="i-boer" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M25 17c-2-6-7-9-12-8 4 2 6 5 7 10"/><path d="M39 17c2-6 7-9 12-8-4 2-6 5-7 10"/><path d="M22 20c-6 0-12 4-15 11 5 1 10-1 14-5"/><path d="M42 20c6 0 12 4 15 11-5 1-10-1-14-5"/><path d="M22 20c2-3 6-4 10-4s8 1 10 4c1 6 0 13-2 19-2 7-5 13-8 13s-6-6-8-13c-2-6-3-13-2-19Z"/><path d="M28 47c1.5 1.2 6.5 1.2 8 0"/><circle cx="26.5" cy="29" r="1.2" fill="currentColor"/><circle cx="37.5" cy="29" r="1.2" fill="currentColor"/></g></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-panah" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
   </defs>
 </svg>
-
 <header class="header">
   <div class="wrap">
-    <a class="wordmark" href="#konten">Agrin Boer Farm <span>· Aqiqah</span></a>
-    <a class="btn" href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau tanya paket aqiqah Agrin. Perkiraan tanggal aqiqah: …" data-dummy-wa>
-      <svg aria-hidden="true"><use href="#i-wa"/></svg><span>Chat <span class="teks-panjang">WhatsApp</span></span>
-    </a>
+    <a class="wordmark" href="/">Agrin Boer Farm</a>
+    <nav class="menu" id="menu" aria-label="Menu utama">
+      <ul>
+        <li><a href="/aqiqah/">Aqiqah</a></li>
+        <li><a href="/tabungan-qurban/">Tabungan Qurban</a></li>
+        <li><a href="/kunjungan/">Kunjungan</a></li>
+        <li><details><summary>Produk<svg aria-hidden="true"><use href="#i-chevron"/></svg></summary>
+          <ul class="sub">
+            <li><a href="/lotion/">Lotion</a></li>
+            <li><a href="/burger/">Burger</a></li>
+          </ul></details></li>
+        <li><a href="/#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+    <div class="header-kanan">
+      <button class="menu-tombol" type="button" aria-expanded="false" aria-controls="menu"><svg aria-hidden="true"><use href="#i-menu"/></svg>Menu</button>
+      <a class="btn" href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau tanya tentang Agrin Boer Farm." aria-label="Chat WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg><span class="teks-wa">Chat WhatsApp</span></a>
+    </div>
   </div>
 </header>
 
 <main id="konten">
 
-  <!-- 2. Hero -->
-  <section class="hero" aria-labelledby="judul-hero">
+  <section class="hero hero-beranda" aria-labelledby="judul-hero">
     <div class="wrap">
       <div>
-        <ul class="persiapan" aria-label="Kamar sudah. Baju sudah. Nama sudah.">
-          <li><svg aria-hidden="true"><use href="#i-cek"/></svg>Kamar sudah.</li>
-          <li><svg aria-hidden="true"><use href="#i-cek"/></svg>Baju sudah.</li>
-          <li><svg aria-hidden="true"><use href="#i-cek"/></svg>Nama sudah.</li>
-        </ul>
-        <h1 id="judul-hero">Aqiqah tuntas, dari kandang kami sendiri.</h1>
-        <p class="sub">Kambing Boer dari kandang kami di Tajinan, Malang. Kami pilihkan, sembelih, masak, dan antar sampai siap dihidangkan untuk keluarga.</p>
-        <div class="aksi">
-          <a class="btn" href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau tanya paket aqiqah Agrin. Perkiraan tanggal aqiqah: …" data-dummy-wa>
-            <svg aria-hidden="true"><use href="#i-wa"/></svg>Tanya paket aqiqah
-          </a>
-          <p class="mikro">Dibalas lewat WhatsApp. Ayah &amp; Bunda boleh lihat kambingnya dulu.</p>
+        <h1 id="judul-hero">Peternakan kambing yang bisa didatangi.</h1>
+        <p class="sub">Agrin Boer Farm adalah peternakan kambing Boer di Tajinan, Kabupaten Malang. Dari kandang yang sama kami menyiapkan aqiqah, Tabungan Qurban, kunjungan belajar, lotion, dan burger kambing.</p>
+        <div class="aksi aksi-baris">
+          <a class="btn" href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau tanya tentang Agrin Boer Farm."><svg aria-hidden="true"><use href="#i-wa"/></svg>Chat dengan peternakan</a>
+          <a class="tautan-kedua" href="#lini">Lihat semua lini</a>
         </div>
-        <p class="trust"><svg aria-hidden="true"><use href="#i-pin"/></svg>Kandang kami terbuka. Silakan datang dengan janji lewat WhatsApp.</p>
+        <p class="trust"><svg aria-hidden="true"><use href="#i-pin"/></svg>Kandang kami terbuka untuk keluarga, sekolah, dan kampus, dengan janji lewat WhatsApp.</p>
       </div>
+      <figure class="denah">
+        <svg viewBox="0 0 560 470" role="group" aria-label="Denah peternakan: lima lini Agrin">
+          <rect class="d-tanah" x="0" y="0" width="560" height="470" rx="18"/>
+          <path class="d-pagar" d="M320 440 H530 V30 H30 V440 H230"/>
+          <circle class="d-pohon" cx="255" cy="300" r="30"/><circle class="d-pohon" cx="520" cy="215" r="16"/><circle class="d-pohon" cx="440" cy="430" r="14"/>
+          <path class="d-jalan" d="M275 445 C 270 380, 230 300, 185 216 M185 216 C 270 245, 390 232, 435 172 M275 445 C 300 400, 315 350, 330 332 M240 360 C 225 350, 215 335, 200 326"/>
+          <rect class="d-bangunan" x="60" y="60" width="250" height="150" rx="6"/>
+          <path class="d-sekat" d="M110 60 V210 M160 60 V210 M210 60 V210 M260 60 V210"/>
+          <use href="#i-boer" x="68" y="110" width="34" height="34" style="color:var(--emas-tua)"/>
+          <use href="#i-boer" x="168" y="110" width="34" height="34" style="color:var(--emas-tua)"/>
+          <use href="#i-boer" x="218" y="110" width="34" height="34" style="color:var(--emas-tua)"/>
+          <text class="d-label" x="62" y="238">Aqiqah</text>
+          <rect class="d-bangunan" x="370" y="60" width="130" height="106" rx="6"/>
+          <use href="#i-boer" x="418" y="94" width="34" height="34" style="color:var(--emas-tua)"/>
+          <text class="d-label" x="372" y="194">Tabungan Qurban</text>
+          <rect class="d-bangunan" x="60" y="262" width="140" height="118" rx="6"/>
+          <rect class="d-isi" x="80" y="290" width="100" height="16" rx="3"/><rect class="d-isi" x="80" y="318" width="100" height="16" rx="3"/><rect class="d-isi" x="80" y="346" width="100" height="16" rx="3"/>
+          <text class="d-label" x="62" y="406">Lotion</text>
+          <rect class="d-bangunan" x="330" y="262" width="170" height="140" rx="6"/>
+          <circle class="d-isi" cx="368" cy="300" r="14"/><circle class="d-isi" cx="408" cy="300" r="14"/><rect class="d-isi" x="350" y="338" width="130" height="40" rx="4"/>
+          <text class="d-label" x="332" y="428">Burger</text>
+          <rect class="d-tiang" x="224" y="432" width="12" height="16" rx="2"/><rect class="d-tiang" x="314" y="432" width="12" height="16" rx="2"/>
+          <text class="d-label" x="150" y="462">Kunjungan</text>
+          <a class="pin" href="/aqiqah/" aria-label="1: Aqiqah"><g><circle cx="300" cy="62" r="20"/><text x="300" y="63">1</text></g></a>
+          <a class="pin" href="/tabungan-qurban/" aria-label="2: Tabungan Qurban"><g><circle cx="492" cy="62" r="20"/><text x="492" y="63">2</text></g></a>
+          <a class="pin" href="/kunjungan/" aria-label="3: Kunjungan"><g><circle cx="275" cy="428" r="20"/><text x="275" y="429">3</text></g></a>
+          <a class="pin" href="/lotion/" aria-label="4: Lotion"><g><circle cx="192" cy="266" r="20"/><text x="192" y="267">4</text></g></a>
+          <a class="pin" href="/burger/" aria-label="5: Burger"><g><circle cx="492" cy="266" r="20"/><text x="492" y="267">5</text></g></a>
+        </svg>
+        <figcaption>Ilustrasi denah, bukan denah asli.</figcaption>
+      </figure>
+    </div>
+  </section>
 
+  <section class="section" id="lini" style="padding-top:0" aria-labelledby="judul-lini">
+    <div class="wrap">
+      <h2 id="judul-lini">Satu kandang, lima keperluan.</h2>
+      <ol class="lini">
+        <li><span class="pos-no" aria-hidden="true"><span>1</span></span>
+          <div class="lini-isi"><h3>Aqiqah</h3><p>Kambing, sembelih, masak, sampai diantar. Ayah &amp; Bunda cukup menentukan tanggal.</p><a href="/aqiqah/">Lihat paket aqiqah<svg aria-hidden="true"><use href="#i-panah"/></svg></a></div></li>
+        <li><span class="pos-no" aria-hidden="true"><span>2</span></span>
+          <div class="lini-isi"><h3>Tabungan Qurban</h3><p>Setor bertahap, kambing siap saat Iduladha.</p><a href="/tabungan-qurban/">Lihat skemanya<svg aria-hidden="true"><use href="#i-panah"/></svg></a></div></li>
+        <li><span class="pos-no" aria-hidden="true"><span>3</span></span>
+          <div class="lini-isi"><h3>Kunjungan &amp; magang</h3><p>Sekolah dan kampus belajar langsung di kandang.</p><a href="/kunjungan/">Lihat program<svg aria-hidden="true"><use href="#i-panah"/></svg></a></div></li>
+        <li><span class="pos-no" aria-hidden="true"><span>4</span></span>
+          <div class="lini-isi"><h3>Lotion susu kambing</h3><p>Lotion susu kambing dari Agrin.</p><a href="/lotion/">Lihat lotion<svg aria-hidden="true"><use href="#i-panah"/></svg></a></div></li>
+        <li><span class="pos-no" aria-hidden="true"><span>5</span></span>
+          <div class="lini-isi"><h3>Burger kambing</h3><p>Daging kambing dalam roti, untuk makan sehari-hari.</p><a href="/burger/">Lihat menu<svg aria-hidden="true"><use href="#i-panah"/></svg></a></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section-tua" aria-labelledby="judul-aqiqah">
+    <div class="wrap dua-kolom">
+      <div>
+        <h2 id="judul-aqiqah" class="judul-section">Aqiqah tuntas, dari kandang kami sendiri.</h2>
+        <p class="pengantar">Kambing Boer dipilihkan, disembelih, dimasak, dan diantar sampai siap dihidangkan. Paket mulai <span data-dummy>Rp2.750.000</span>, harga total sebelum ongkir.</p>
+        <p style="margin-top:var(--sp-6)"><a class="btn" href="/aqiqah/">Lihat paket aqiqah</a></p>
+      </div>
       <article class="kartu" data-isi aria-label="Contoh Kartu Kambing">
         <div class="kartu-kepala">
           <span class="nama">Kartu Kambing</span>
@@ -372,197 +162,75 @@
     </div>
   </section>
 
-  <!-- 3. Sesuai ketentuan -->
-  <section class="section" style="padding-top:0" aria-labelledby="judul-ketentuan">
+  <section class="section di-bidang" aria-labelledby="judul-kandang">
+    <div class="wrap dua-kolom">
+      <div>
+        <h2 id="judul-kandang" class="judul-section">Kandangnya terbuka untuk dikunjungi.</h2>
+        <p class="pengantar">Keluarga boleh datang melihat kambing sebelum memesan. Sekolah dan kampus bisa mengatur kunjungan belajar atau program magang. Semua kunjungan dengan janji lewat WhatsApp, supaya ada yang menemani.</p>
+        <p style="margin-top:var(--sp-6)"><a class="btn btn--bidang" href="/kunjungan/">Lihat program kunjungan</a></p>
+      </div>
+      <div class="slot-foto" data-sementara><svg aria-hidden="true"><use href="#i-boer"/></svg><span class="butuh">[BUTUH DATA: foto kunjungan di kandang]</span></div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="judul-produk">
     <div class="wrap">
-      <div class="sempit" style="max-width:52rem">
-        <h2 id="judul-ketentuan" class="judul-section">Ketentuan yang kami jaga untuk setiap kambing.</h2>
-        <p class="pengantar">Aqiqah cukup sekali seumur hidup Si Kecil. Wajar kalau Ayah &amp; Bunda ingin semuanya tepat. Ini yang kami jaga untuk setiap kambing:</p>
-        <dl class="ketentuan">
-          <div><dt><svg aria-hidden="true"><use href="#i-cek"/></svg>Sehat dan tidak cacat.</dt><dd>Tidak buta, tidak pincang, tidak sakit, dan tidak kurus.</dd></div>
-          <div><dt><svg aria-hidden="true"><use href="#i-cek"/></svg>Cukup umur.</dt><dd>Batas umurnya mengikuti ketentuan hewan qurban. Ulama berbeda pendapat soal angkanya, jadi umur tiap ekor kami tulis di Kartu Kambing.</dd></div>
-          <div><dt><svg aria-hidden="true"><use href="#i-cek"/></svg>Jumlah sesuai pilihan keluarga.</dt><dd>Banyak keluarga memakai dua ekor untuk anak laki-laki dan satu ekor untuk anak perempuan. Sebagian ulama membolehkan satu ekor untuk anak laki-laki. Ayah &amp; Bunda yang memutuskan, kami siapkan.</dd></div>
-          <div><dt><svg aria-hidden="true"><use href="#i-cek"/></svg>Disembelih dengan tata cara syar'i,</dt><dd>dengan menyebut nama Allah.</dd></div>
-        </dl>
-        <p class="catatan-ustaz">Masih ragu soal hukumnya? Tanyakan ke ustaz yang Ayah &amp; Bunda percaya. Kami juga senang menjawab pertanyaan Ayah &amp; Bunda lewat WhatsApp.</p>
+      <h2 id="judul-produk">Hasil kandang untuk sehari-hari.</h2>
+      <div class="produk">
+        <article class="kartu">
+          <div class="kartu-kepala"><h3 class="nama" style="color:inherit;font-size:1.25rem">Lotion susu kambing</h3><svg aria-hidden="true"><use href="#i-boer"/></svg></div>
+          <div class="slot-foto" data-sementara><svg aria-hidden="true"><use href="#i-boer"/></svg><span class="butuh">[BUTUH DATA: foto lotion]</span></div>
+          <div class="isi"><p>Lotion susu kambing dari Agrin, dalam ukuran <span data-dummy>100 ml</span>.</p><div class="harga" style="padding:0"><div class="angka"><span data-dummy>Rp45.000</span></div></div><a class="btn btn--garis" href="/lotion/">Lihat lotion</a></div>
+        </article>
+        <article class="kartu">
+          <div class="kartu-kepala"><h3 class="nama" style="color:inherit;font-size:1.25rem">Burger kambing</h3><svg aria-hidden="true"><use href="#i-boer"/></svg></div>
+          <div class="slot-foto" data-sementara><svg aria-hidden="true"><use href="#i-boer"/></svg><span class="butuh">[BUTUH DATA: foto burger]</span></div>
+          <div class="isi"><p>Burger daging kambing, dipesan lewat WhatsApp.</p><div class="harga" style="padding:0"><div class="angka"><span data-dummy>Rp35.000</span></div></div><a class="btn btn--garis" href="/burger/">Lihat menu</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tua" aria-labelledby="judul-tabungan">
+    <div class="wrap">
+      <div class="sempit">
+        <h2 id="judul-tabungan" class="judul-section">Qurban nanti, disiapkan dari sekarang.</h2>
+        <p class="pengantar">Bapak/Ibu bisa menabung untuk qurban sedikit demi sedikit. Setiap setoran tercatat, aturannya tertulis, dan kambingnya dari kandang yang sama.</p>
+        <p style="margin-top:var(--sp-6)"><a class="tautan-kedua" href="/tabungan-qurban/">Lihat skema Tabungan Qurban</a></p>
       </div>
     </div>
   </section>
 
-  <!-- 4. Paket & harga -->
-  <section class="section" style="padding-top:0" id="paket" aria-labelledby="judul-paket">
+  <section class="section" aria-labelledby="judul-nilai">
     <div class="wrap">
-      <h2 id="judul-paket" class="judul-section">Paketnya jelas sejak awal.</h2>
-      <p class="pengantar">Semua paket sudah termasuk kambing, penyembelihan, dimasak, dan dikemas. Harga di bawah adalah harga total sebelum ongkir.</p>
-
-      <form class="pemilih" id="pemilih" novalidate>
-        <fieldset>
-          <legend>Si Kecil</legend>
-          <div class="pilihan">
-            <label><input type="radio" name="anak" value="laki" checked> Laki-laki</label>
-            <label><input type="radio" name="anak" value="perempuan"> Perempuan</label>
-          </div>
-        </fieldset>
-        <div>
-          <label class="label" for="tamu">Perkiraan tamu</label>
-          <input class="isian" id="tamu" name="tamu" type="number" inputmode="numeric" min="1" max="2000" step="1" value="60" aria-describedby="galat-tamu">
-          <p class="galat" id="galat-tamu" hidden>Isi dengan angka, misalnya 60.</p>
-        </div>
-        <p class="saran" id="saran" aria-live="polite"></p>
-      </form>
-
-      <div class="paket">
-        <article class="kartu" data-paket="satu">
-          <div class="kartu-kepala"><h3 class="nama" style="color:inherit;font-size:1.25rem">Paket Satu Ekor</h3><span class="tanda-saran">Cocok</span></div>
-          <dl class="baris">
-            <div><dt>Untuk</dt><dd>Anak perempuan, atau sesuai pilihan keluarga</dd></div>
-            <div><dt>Kambing</dt><dd>1 ekor Boer, bobot <span data-dummy>25–28 kg</span></dd></div>
-            <div><dt>Olahan</dt><dd><span data-dummy>sate dan gulai</span></dd></div>
-            <div><dt>Perkiraan porsi</dt><dd><span data-dummy>40 porsi</span></dd></div>
-          </dl>
-          <div class="harga"><div class="angka"><span data-dummy>Rp2.750.000</span></div></div>
-          <a class="btn" href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau tanya Paket Satu Ekor. Perkiraan tanggal aqiqah: …" data-dummy-wa><svg aria-hidden="true"><use href="#i-wa"/></svg>Tanya paket ini</a>
-        </article>
-        <article class="kartu" data-paket="dua">
-          <div class="kartu-kepala"><h3 class="nama" style="color:inherit;font-size:1.25rem">Paket Dua Ekor</h3><span class="tanda-saran">Cocok</span></div>
-          <dl class="baris">
-            <div><dt>Untuk</dt><dd>Anak laki-laki</dd></div>
-            <div><dt>Kambing</dt><dd>2 ekor Boer, bobot <span data-dummy>25–28 kg</span> per ekor</dd></div>
-            <div><dt>Olahan</dt><dd><span data-dummy>sate dan gulai</span></dd></div>
-            <div><dt>Perkiraan porsi</dt><dd><span data-dummy>80 porsi</span></dd></div>
-          </dl>
-          <div class="harga"><div class="angka"><span data-dummy>Rp5.300.000</span></div></div>
-          <a class="btn" href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau tanya Paket Dua Ekor. Perkiraan tanggal aqiqah: …" data-dummy-wa><svg aria-hidden="true"><use href="#i-wa"/></svg>Tanya paket ini</a>
-        </article>
-        <article class="kartu" data-paket="nasi">
-          <div class="kartu-kepala"><h3 class="nama" style="color:inherit;font-size:1.25rem">Paket Dua Ekor + Nasi Kotak</h3><span class="tanda-saran">Cocok</span></div>
-          <dl class="baris">
-            <div><dt>Untuk</dt><dd>Anak laki-laki, acara di rumah</dd></div>
-            <div><dt>Kambing</dt><dd>2 ekor Boer, bobot <span data-dummy>25–28 kg</span> per ekor</dd></div>
-            <div><dt>Olahan</dt><dd><span data-dummy>sate, gulai, dan nasi kotak</span></dd></div>
-            <div><dt>Perkiraan porsi</dt><dd><span data-dummy>100 kotak</span></dd></div>
-          </dl>
-          <div class="harga"><div class="angka"><span data-dummy>Rp6.900.000</span></div></div>
-          <a class="btn" href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau tanya Paket Dua Ekor + Nasi Kotak. Perkiraan tanggal aqiqah: …" data-dummy-wa><svg aria-hidden="true"><use href="#i-wa"/></svg>Tanya paket ini</a>
-        </article>
-      </div>
-
-      <ul class="info-paket">
-        <li><svg aria-hidden="true"><use href="#i-pin"/></svg><span>Antar ke Malang Raya. Ongkir: <span class="butuh">[BUTUH DATA: tarif atau area gratis ongkir]</span>.</span></li>
-        <li><svg aria-hidden="true"><use href="#i-jam"/></svg><span>Pemesanan: <span class="butuh">[BUTUH DATA: berapa hari sebelum tanggal aqiqah, besaran DP, cara bayar]</span>.</span></li>
-        <li><svg aria-hidden="true"><use href="#i-wa"/></svg><span>Butuh jumlah porsi lain? Tulis saja di chat, kami hitungkan.</span></li>
-      </ul>
+      <h2 id="judul-nilai">Yang kami pegang di kandang.</h2>
+      <dl class="nilai">
+        <div><dt>Amanah.</dt><dd>Kambing yang kami tawarkan adalah kambing yang kami tunjukkan.</dd></div>
+        <div><dt>Terbuka.</dt><dd>Kandang bisa didatangi, bobot ditulis, harga disebut di depan.</dd></div>
+        <div><dt>Hangat.</dt><dd>Kami menemani keluarga dari bertanya sampai selesai.</dd></div>
+        <div><dt>Tuntas.</dt><dd>Urusan yang kami ambil, kami selesaikan sampai akhir.</dd></div>
+      </dl>
     </div>
   </section>
 
-  <!-- 5. Alur 4 langkah -->
-  <section class="section di-bidang" aria-labelledby="judul-alur">
+  <section class="section section-tua cta-akhir-beranda" id="kontak" aria-labelledby="judul-kontak">
     <div class="wrap">
-      <h2 id="judul-alur">Ayah &amp; Bunda cukup menentukan tanggal.</h2>
-      <ol class="alur">
-        <li><h3>Pilih kambing.</h3><p>Kami kirimkan Kartu Kambing: foto, jenis, bobot, dan umur. Mau datang melihat langsung juga boleh.</p></li>
-        <li><h3>Disembelih.</h3><p>Pada hari yang disepakati, sesuai tata cara syar'i.</p></li>
-        <li><h3>Dimasak.</h3><p>Diolah di dapur kami sesuai menu paket.</p></li>
-        <li><h3>Dikemas dan diantar.</h3><p>Sampai di rumah atau di tempat acara, siap dibagikan.</p></li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- 6. Kandang terbuka -->
-  <section class="section" aria-labelledby="judul-kandang">
-    <div class="wrap">
-      <h2 id="judul-kandang" class="judul-section" style="max-width:22ch">Kambingnya bisa Ayah &amp; Bunda lihat sendiri.</h2>
-      <p class="pengantar">Kami tidak menjual dari foto saja. Setiap kambing punya Kartu Kambing, dan kandangnya bisa didatangi.</p>
-      <div class="kandang">
-        <div class="foto-besar">
-          <div class="slot-foto" data-sementara>
-            <svg aria-hidden="true"><use href="#i-boer"/></svg>
-            <span class="butuh">[BUTUH DATA: foto kandang di Tajinan]</span>
-          </div>
-        </div>
-        <div>
-          <article class="kartu" data-isi aria-label="Contoh Kartu Kambing">
-            <div class="kartu-kepala"><span class="nama">Kartu Kambing · Contoh</span><svg aria-hidden="true"><use href="#i-boer"/></svg></div>
-            <dl class="baris">
-              <div style="--i:0"><dt>Foto</dt><dd><span class="butuh">[BUTUH DATA: foto kambing asli]</span></dd></div>
-              <div style="--i:1"><dt>Jenis</dt><dd>Boer</dd></div>
-              <div style="--i:2"><dt>Bobot</dt><dd><span data-dummy>27 kg</span></dd></div>
-              <div style="--i:3"><dt>Umur</dt><dd><span data-dummy>14 bulan</span></dd></div>
-              <div style="--i:4"><dt>Tanggal ditimbang</dt><dd><span data-dummy>2 Nov 2026</span></dd></div>
-            </dl>
-          </article>
-          <div class="kunjungan">
-            <ul>
-              <li><svg aria-hidden="true"><use href="#i-pin"/></svg><span>Alamat: Tajinan, Kabupaten Malang. <span class="butuh">[BUTUH DATA: alamat lengkap dan link Google Maps]</span></span></li>
-              <li><svg aria-hidden="true"><use href="#i-jam"/></svg><span>Jam kunjung: <span class="butuh">[BUTUH DATA: hari dan jam]</span></span></li>
-              <li><svg aria-hidden="true"><use href="#i-wa"/></svg><span>Kunjungan dengan janji lewat WhatsApp, supaya ada yang menemani.</span></li>
-            </ul>
-            <a class="btn btn--garis" href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau berkunjung ke kandang Agrin untuk melihat kambing aqiqah. Rencana hari: …" data-dummy-wa><svg aria-hidden="true"><use href="#i-wa"/></svg>Atur jadwal kunjungan</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 7. Qurban & Tabungan Qurban -->
-  <section class="section qurban" aria-labelledby="judul-qurban">
-    <div class="wrap">
-      <h2 id="judul-qurban" style="max-width:24ch">Untuk qurban nanti, Bapak/Ibu bisa mulai dari sekarang.</h2>
-      <div class="qurban-kolom">
-        <div>
-          <h3>Qurban</h3>
-          <p>Kambing qurban dari kandang yang sama, dengan Kartu Kambing yang sama. Pemesanan untuk Iduladha 2027 kami buka mulai <span class="butuh">[BUTUH DATA: tanggal mulai pemesanan]</span>.</p>
-        </div>
-        <div>
-          <h3>Tabungan Qurban</h3>
-          <p>Setor sedikit demi sedikit, kambing siap saat Iduladha. Setiap setoran tercatat dan aturannya tertulis.</p>
+      <h2 id="judul-kontak">Datang ke kandang, atau sapa kami dulu.</h2>
+      <div class="kontak">
+        <div class="kunjungan" style="margin:0;background:var(--bg)">
           <ul>
-            <li>Setoran: <span class="butuh">[BUTUH DATA: besaran dan jadwal setoran]</span></li>
-            <li>Penarikan dan pengembalian: <span class="butuh">[BUTUH DATA: aturan tertulis]</span></li>
+            <li><svg aria-hidden="true"><use href="#i-pin"/></svg><span>Alamat: Tajinan, Kabupaten Malang. <span class="butuh">[BUTUH DATA: alamat lengkap dan link Google Maps]</span></span></li>
+            <li><svg aria-hidden="true"><use href="#i-jam"/></svg><span>Jam kunjung: <span class="butuh">[BUTUH DATA: hari dan jam]</span></span></li>
+            <li><svg aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp: <span data-dummy>0812-0000-0000</span></span></li>
           </ul>
+          <a class="btn" href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau tanya tentang Agrin Boer Farm."><svg aria-hidden="true"><use href="#i-wa"/></svg>Chat WhatsApp</a>
         </div>
+        <div class="slot-foto" data-sementara><svg aria-hidden="true"><use href="#i-pin"/></svg><span class="butuh">[BUTUH DATA: peta Google Maps kandang]</span></div>
       </div>
-      <p style="margin-top:var(--sp-6)">
-        <a class="btn" href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau tanya Tabungan Qurban Agrin." data-dummy-wa><svg aria-hidden="true"><use href="#i-wa"/></svg>Tanya Tabungan Qurban</a>
-      </p>
-    </div>
-  </section>
-
-  <!-- 8. FAQ -->
-  <section class="section" aria-labelledby="judul-faq">
-    <div class="wrap">
-      <div class="sempit" style="max-width:48rem">
-        <h2 id="judul-faq">Pertanyaan yang sering masuk.</h2>
-        <div class="faq">
-          <details><summary>Kalau aqiqahnya lewat hari ketujuh, bagaimana?<svg aria-hidden="true"><use href="#i-chevron"/></svg></summary>
-            <div class="jawab"><p>Ulama berbeda pendapat. Sebagian menganjurkan hari ke-14 atau ke-21, sebagian membolehkan kapan saja selama masih ada kelapangan. Kami bisa menyiapkan di tanggal mana pun yang keluarga pilih. Kalau ragu, tanyakan ke ustaz yang Ayah &amp; Bunda percaya.</p></div></details>
-          <details><summary>Boleh lihat kambingnya dulu sebelum memesan?<svg aria-hidden="true"><use href="#i-chevron"/></svg></summary>
-            <div class="jawab"><p>Boleh. Kami kirim Kartu Kambing lewat WhatsApp, atau Ayah &amp; Bunda datang ke kandang dengan janji lebih dulu.</p></div></details>
-          <details><summary>Berapa hari sebelumnya harus memesan?<svg aria-hidden="true"><use href="#i-chevron"/></svg></summary>
-            <div class="jawab"><p class="butuh">[BUTUH DATA: batas minimal pemesanan]</p></div></details>
-          <details><summary>Diantar ke mana saja, dan berapa ongkirnya?<svg aria-hidden="true"><use href="#i-chevron"/></svg></summary>
-            <div class="jawab"><p>Malang Raya. <span class="butuh">[BUTUH DATA: tarif ongkir atau area gratis]</span></p></div></details>
-          <details><summary>Kalau kambing pilihan kami sakit sebelum hari-H?<svg aria-hidden="true"><use href="#i-chevron"/></svg></summary>
-            <div class="jawab"><p class="butuh">[BUTUH DATA: kebijakan penggantian kambing]</p></div></details>
-          <details><summary>Bagaimana cara bayarnya?<svg aria-hidden="true"><use href="#i-chevron"/></svg></summary>
-            <div class="jawab"><p class="butuh">[BUTUH DATA: DP, pelunasan, metode bayar]</p></div></details>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 9. CTA akhir -->
-  <section class="section di-bidang cta-akhir" aria-labelledby="judul-cta">
-    <svg class="gelombang" viewBox="0 0 1200 28" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14 C 100 2, 200 2, 300 14 S 500 26, 600 14 S 800 2, 900 14 S 1100 26, 1200 14" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>
-    <div class="wrap">
-      <h2 id="judul-cta">Dari kandang kami, untuk momen keluargamu.</h2>
-      <p>Ceritakan tanggal dan jumlah tamunya. Kami bantu siapkan sisanya.</p>
-      <a class="btn btn--bidang" href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau tanya paket aqiqah Agrin. Perkiraan tanggal aqiqah: …" data-dummy-wa><svg aria-hidden="true"><use href="#i-wa"/></svg>Tanya paket aqiqah</a>
     </div>
   </section>
 </main>
 
-<!-- 10. Footer -->
 <footer class="footer di-bidang">
   <svg class="gelombang" viewBox="0 0 1200 18" preserveAspectRatio="none" aria-hidden="true"><path d="M0 9 C 100 1, 200 1, 300 9 S 500 17, 600 9 S 800 1, 900 9 S 1100 17, 1200 9" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
   <div class="wrap">
@@ -570,82 +238,25 @@
       <p class="nama">Agrin Boer Farm</p>
       <p>Peternakan Kambing untuk Keluarga — Malang</p>
     </div>
+    <nav aria-label="Lini Agrin">
+      <ul>
+        <li><a href="/aqiqah/">Aqiqah</a></li>
+        <li><a href="/tabungan-qurban/">Tabungan Qurban</a></li>
+        <li><a href="/kunjungan/">Kunjungan</a></li>
+        <li><a href="/lotion/">Lotion</a></li>
+        <li><a href="/burger/">Burger</a></li>
+      </ul>
+    </nav>
     <ul>
       <li><svg aria-hidden="true"><use href="#i-pin"/></svg><span>Alamat: Tajinan, Kabupaten Malang. <span class="butuh">[BUTUH DATA: alamat lengkap]</span></span></li>
       <li><svg aria-hidden="true"><use href="#i-jam"/></svg><span>Jam kunjung kandang: <span class="butuh">[BUTUH DATA: hari dan jam]</span></span></li>
-    </ul>
-    <ul>
-      <li><svg aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp: <a href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau tanya paket aqiqah Agrin. Perkiraan tanggal aqiqah: …" data-dummy-wa><span data-dummy>0812-0000-0000</span></a></span></li>
+      <li><svg aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp: <a href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau tanya tentang Agrin Boer Farm."><span data-dummy>0812-0000-0000</span></a></span></li>
     </ul>
   </div>
 </footer>
 
 <div class="sticky-wa" id="sticky-wa">
-  <a class="btn btn--lebar" href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau tanya paket aqiqah Agrin. Perkiraan tanggal aqiqah: …" data-dummy-wa tabindex="-1"><svg aria-hidden="true"><use href="#i-wa"/></svg>Tanya paket aqiqah</a>
+  <a class="btn btn--lebar" href="https://wa.me/62812000000000" target="_blank" rel="noopener noreferrer" data-wa="Assalamu'alaikum, saya mau tanya tentang Agrin Boer Farm." tabindex="-1"><svg aria-hidden="true"><use href="#i-wa"/></svg>Chat dengan peternakan</a>
 </div>
-
-<script>
-  // DUMMY: ganti dengan nomor WhatsApp asli (format 62…), lalu cari-ganti 62812000000000 di file ini.
-  const WA_NUMBER = '62812000000000';
-
-  document.querySelectorAll('[data-wa]').forEach(a => {
-    a.href = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(a.dataset.wa)}`;
-  });
-
-  // Pemilih paket. Ambang porsi mengikuti data paket (dummy).
-  const form = document.getElementById('pemilih');
-  const tamu = document.getElementById('tamu');
-  const galat = document.getElementById('galat-tamu');
-  const saran = document.getElementById('saran');
-  const kartuPaket = { satu: 'Paket Satu Ekor', dua: 'Paket Dua Ekor', nasi: 'Paket Dua Ekor + Nasi Kotak' };
-  const porsi = { satu: 40, dua: 80, nasi: 100 };
-
-  function perbarui() {
-    const n = Number(tamu.value);
-    const valid = tamu.value.trim() !== '' && Number.isInteger(n) && n > 0;
-    tamu.setAttribute('aria-invalid', String(!valid));
-    galat.hidden = valid;
-    document.querySelectorAll('[data-paket]').forEach(k => k.classList.remove('disarankan'));
-    if (!valid) { saran.textContent = ''; return; }
-    const anak = form.anak.value;
-    let pilih = anak === 'perempuan' ? 'satu' : 'dua';
-    if (n > porsi[pilih]) pilih = pilih === 'satu' ? 'dua' : 'nasi';
-    const lebih = n > porsi[pilih];
-    document.querySelector(`[data-paket="${pilih}"]`).classList.add('disarankan');
-    saran.innerHTML = `Saran: <strong>${kartuPaket[pilih]}</strong> (sekitar ${porsi[pilih]} ${pilih === 'nasi' ? 'kotak' : 'porsi'}).` +
-      (lebih ? ' Butuh jumlah porsi lain? Tulis saja di chat, kami hitungkan.' : '');
-  }
-  form.addEventListener('input', perbarui);
-  form.addEventListener('submit', e => e.preventDefault());
-  perbarui();
-
-  // Baris Kartu Kambing terisi saat kartu masuk layar.
-  const gerak = 'IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (gerak) {
-    document.documentElement.classList.add('js-gerak');
-    const io = new IntersectionObserver(es => es.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('terisi'); io.unobserve(e.target); }
-    }), { threshold: 0.3 });
-    document.querySelectorAll('.kartu[data-isi]').forEach(k => io.observe(k));
-  }
-
-  // Sticky WA muncul setelah tombol hero lewat, dan sembunyi lagi saat CTA akhir terlihat.
-  const sticky = document.getElementById('sticky-wa');
-  const heroBtn = document.querySelector('.hero .aksi .btn');
-  const ctaAkhir = document.querySelector('.cta-akhir');
-  if ('IntersectionObserver' in window) {
-    let lewatHero = false, diAkhir = false;
-    const atur = () => {
-      const tampil = lewatHero && !diAkhir;
-      sticky.classList.toggle('tampil', tampil);
-      sticky.querySelector('a').tabIndex = tampil ? 0 : -1;
-    };
-    new IntersectionObserver(([e]) => { lewatHero = !e.isIntersecting && e.boundingClientRect.top < 0; atur(); }).observe(heroBtn);
-    new IntersectionObserver(([e]) => { diAkhir = e.isIntersecting || e.boundingClientRect.top < 0; atur(); }).observe(ctaAkhir);
-  } else {
-    sticky.classList.add('tampil');
-    sticky.querySelector('a').tabIndex = 0;
-  }
-</script>
 </body>
 </html>

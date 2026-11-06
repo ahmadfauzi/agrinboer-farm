@@ -71,6 +71,7 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 | Lebar | id | Alasan satu kalimat |
 |---|---|---|
 | — | — | Tidak ada WARN pada putaran 2 |
+| 360 (`/tur/`) | wa-menutupi | Bilah WA tersembunyi di bawah layar saat diperiksa; pemeriksa membaca posisinya ketika halaman masih menggulir ke atas |
 
 ---
 
@@ -78,6 +79,7 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 
 | Tanggal | Yang diubah | Dari → Ke | Alasan | Disetujui |
 |---|---|---|---|---|
+| 2026-11-05 | Desain alternatif | — → `site/tur/` (struktur "Tur kandang": denah + 4 pos), noindex, canonical ke `/`; versi utama tidak berubah | Diminta pengguna lewat impeccable | Pengguna |
 | 2026-11-05 | Latar bawaan | krem → putih (krem jadi cadangan `?tema=krem`; og-image.png kini versi putih) | Dipilih pengguna setelah membandingkan | Pengguna |
 | 2026-11-05 | Kartu di tema putih | kartu putih + belang krem pucat → kartu Krem Jerami + baris putih, tanpa bayangan (opsi A) | Kartu menyatu dengan latar putih (analisis ui-ux-analyzer, severity 3) | Pengguna |
 | 2026-11-05 | Latar halaman (alternatif) | krem saja → krem (default) + alternatif putih lewat `?tema=putih` | Diminta pengguna untuk dibandingkan; tema krem belum diganti | Pengguna |
