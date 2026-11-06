@@ -58,3 +58,11 @@ Sumber arah: brand guideline (`../agrin-boer-farm/brand-strategy.md`) + usulan a
 - Berlaku: daftar larangan arah-visual-web-id.
 - Pengecualian: tipografi 3 keluarga (Caveat, keputusan brand, satu kali per halaman).
 - Tidak memakai: angka klaim, lencana kepercayaan, emoji, login di beranda (pelajaran dari nusaqu.id).
+
+## Revisi v2 · 6 Nov 2026 (permintaan pengguna: tidak monoton, mewah tapi elegan, lebih banyak copy, animasi)
+- **Ritme beranda:** tiap section berbeda bentuk dan latar: hero putih + pita fakta → manifesto hijau (kutipan besar, dua kolom teks) → peta lini (kepala lengket kiri, pos kanan) → kalender keluarga krem (garis waktu 4 momen) → sorotan aqiqah putih (alur bernomor + Kartu Kambing berbingkai emas) → kandang terbuka hijau (+ 4 langkah berkunjung) → pita lini berjalan → hasil kandang (kartu produk) → Tabungan Qurban krem (tiga prinsip) → nilai 4 kolom bernomor → FAQ krem dua kolom → kontak (panel hijau + slot peta) → footer.
+- **Penanda pos** kini juga dipakai di judul section beranda (1 Aqiqah, 2 Tabungan, 3 Kunjungan, 4–5 produk), menggantikan label kecil di atas judul (eyebrow tetap dilarang).
+- **Huruf:** Fraunces Italic (variabel, di-host sendiri, `site/fonts/Fraunces-italic-*.woff2`) hanya untuk: kutipan manifesto, nomor alur/nilai, keterangan momen kalender, catatan Kartu Kambing, tagline footer, pita lini. Kata beraksen di judul (h1–h3) tetap dilarang.
+- **Pengecualian baru:** satu frasa italic emas di kutipan manifesto ("Tinggal kambingnya."). Kutipan berupa `blockquote`, bukan judul, dengan h2 tersembunyi untuk pembaca layar.
+- **Gerak (semua halaman, mati di prefers-reduced-motion):** hero masuk berurutan; blok denah muncul lalu pin "melompat" bergiliran; titik jalan setapak berjalan pelan; elemen muncul naik saat digulir (situs.js menandai otomatis, termasuk halaman lini); header lengket berlapis kaca setelah digulir; bilah progres baca emas 2px; tombol terangkat dengan panah bergeser; pos peta lini bercincin emas saat hover; kartu produk terangkat; FAQ terbuka dengan jawaban turun halus; pita lini berjalan 48 detik per putaran, berhenti saat hover.
+- **Slot foto:** bingkai garis putus emas + label penanda berbentuk pil, supaya kosongnya terlihat disengaja sampai foto asli ada.

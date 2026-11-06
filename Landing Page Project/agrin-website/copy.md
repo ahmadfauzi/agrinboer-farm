@@ -1,6 +1,6 @@
 # Copy — Website Peternakan Agrin Boer Farm
 
-Versi 1.1 · 5 Nov 2026 (setelah audit antislop) · Mengikuti `brief.md` (sitemap §4, beranda §5) dan suara di `../agrin-boer-farm/brand-strategy.md`.
+Versi 1.2 · 6 Nov 2026 (beranda diperkaya; v1.1 lolos audit antislop 5 Nov 2026) · Mengikuti `brief.md` (sitemap §4, beranda §5) dan suara di `../agrin-boer-farm/brand-strategy.md`.
 Halaman Aqiqah memakai `../agrin-boer-farm/copy.md` v1.1 tanpa perubahan.
 
 Penanda:
@@ -15,90 +15,119 @@ Sapaan: beranda kami–keluarga (netral-hangat) · Tabungan Qurban: Bapak/Ibu ·
 
 # A. Beranda (`/`)
 
+**v1.2 · 6 Nov 2026:** beranda diperkaya (permintaan pengguna: tidak monoton, mewah tapi elegan, lebih banyak copy). Section baru: pita fakta, manifesto, kalender keluarga, alur aqiqah, cara berkunjung, prinsip tabungan, FAQ. Semua kalimat baru diambil dari `brand-strategy.md`, halaman Aqiqah, atau copy v1.1; tidak ada angka, testimoni, atau sertifikat baru. Lolos `cek_klise.py` (0 temuan).
+
 ## A1. Header
-- Wordmark: **Agrin Boer Farm**
-- Menu: Aqiqah · Tabungan Qurban · Kunjungan · Produk · Kontak
-- Tombol: **Chat WhatsApp**
+- Wordmark: **Agrin Boer Farm** · Menu: Aqiqah · Tabungan Qurban · Kunjungan · Produk · Kontak · Tombol: **Chat WhatsApp**
 - Pesan WA terisi: Assalamu'alaikum, saya mau tanya tentang Agrin Boer Farm.
 
 ## A2. Hero peternakan
-
 **Judul (H1):** Peternakan kambing yang bisa didatangi.
-
-**Catatan (tidak tampil):** opsi A dipilih (5 Nov 2026). Tidak dipakai: "Kandang kambing keluarga di Tajinan." dan "Dari satu kandang, untuk banyak keperluan." 
-
 **Subjudul:** Agrin Boer Farm adalah peternakan kambing Boer di Tajinan, Kabupaten Malang. Dari kandang yang sama kami menyiapkan aqiqah, Tabungan Qurban, kunjungan belajar, lotion, dan burger kambing.
-
-**Tombol utama:** Chat dengan peternakan
-**Tautan kedua:** Lihat semua lini
+**Tombol utama:** Chat dengan peternakan · **Tautan kedua:** Lihat semua lini
 **Trust line:** Kandang kami terbuka untuk keluarga, sekolah, dan kampus, dengan janji lewat WhatsApp.
+**Keterangan denah:** Ilustrasi denah, bukan denah asli. Ketuk nomor untuk membuka lininya.
+
+**Pita fakta (baru):**
+- **Kandang di Tajinan.** Kabupaten Malang. Bisa didatangi dengan janji.
+- **Lima lini, satu kandang.** Aqiqah, Tabungan Qurban, kunjungan, lotion, burger.
+- **Semua lewat WhatsApp.** Bertanya, mengatur jadwal, dan memesan di satu obrolan.
+
+## A2b. Manifesto (baru)
+**Kutipan:** Kamar sudah. Baju sudah. Nama sudah. *Tinggal kambingnya.*
+**Paragraf 1:** Menyambut Si Kecil selalu datang bersama daftar yang panjang. Aqiqah termasuk urusan yang tidak boleh keliru, dan orang tua baru sering sudah kewalahan sebelum sampai ke sana.
+**Paragraf 2:** Karena itu kandang kami terbuka. Ayah & Bunda bisa melihat kambingnya, bertanya langsung kepada kami, lalu menyerahkan sisanya: sembelih, masak, sampai hidangan diantar.
+**Tanda tangan:** Agrin Boer Farm · Dari kandang kami, untuk momen keluargamu.
+
+**Catatan (tidak tampil):** kutipan dari contoh "Sesudah" dan kalimat khas persona di brand-strategy. Judul section untuk pembaca layar: "Kenapa kandang kami terbuka".
 
 ## A3. Peta lini
-
 **Judul:** Satu kandang, lima keperluan.
+**Pengantar (baru):** Semua lini Agrin berangkat dari kandang yang sama di Tajinan. Pilih yang sedang keluarga butuhkan. Nomornya sama dengan pin di denah.
 
-| Lini | Kalimat | Tautan |
-|---|---|---|
-| Aqiqah | Kambing, sembelih, masak, sampai diantar. Ayah & Bunda cukup menentukan tanggal. | Lihat paket aqiqah |
-| Tabungan Qurban | Setor bertahap, kambing siap saat Iduladha. | Lihat skemanya |
-| Kunjungan & magang | Sekolah dan kampus belajar langsung di kandang. | Lihat program |
-| Lotion susu kambing | Lotion susu kambing dari Agrin. | Lihat lotion |
-| Burger kambing | Daging kambing dalam roti, untuk makan sehari-hari. | Lihat menu |
+| Lini | Untuk (baru) | Kalimat | Tautan |
+|---|---|---|---|
+| Aqiqah | Untuk keluarga yang menyambut kelahiran | Kambing, sembelih, masak, sampai diantar. Ayah & Bunda cukup menentukan tanggal. | Lihat paket aqiqah |
+| Tabungan Qurban | Untuk Bapak/Ibu yang menyiapkan Iduladha | Setor bertahap, kambing siap saat Iduladha. Kambingnya dari kandang yang sama. | Lihat skemanya |
+| Kunjungan & magang | Untuk sekolah dan kampus | Sekolah dan kampus belajar langsung di kandang, didampingi tim kami. | Lihat program |
+| Lotion susu kambing | Untuk dipakai sehari-hari | Lotion susu kambing dari Agrin, dipesan lewat WhatsApp. | Lihat lotion |
+| Burger kambing | Untuk makan sehari-hari | Daging kambing dalam roti. Diambil sendiri atau diantar. | Lihat menu |
 
-**Catatan (tidak tampil):** pada arah visual "Tur kandang", tiap lini menjadi satu pos di denah.
+## A3b. Kalender keluarga (baru)
+**Judul:** Sepanjang tahun, di kandang yang sama.
+**Pengantar:** Keluarga butuh kambing di momen yang berbeda-beda. Karena kandangnya tetap sama, keluarga tidak perlu mencari penyedia baru setiap musim.
+1. *Saat Si Kecil lahir* · **Aqiqah** · Ayah & Bunda menentukan tanggal. Kami menyiapkan kambing sampai hidangannya.
+2. *Menjelang Iduladha* · **Tabungan Qurban** · Setoran yang dimulai jauh hari terasa lebih ringan saat musimnya tiba.
+3. *Saat sekolah mencari tempat belajar* · **Kunjungan & magang** · Siswa mengenal kambing, kandang, dan pakannya dengan melihat sendiri.
+4. *Di hari-hari biasa* · **Lotion & burger** · Hasil kandang untuk dipakai dan dinikmati di rumah.
 
 ## A4. Sorotan aqiqah
-
 **Judul:** Aqiqah tuntas, dari kandang kami sendiri.
 **Teks:** Kambing Boer dipilihkan, disembelih, dimasak, dan diantar sampai siap dihidangkan. Paket mulai {DUMMY: Rp2.750.000}, harga total sebelum ongkir.
-**Tombol:** Lihat paket aqiqah
+**Alur (baru, sama dengan halaman Aqiqah):** 01 Pilih kambing: Kami kirimkan Kartu Kambing: foto, jenis, bobot, dan umur. Mau datang melihat langsung juga boleh. · 02 Disembelih: Pada hari yang disepakati, sesuai tata cara syar'i. · 03 Dimasak: Diolah di dapur kami sesuai menu paket. · 04 Dikemas dan diantar: Sampai di rumah atau di tempat acara, siap dibagikan.
+**Tombol:** Lihat paket aqiqah · **Tautan:** Tanya lewat WhatsApp (pesan: Assalamu'alaikum, saya mau tanya paket aqiqah Agrin.)
+**Catatan di bawah Kartu Kambing (baru):** Setiap kambing aqiqah punya kartunya sendiri. Ayah & Bunda melihat data kambingnya sebelum hari-H, bukan sesudahnya.
+
+**Catatan (tidak tampil):** [CEK] Kartu Kambing benar dikirim untuk setiap pesanan aqiqah sebelum hari-H.
 
 ## A5. Kandang terbuka
-
 **Judul:** Kandangnya terbuka untuk dikunjungi.
-**Teks:** Keluarga boleh datang melihat kambing sebelum memesan. Sekolah dan kampus bisa mengatur kunjungan belajar atau program magang. Semua kunjungan dengan janji lewat WhatsApp, supaya ada yang menemani.
-**Tautan:** Lihat program kunjungan
+**Teks:** (sama dengan v1.1)
+**Cara berkunjung ke kandang (baru):**
+1. **Sapa kami lewat WhatsApp.** Ceritakan siapa yang akan datang dan apa yang ingin dilihat.
+2. **Sepakati harinya.** Kami pastikan ada tim yang menemani di kandang pada hari itu.
+3. **Datang ke Tajinan.** Kandang kami di Tajinan, Kabupaten Malang. Alamat lengkapnya ada di bagian kontak.
+4. **Berkeliling ditemani.** Lihat kambing, kandang, dan pakannya, lalu tanyakan apa saja.
+**Tombol:** Atur jadwal kunjungan (pesan: Assalamu'alaikum, saya mau mengatur kunjungan ke kandang Agrin.) · **Tautan:** Program untuk sekolah & kampus
+
+**Catatan (tidak tampil):** [CEK] langkah 2 "ada tim yang menemani" sesuai praktik sekarang.
 
 ## A6. Hasil kandang
-
 **Judul:** Hasil kandang untuk sehari-hari.
-
-| Produk | Kalimat | Harga | Tautan |
-|---|---|---|---|
-| Lotion susu kambing | Lotion susu kambing dari Agrin, dalam ukuran {DUMMY: 100 ml}. | {DUMMY: Rp45.000} | Lihat lotion |
-| Burger kambing | Burger daging kambing, dipesan lewat WhatsApp. | {DUMMY: Rp35.000} | Lihat menu |
+**Pengantar (baru):** Selain kambing untuk ibadah, ada dua hasil kandang yang bisa dibawa pulang. Keduanya dipesan lewat WhatsApp.
+(Kartu lotion dan burger sama dengan v1.1.)
 
 ## A7. Tabungan Qurban
-
 **Judul:** Qurban nanti, disiapkan dari sekarang.
-**Teks:** Bapak/Ibu bisa menabung untuk qurban sedikit demi sedikit. Setiap setoran tercatat, aturannya tertulis, dan kambingnya dari kandang yang sama.
-**Tautan:** Lihat skema Tabungan Qurban
+**Teks:** (sama dengan v1.1)
+**Tiga prinsip (baru, dari halaman Tabungan Qurban):**
+- **Tercatat.** Setiap setoran dicatat dan bisa ditanyakan kapan saja.
+- **Tertulis.** Aturannya kami kirimkan lebih dulu, sebelum Bapak/Ibu mulai menyetor.
+- **Untuk membeli kambing.** Setoran dipakai untuk membeli kambing qurban Bapak/Ibu, bukan untuk dikembangkan.
+**Tombol:** Lihat skema Tabungan Qurban
 
-**Catatan (tidak tampil):** [CEK] "setiap setoran tercatat, aturannya tertulis" hanya tayang bila skema tertulis sudah ada.
+**Catatan (tidak tampil):** [CEK] "tercatat" dan "tertulis" hanya tayang bila skema tertulis sudah ada.
 
 ## A8. Tentang Agrin
-
 **Judul:** Yang kami pegang di kandang.
+**Pengantar (baru):** Empat hal ini yang kami jaga setiap kali keluarga menitipkan urusannya kepada kami.
+(Empat nilai sama dengan v1.1, diberi nomor 01–04.)
 
-- **Amanah.** Kambing yang kami tawarkan adalah kambing yang kami tunjukkan.
-- **Terbuka.** Kandang bisa didatangi, bobot ditulis, harga disebut di depan.
-- **Hangat.** Kami menemani keluarga dari bertanya sampai selesai.
-- **Tuntas.** Urusan yang kami ambil, kami selesaikan sampai akhir.
+## A8b. FAQ beranda (baru)
+**Judul:** Yang sering ditanyakan. · **Pengantar:** Belum ada jawabannya di sini? Tanyakan saja lewat WhatsApp.
+- **Apakah kandangnya benar-benar bisa dikunjungi?** Bisa. Kunjungan diatur lewat WhatsApp lebih dulu supaya ada tim yang menemani. Jam kunjung: [BUTUH DATA: hari dan jam]
+- **Di mana lokasi peternakannya?** Di Tajinan, Kabupaten Malang. Alamat lengkapnya ada di bagian kontak di bawah.
+- **Jenis kambingnya apa?** Kambing Boer, yang dikenali dari kepala cokelat kemerahan dan telinga panjang terkulai. Data tiap ekor ditulis di Kartu Kambing.
+- **Bagaimana cara memesan?** Semua pemesanan lewat WhatsApp. Tombol di tiap halaman lini sudah berisi pesan awal, jadi tinggal dilengkapi lalu dikirim.
+- **Setoran Tabungan Qurban dipakai untuk apa?** Untuk membeli kambing qurban Bapak/Ibu, tidak untuk diputar atau dikembangkan. Aturan lengkapnya ada di halaman Tabungan Qurban.
+- **Siapa yang bisa ikut kunjungan belajar?** Sekolah dan kampus, juga siswa atau mahasiswa yang ingin magang. Rincian programnya ada di halaman Kunjungan.
 
-**Catatan (tidak tampil):** [CEK] "bobot ditulis" sejalan dengan Kartu Kambing; pastikan berjalan sebelum tayang.
+**Catatan (tidak tampil):** sengaja tidak memakai kata "Boer murni" (guardrail brand).
 
 ## A9. Kontak & lokasi
-
 **Judul:** Datang ke kandang, atau sapa kami dulu.
+**Pengantar (baru):** Pertanyaan kecil pun boleh. Kalau ingin berkunjung, kami bantu atur harinya.
 - Alamat: Tajinan, Kabupaten Malang. [BUTUH DATA: alamat lengkap dan link Google Maps]
 - Jam kunjung: [BUTUH DATA: hari dan jam]
 - WhatsApp: {DUMMY: 0812-0000-0000}
 - **Tombol:** Chat WhatsApp
 
-## A10. Footer
+## A10. Footer (semua halaman)
 - **Agrin Boer Farm** · Peternakan Kambing untuk Keluarga — Malang
+- Tagline (baru): *Dari kandang kami, untuk momen keluargamu.*
 - Tautan: Aqiqah · Tabungan Qurban · Kunjungan · Lotion · Burger
 - Alamat, WhatsApp, jam kunjung (sama dengan A9)
+- Baris bawah (baru): Agrin Boer Farm, 2026 · Tajinan, Kabupaten Malang · Kembali ke atas
 
 ---
 

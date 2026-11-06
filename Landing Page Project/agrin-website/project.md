@@ -74,6 +74,7 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 | Tanggal | Yang diubah | Dari → Ke | Alasan | Disetujui |
 |---|---|---|---|---|
 | 2026-11-05 | Fokus beranda | aqiqah sebagai CTA utama beranda → peternakan yang utama, aqiqah lini pertama | Tujuan website adalah peternakan | Pengguna |
+| 2026-11-06 | Beranda & gaya bersama (v2) | 9 section ringkas → 12 section beragam bentuk + copy v1.2; header lengket, gerak masuk, Fraunces Italic | Pengguna minta situs tidak monoton, mewah tapi elegan, lebih banyak copy dan animasi | Pengguna |
 
 ---
 
@@ -82,6 +83,7 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 - Data per lini (`brief.md` §6) dan domain sendiri belum ada.
 - Nomor izin lotion (BPOM), burger (halal/izin pangan) hanya ditulis bila nomornya diberikan.
 - `brand-strategy.md` perlu ditambah lini Kunjungan & Edukasi.
+- [CEK] baru (copy v1.2): Kartu Kambing dikirim untuk tiap pesanan aqiqah sebelum hari-H; tim selalu menemani kunjungan.
 - [CEK] dari copy: lotion dari susu kambing Agrin; daging burger dari kambing Agrin; aturan keselamatan kunjungan; skema tertulis Tabungan Qurban; fungsi lotion sesuai label.
 
 ---
