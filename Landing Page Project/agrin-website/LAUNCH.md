@@ -3,7 +3,7 @@
 **Status: PRATINJAU (data dummy) — belum untuk dibagikan ke pelanggan.** QA Tahap 6: 5 Nov 2026.
 
 - Preview branch: https://claude-bold-darwin-5yxfnr.agrinboer-farm.pages.dev/
-- Produksi (masih landing aqiqah lama): https://agrinboer-farm.pages.dev/ — berubah setelah branch digabung ke `main`.
+- Produksi: https://agrinboer-farm.pages.dev/ — website peternakan tayang 6 Nov 2026 (PR #5), masih data dummy.
 - Host: Cloudflare Pages, output directory `site`, tanpa build command.
 
 ## Penghalang deploy (wajib beres sebelum dibagikan)
@@ -48,6 +48,11 @@ Sebelum font self-host, LCP beranda 3,5 s (performa 83).
 - [x] favicon, 404.html, robots.txt, sitemap.xml.
 - [ ] Domain sendiri — belum ada (URL di canonical/sitemap memakai pages.dev; ganti bila domain dipasang).
 - [ ] Analytics — belum ada.
+
+## Cek setelah online (6 Nov 2026)
+- [x] Semua halaman 200: /, /aqiqah/, /tabungan-qurban/, /kunjungan/, /lotion/, /burger/, /sitemap.xml, /fonts/fonts.css.
+- [x] Alamat acak (/tes-404) mengembalikan 404.
+- [x] URL produksi tanpa header `x-robots-tag` → audit SEO `is-crawlable` lolos di produksi.
 
 ## Pantau minggu pertama (setelah tayang resmi)
 - Chat WA per hari, per halaman asal (pesan terisi berbeda tiap lini).
