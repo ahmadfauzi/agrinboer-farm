@@ -572,7 +572,7 @@
     .denah { animation: naik 1000ms 150ms var(--ease-keluar) both; }
     .denah .d-blok { animation: muncul-blok 700ms var(--ease-keluar) both; animation-delay: calc(400ms + var(--d) * 120ms); }
     .denah .pin g { animation: pin-masuk 600ms cubic-bezier(0.34, 1.56, 0.64, 1) both; animation-delay: calc(900ms + var(--d) * 110ms); }
-    .denah .d-jalan { animation: jalan-titik 2.4s linear infinite; }
+    .denah .d-jalan { animation: jalan-titik 2.4s linear 2; }
   }
   @keyframes naik { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
   @keyframes muncul-blok { from { opacity: 0; } to { opacity: 1; } }
@@ -652,9 +652,9 @@
   .untuk { font-size: var(--fs-kecil); font-weight: 600; color: var(--aksen); margin-top: 2px; }
 
   /* Kalender keluarga */
-  .kalender-kepala, .nilai-kepala, .kontak-kepala, .produk-kepala { display: grid; gap: var(--sp-4); }
+  .kalender-kepala, .nilai-kepala, .kontak-kepala, .produk-kepala, .kepala-dua { display: grid; gap: var(--sp-4); }
   @media (min-width: 960px) {
-    .kalender-kepala, .nilai-kepala, .kontak-kepala, .produk-kepala { grid-template-columns: 1fr 1fr; gap: var(--sp-8); align-items: end; }
+    .kalender-kepala, .nilai-kepala, .kontak-kepala, .produk-kepala, .kepala-dua { grid-template-columns: 1fr 1fr; gap: var(--sp-8); align-items: end; }
   }
   .musim { list-style: none; margin: var(--sp-7) 0 0; padding: 0; display: grid; gap: var(--sp-6); position: relative; }
   .musim li { position: relative; padding-left: var(--sp-6); }
@@ -702,8 +702,18 @@
   .pita-jalan i { width: 9px; height: 9px; background: var(--emas-tua); transform: rotate(45deg); flex: none; }
   @media (prefers-reduced-motion: no-preference) {
     .pita-jalan { animation: berjalan 48s linear infinite; }
-    .pita-lini:hover .pita-jalan { animation-play-state: paused; }
+    .pita-lini:hover .pita-jalan, .pita-lini.dijeda .pita-jalan { animation-play-state: paused; }
   }
+  .pita-lini { position: relative; }
+  .pita-jeda {
+    position: absolute; right: var(--gutter); top: 50%; transform: translateY(-50%); z-index: 2;
+    min-height: 44px; padding: 0 var(--sp-4); border: 0; border-radius: 999px; cursor: pointer;
+    background: var(--bg); color: var(--judul); font-weight: var(--fw-tombol); font-size: var(--fs-kecil);
+    box-shadow: 0 0 0 1px var(--garis-emas), 0 6px 16px -8px rgb(58 42 28 / 0.35);
+    transition: background-color var(--dur-cepat) var(--ease);
+  }
+  .pita-jeda:hover { background: var(--bg-blok); }
+  @media (prefers-reduced-motion: reduce) { .pita-jeda { display: none; } }
   @keyframes berjalan { to { transform: translateX(calc(-50% - var(--sp-6) / 2)); } }
 
   /* Hasil kandang */
@@ -722,8 +732,9 @@
 
   /* Tabungan Qurban: tiga prinsip */
   .tabungan-tata { align-items: start; }
-  .prinsip { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--sp-3); }
-  .prinsip li { padding: var(--sp-5); background: var(--bg); border-radius: var(--radius-kartu); border-left: 3px solid var(--emas-tua); }
+  .prinsip { list-style: none; margin: 0; padding: 0; display: grid; }
+  .prinsip li { padding: var(--sp-5) 0; border-top: 1px solid var(--garis-emas); }
+  .prinsip li:last-child { border-bottom: 1px solid var(--garis-emas); }
   .prinsip h3 { font-size: 1.25rem; margin-bottom: var(--sp-1); }
   .prinsip p { color: var(--teks-lembut); }
 
@@ -735,7 +746,6 @@
     .nilai-section .nilai > div { padding: var(--sp-5) var(--sp-5) 0; border-top: 0; border-left: 1px solid var(--garis-emas); }
     .nilai-section .nilai > div:first-child { border-left: 0; padding-left: 0; }
   }
-  .nilai-no { display: block; font-family: var(--font-judul); font-style: italic; color: var(--emas-tua); margin-bottom: var(--sp-3); }
   .nilai-section .nilai dt { font-size: clamp(1.625rem, 1.4rem + 1vw, 2.125rem); }
   .nilai-section .nilai dd { color: var(--teks-lembut); }
 
@@ -756,3 +766,17 @@
   .kontak-info strong { display: block; font-size: var(--fs-label); letter-spacing: 0.14em; text-transform: uppercase; color: var(--emas-terang); margin-bottom: 2px; }
   .kontak-info .btn { justify-self: start; position: relative; z-index: 1; }
   .kontak .slot-foto { min-height: 320px; aspect-ratio: auto; }
+
+/* ---------- Halaman lini v1.3 ---------- */
+  html { scrollbar-color: var(--emas-tua) var(--krem-jerami); }
+  @media (min-width: 900px) { .alur.alur--tiga { grid-template-columns: repeat(3, 1fr); } }
+  .pita-fakta--isi { margin-top: var(--sp-7); }
+  .pita-fakta--isi h3 { font-size: 1.25rem; }
+  .pita-fakta--isi p { color: var(--teks-lembut); }
+  .catatan-kecil { margin-top: var(--sp-4); font-family: var(--font-judul); font-style: italic; color: var(--teks-lembut); }
+  .blok-krem { padding: var(--sp-6); background: var(--bg-tua); border-radius: var(--radius-kartu); }
+  h2.h3 { font-size: var(--fs-h3); }
+  .blok-krem .daftar-poin { margin-top: var(--sp-4); }
+  .cta-akhir p { color: var(--teks-di-bidang); }
+  .tabungan-tata h2 { align-self: start; }
+  @media (min-width: 960px) { .kepala-dua { align-items: start; } }
