@@ -55,7 +55,7 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 - Arah: Tur kandang — denah peternakan sebagai peta navigasi situs
 - Kalimat ide: Di halaman ini, denah peternakan di Tajinan menjadi peta navigasi situs
 - Elemen hidup: pin denah → halaman lini; pemilih paket di Aqiqah
-- Halaman lini: kerangka landing aqiqah + penanda pos sesuai pin
+- Halaman lini: kerangka landing aqiqah (penanda pos dihapus 7 Nov 2026)
 - Pengecualian larangan: tipografi 3 keluarga (Caveat) — keputusan brand
 - Disetujui klien: n/a (pemilik sendiri)
 
@@ -86,6 +86,7 @@ Status yang dipakai: `belum` · `selesai` · `menunggu klien` · `[dilewati] —
 | 2026-11-05 | Fokus beranda | aqiqah sebagai CTA utama beranda → peternakan yang utama, aqiqah lini pertama | Tujuan website adalah peternakan | Pengguna |
 | 2026-11-06 | Beranda & gaya bersama (v2) | 9 section ringkas → 12 section beragam bentuk + copy v1.2; header lengket, gerak masuk, Fraunces Italic | Pengguna minta situs tidak monoton, mewah tapi elegan, lebih banyak copy dan animasi | Pengguna |
 | 2026-11-06 | Daftar section halaman lini | copy.md v1.1 B–E → v1.3 (section baru bertanda "baru, v1.3") | Pengguna minta halaman lini tidak monoton dan lebih banyak copy | Pengguna |
+| 2026-11-07 | Penanda pos | lingkaran bernomor di hero lini, judul section beranda, kartu produk → dihapus; pin denah, peta lini, nomor langkah tetap | Pengguna: section dan halaman tanpa nomor pos | Pengguna |
 
 ---
 
