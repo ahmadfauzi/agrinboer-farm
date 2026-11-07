@@ -33,7 +33,7 @@ Sumber arah: brand guideline (`../agrin-boer-farm/brand-strategy.md`) + usulan a
   A8 Tentang Agrin → daftar empat nilai dua kolom di latar putih.
   A9 Kontak & lokasi → split: blok info kiri, slot peta `[BUTUH DATA]` kanan.
   A10 Footer → hijau gelap, gelombang emas, tautan semua lini.
-- **Halaman lini** (`/tabungan-qurban/`, `/kunjungan/`, `/lotion/`, `/burger/`): kerangka landing aqiqah — header sama (menu 6 item), hero dua kolom (teks + kartu krem berisi data utama lini), section tabel dalam kartu krem berbaris putih, FAQ accordion, CTA akhir hijau bergelombang emas, footer sama. Hero diawali **penanda pos** (lingkaran nomor sesuai pin + nama lini) di samping judul, bukan label kecil di atas judul.
+- **Halaman lini** (`/tabungan-qurban/`, `/kunjungan/`, `/lotion/`, `/burger/`): kerangka landing aqiqah — header sama (menu 6 item), hero dua kolom (teks + kartu krem berisi data utama lini), section tabel dalam kartu krem berbaris putih, FAQ accordion, CTA akhir hijau bergelombang emas, footer sama. Hero tanpa penanda pos (dihapus 7 Nov 2026 atas permintaan pengguna); judul berdiri sendiri.
 - **Aqiqah** (`/aqiqah/`): halaman yang sudah ada, dipindah apa adanya; header diganti header situs (menu 6 item).
 
 ## Warna (untuk tahap token)
@@ -58,3 +58,13 @@ Sumber arah: brand guideline (`../agrin-boer-farm/brand-strategy.md`) + usulan a
 - Berlaku: daftar larangan arah-visual-web-id.
 - Pengecualian: tipografi 3 keluarga (Caveat, keputusan brand, satu kali per halaman).
 - Tidak memakai: angka klaim, lencana kepercayaan, emoji, login di beranda (pelajaran dari nusaqu.id).
+
+## Revisi v2 · 6 Nov 2026 (permintaan pengguna: tidak monoton, mewah tapi elegan, lebih banyak copy, animasi)
+- **Ritme beranda:** tiap section berbeda bentuk dan latar: hero putih + pita fakta → manifesto hijau (kutipan besar, dua kolom teks) → peta lini (kepala lengket kiri, pos kanan) → kalender keluarga krem (garis waktu 4 momen) → sorotan aqiqah putih (alur bernomor + Kartu Kambing berbingkai emas) → kandang terbuka hijau (+ 4 langkah berkunjung) → pita lini berjalan → hasil kandang (kartu produk) → Tabungan Qurban krem (tiga prinsip) → nilai 4 kolom bernomor → FAQ krem dua kolom → kontak (panel hijau + slot peta) → footer.
+- ~~Penanda pos di judul section beranda~~ dihapus 7 Nov 2026; judul section tanpa nomor dan tanpa label di atasnya (eyebrow tetap dilarang).
+- **Huruf:** Fraunces Italic (variabel, di-host sendiri, `site/fonts/Fraunces-italic-*.woff2`) hanya untuk: kutipan manifesto, nomor alur/nilai, keterangan momen kalender, catatan Kartu Kambing, tagline footer, pita lini. Kata beraksen di judul (h1–h3) tetap dilarang.
+- **Pengecualian baru:** satu frasa italic emas di kutipan manifesto ("Tinggal kambingnya."). Kutipan berupa `blockquote`, bukan judul, dengan h2 tersembunyi untuk pembaca layar.
+- **Gerak (semua halaman, mati di prefers-reduced-motion):** hero masuk berurutan; blok denah muncul lalu pin "melompat" bergiliran; titik jalan setapak berjalan pelan; elemen muncul naik saat digulir (situs.js menandai otomatis, termasuk halaman lini); header lengket berlapis kaca setelah digulir; bilah progres baca emas 2px; tombol terangkat dengan panah bergeser; pos peta lini bercincin emas saat hover; kartu produk terangkat; FAQ terbuka dengan jawaban turun halus; pita lini berjalan 48 detik per putaran, berhenti saat hover.
+- **Slot foto:** bingkai garis putus emas + label penanda berbentuk pil, supaya kosongnya terlihat disengaja sampai foto asli ada.
+- **Tambahan 7 Nov 2026 (halaman lini v1.3):** section baru memakai `.kepala-dua` (judul kiri, teks kanan, rata atas), `.pita-fakta--isi`, `.alur--tiga`, `.prinsip` (garis tipis emas, bukan kartu), `.blok-krem`. Pita lini punya tombol "Jeda gerak"; titik jalan denah hanya 2 putaran. Submenu Produk yang terbuka di halaman Lotion/Burger ditutup otomatis di desktop.
+- **Perubahan 7 Nov 2026 (pengguna):** penanda pos bernomor dihapus dari hero halaman lini, judul section beranda, dan kartu produk. Yang tetap bernomor: pin denah dan peta lini (penunjuk arah yang saling cocok), serta nomor langkah (urutan).

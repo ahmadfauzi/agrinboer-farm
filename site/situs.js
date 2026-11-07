@@ -23,6 +23,9 @@ if (tombolMenu && menu) {
   menu.querySelectorAll('a').forEach(a => a.addEventListener('click', tutup));
 }
 
+// Submenu Produk di halaman Lotion/Burger terbuka untuk menu HP; di desktop ditutup saat halaman dimuat.
+if (matchMedia('(min-width: 1024px)').matches) document.querySelectorAll('.menu details[open]').forEach(dt => dt.removeAttribute('open'));
+
 // Submenu Produk tertutup saat klik di luar (desktop).
 document.addEventListener('click', e => {
   document.querySelectorAll('.menu details[open]').forEach(dt => {
@@ -62,3 +65,52 @@ if (sticky && heroBtn) {
     link.tabIndex = 0;
   }
 }
+
+// Header berlapis kaca setelah halaman digulir.
+const header = document.querySelector('.header');
+if (header) {
+  const aturHeader = () => header.classList.toggle('tergulir', scrollY > 8);
+  aturHeader();
+  addEventListener('scroll', aturHeader, { passive: true });
+}
+
+// Gerak muncul saat digulir. Elemen ditandai di sini supaya semua halaman ikut tanpa mengubah HTML-nya;
+// tanpa JS atau dengan prefers-reduced-motion, semua tampil biasa.
+if (gerak) {
+  const kelompok = [
+    ['main .section .wrap > h2, main .section .sempit > h2', null],
+    ['.label-bagian, .judul-section, .pengantar:not(.hero .pengantar)', null],
+    ['.kalender-kepala > *, .nilai-kepala > *, .kontak-kepala > *, .produk-kepala > *, .lini-kepala > *, .kepala-dua > *', null],
+    ['.pita-fakta > li, .lini > li, .musim > li, .tahap > li, .alur > li, .prinsip > li, .nilai > div, .faq > details', 'urut'],
+    ['.produk > .kartu, .paket > .kartu, .qurban-kolom > div, .ketentuan > div, .daftar-poin > li', 'urut'],
+    ['.kutipan, .manifesto-isi, .tanda-tangan, .manifesto-boer', null],
+    ['.blok-krem, .kartu-bingkai, .kandang-tata > .slot-foto, .kontak > *, .tabel-kartu, .sub-judul-bidang, .kandang .foto-besar', 'skala'],
+  ];
+  const sudah = new Set();
+  kelompok.forEach(([sel, mode]) => {
+    document.querySelectorAll(sel).forEach(el => {
+      if (sudah.has(el) || el.closest('.hero') || el.closest('[data-muncul]')) return;
+      sudah.add(el);
+      el.dataset.muncul = mode === 'skala' ? 'skala' : '';
+      if (mode === 'urut') el.style.setProperty('--urut', [...el.parentElement.children].indexOf(el) % 6);
+    });
+  });
+  const ioMuncul = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    const el = e.target;
+    el.classList.add('muncul');
+    ioMuncul.unobserve(el);
+    // Lepas penanda setelah selesai, supaya transisi hover elemen itu kembali normal.
+    const urut = parseFloat(getComputedStyle(el).getPropertyValue('--urut')) || 0;
+    setTimeout(() => { el.removeAttribute('data-muncul'); el.classList.remove('muncul'); el.style.removeProperty('--urut'); }, 900 + urut * 90);
+  }), { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+  document.querySelectorAll('[data-muncul]').forEach(el => ioMuncul.observe(el));
+}
+
+// Pita lini berjalan: tombol jeda (WCAG 2.2.2).
+document.querySelectorAll('.pita-jeda').forEach(b => b.addEventListener('click', () => {
+  const jeda = b.getAttribute('aria-pressed') !== 'true';
+  b.setAttribute('aria-pressed', String(jeda));
+  b.textContent = jeda ? 'Putar gerak' : 'Jeda gerak';
+  b.closest('.pita-lini').classList.toggle('dijeda', jeda);
+}));
